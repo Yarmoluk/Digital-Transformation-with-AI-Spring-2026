@@ -1,0 +1,59 @@
+{
+  "title": "Digital Maturity Quadrant Model",
+  "description": "Interactive exploration of the four digital maturity archetypes with organizational placement exercise",
+  "creator": "Claude Code",
+  "subject": ["Digital Transformation", "Maturity Model", "Strategic Planning"],
+  "date": "2026-01-14",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "gradeLevel": "Graduate",
+  "subjectArea": "Business/Technology",
+  "topic": "Digital Maturity Assessment",
+  "learningObjectives": [
+    "Classify organizations into digital maturity quadrants",
+    "Evaluate organizational digital maturity position",
+    "Recommend improvement vectors for each archetype"
+  ],
+  "bloomsTaxonomy": ["Apply", "Analyze", "Evaluate"],
+  "duration": "15-20 minutes",
+  "prerequisites": ["Understanding of digital transformation concepts"],
+  "framework": "p5.js",
+  "canvasDimensions": "1000x550",
+  "responsive": "Width-responsive",
+  "dependencies": ["p5.js CDN"],
+  "accessibility": {
+    "screenReader": true,
+    "keyboardNav": true
+  },
+  "controls": [
+    {
+      "type": "drag",
+      "name": "Organization Placement",
+      "description": "Drag organizations to position on quadrant"
+    },
+    {
+      "type": "button",
+      "name": "Add Organization",
+      "description": "Add a new organization to assess"
+    },
+    {
+      "type": "button",
+      "name": "Reset All",
+      "description": "Reset organizations to default positions"
+    }
+  ],
+  "modelType": "2x2 Matrix Assessment",
+  "variables": ["Digital Intensity", "Transformation Management", "Quadrant classification"],
+  "assumptions": [
+    "Two dimensions capture key aspects of digital maturity",
+    "Organizations can be meaningfully positioned on continuous scales",
+    "Recommendations are general guidelines, not prescriptive"
+  ],
+  "limitations": [
+    "Simplified to two dimensions",
+    "Does not capture industry-specific factors",
+    "Quadrant boundaries are artificial"
+  ]
+}

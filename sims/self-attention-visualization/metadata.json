@@ -1,0 +1,60 @@
+{
+  "title": "Self-Attention Visualization",
+  "description": "Interactive visualization of how tokens attend to other tokens in transformer self-attention mechanisms",
+  "creator": "Claude Code",
+  "subject": ["Self-Attention", "Transformers", "NLP", "LLM Architecture"],
+  "date": "2026-01-14",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "gradeLevel": "Graduate",
+  "subjectArea": "Computer Science/AI",
+  "topic": "Transformer Self-Attention",
+  "learningObjectives": [
+    "Explain how self-attention captures token relationships",
+    "Interpret attention patterns and their linguistic significance",
+    "Analyze how context influences token relationships"
+  ],
+  "bloomsTaxonomy": ["Understand", "Analyze", "Evaluate"],
+  "duration": "10-15 minutes",
+  "prerequisites": ["Understanding of tokenization", "Basic transformer concepts"],
+  "framework": "p5.js",
+  "canvasDimensions": "1000x550",
+  "responsive": "Width-responsive",
+  "dependencies": ["p5.js CDN"],
+  "accessibility": {
+    "screenReader": true,
+    "keyboardNav": true
+  },
+  "controls": [
+    {
+      "type": "button",
+      "name": "Sentence Selection",
+      "description": "Choose different example sentences",
+      "count": 4
+    },
+    {
+      "type": "interactive",
+      "name": "Token Click",
+      "description": "Click tokens to see attention distribution"
+    },
+    {
+      "type": "hover",
+      "name": "Matrix Hover",
+      "description": "Hover over cells to see exact attention values"
+    }
+  ],
+  "modelType": "Attention pattern visualization",
+  "variables": ["Selected token", "Attention weights", "Token relationships"],
+  "assumptions": [
+    "Attention patterns are simulated based on linguistic rules",
+    "Single attention head shown (real models have multiple)",
+    "Patterns simplified for educational clarity"
+  ],
+  "limitations": [
+    "Simulated attention, not from actual model",
+    "Only shows single-head attention",
+    "Limited sentence examples"
+  ]
+}

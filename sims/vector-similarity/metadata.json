@@ -1,0 +1,54 @@
+{
+  "title": "Vector Similarity Visualization",
+  "description": "Interactive visualization of how semantic similarity works with word embeddings in 2D projection space",
+  "creator": "Claude Code",
+  "subject": ["Word Embeddings", "Semantic Search", "RAG", "Vector Similarity"],
+  "date": "2026-01-14",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "gradeLevel": "Graduate",
+  "subjectArea": "Computer Science/AI",
+  "topic": "Vector Embeddings and Semantic Similarity",
+  "learningObjectives": [
+    "Explain how vector similarity captures semantic relationships",
+    "Interpret cosine similarity values",
+    "Understand why semantic search outperforms keyword matching"
+  ],
+  "bloomsTaxonomy": ["Understand", "Apply", "Analyze"],
+  "duration": "10-15 minutes",
+  "prerequisites": ["Basic understanding of vectors", "Familiarity with RAG concepts"],
+  "framework": "p5.js",
+  "canvasDimensions": "1000x550",
+  "responsive": "Width-responsive",
+  "dependencies": ["p5.js CDN"],
+  "accessibility": {
+    "screenReader": true,
+    "keyboardNav": true
+  },
+  "controls": [
+    {
+      "type": "click",
+      "name": "Word Selection",
+      "description": "Click words to select for comparison"
+    },
+    {
+      "type": "button",
+      "name": "Clear Selection",
+      "description": "Clear selected words"
+    }
+  ],
+  "modelType": "2D embedding space projection",
+  "variables": ["Word positions", "Cosine similarity", "Euclidean distance", "Category membership"],
+  "assumptions": [
+    "2D projection preserves relative distances",
+    "Simulated embeddings represent typical patterns",
+    "Words in same category are semantically related"
+  ],
+  "limitations": [
+    "2D projection loses information from high-dimensional space",
+    "Simulated rather than actual embeddings",
+    "Limited vocabulary for clarity"
+  ]
+}

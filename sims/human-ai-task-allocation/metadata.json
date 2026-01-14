@@ -1,0 +1,76 @@
+{
+  "title": "Human-AI Task Allocation Simulator",
+  "description": "Interactive simulation for experimenting with different human-AI task allocation strategies and observing productivity outcomes across multiple work scenarios",
+  "creator": "Claude Code",
+  "subject": ["Human-AI Collaboration", "Future of Work", "Workforce Transformation", "Task Allocation"],
+  "date": "2026-01-14",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "gradeLevel": "Graduate",
+  "subjectArea": "Business/Technology",
+  "topic": "Human-AI Collaboration",
+  "learningObjectives": [
+    "Apply collaboration principles to task allocation decisions",
+    "Analyze tradeoffs between quality, cost, and throughput",
+    "Evaluate which tasks benefit from human vs. AI processing"
+  ],
+  "bloomsTaxonomy": ["Apply", "Analyze", "Evaluate"],
+  "duration": "10-15 minutes",
+  "prerequisites": ["Understanding of AI capabilities", "Basic knowledge of workflow optimization"],
+  "framework": "p5.js",
+  "canvasDimensions": "1000x600",
+  "responsive": "Width-responsive",
+  "dependencies": ["p5.js CDN"],
+  "accessibility": {
+    "screenReader": true,
+    "keyboardNav": false
+  },
+  "controls": [
+    {
+      "type": "select",
+      "name": "Scenario",
+      "description": "Work context selection affecting AI/human performance characteristics",
+      "options": ["Customer Service", "Financial Reports", "Code Review", "Content Creation"]
+    },
+    {
+      "type": "slider",
+      "name": "Task Rate",
+      "description": "Number of tasks generated per minute",
+      "min": 1,
+      "max": 10,
+      "default": 3
+    },
+    {
+      "type": "slider",
+      "name": "Complexity",
+      "description": "Base complexity level of generated tasks",
+      "min": 1,
+      "max": 10,
+      "default": 5
+    },
+    {
+      "type": "button",
+      "name": "Start/Pause",
+      "description": "Toggle simulation running state"
+    },
+    {
+      "type": "button",
+      "name": "Reset",
+      "description": "Clear all tasks and reset metrics"
+    }
+  ],
+  "modelType": "Agent-based simulation",
+  "variables": ["Task complexity", "Allocation type", "Quality score", "Processing cost", "Throughput"],
+  "assumptions": [
+    "Tasks can be cleanly categorized by complexity",
+    "AI and human performance varies predictably by scenario",
+    "Quality and cost are measurable outcomes"
+  ],
+  "limitations": [
+    "Simplified allocation logic compared to real-world decisions",
+    "Does not model learning effects or skill development",
+    "Quality metrics are simulated, not measured"
+  ]
+}

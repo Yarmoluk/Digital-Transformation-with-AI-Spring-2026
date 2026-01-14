@@ -1,0 +1,60 @@
+{
+  "title": "AI Use Case Prioritization Tool",
+  "description": "Interactive 2x2 matrix visualization for prioritizing AI initiatives based on business value and implementation complexity with draggable bubbles and real-time ranking",
+  "creator": "Claude Code",
+  "subject": ["AI Strategy", "Prioritization", "Business Value", "Portfolio Management"],
+  "date": "2026-01-14",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "gradeLevel": "Graduate",
+  "subjectArea": "Business/Technology",
+  "topic": "AI Use Case Prioritization",
+  "learningObjectives": [
+    "Evaluate and prioritize AI opportunities using structured criteria",
+    "Analyze trade-offs between business value and implementation complexity",
+    "Apply prioritization frameworks to industry-specific scenarios"
+  ],
+  "bloomsTaxonomy": ["Apply", "Analyze", "Evaluate"],
+  "duration": "10-15 minutes",
+  "prerequisites": ["Understanding of AI capabilities", "Basic business strategy concepts"],
+  "framework": "p5.js",
+  "canvasDimensions": "1100x650",
+  "responsive": "Width-responsive",
+  "dependencies": ["p5.js CDN"],
+  "accessibility": {
+    "screenReader": true,
+    "keyboardNav": false
+  },
+  "controls": [
+    {
+      "type": "select",
+      "name": "Scenario",
+      "description": "Industry scenario selection",
+      "options": ["Healthcare Provider", "Financial Services", "Retail Company", "Manufacturing"]
+    },
+    {
+      "type": "button",
+      "name": "Clear All",
+      "description": "Remove all use cases from the matrix"
+    },
+    {
+      "type": "drag",
+      "name": "Bubble Drag",
+      "description": "Drag bubbles to reposition use cases and explore what-if scenarios"
+    }
+  ],
+  "modelType": "Interactive visualization",
+  "variables": ["Business value (1-10)", "Implementation complexity (1-10)", "Investment amount", "Priority score"],
+  "assumptions": [
+    "Value and complexity can be quantified on 1-10 scales",
+    "Priority score formula weights value higher than complexity",
+    "Investment correlates with implementation scope"
+  ],
+  "limitations": [
+    "Simplified two-dimensional analysis",
+    "Does not account for dependencies between use cases",
+    "Investment estimates are illustrative only"
+  ]
+}

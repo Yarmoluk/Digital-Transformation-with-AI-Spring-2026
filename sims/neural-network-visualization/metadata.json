@@ -1,0 +1,66 @@
+{
+  "title": "Neural Network Architecture Visualization",
+  "description": "Interactive visualization of how neural networks process information through layers with configurable architecture",
+  "creator": "Claude Code",
+  "subject": ["Neural Networks", "Deep Learning", "AI Fundamentals"],
+  "date": "2026-01-14",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "gradeLevel": "Graduate",
+  "subjectArea": "Computer Science/AI",
+  "topic": "Neural Network Architecture",
+  "learningObjectives": [
+    "Explain how information flows through network layers",
+    "Trace information flow through a neural network",
+    "Understand the role of layers and weights"
+  ],
+  "bloomsTaxonomy": ["Understand", "Apply", "Analyze"],
+  "duration": "15-20 minutes",
+  "prerequisites": ["Basic understanding of functions", "Linear algebra basics"],
+  "framework": "p5.js",
+  "canvasDimensions": "1000x550",
+  "responsive": "Width-responsive",
+  "dependencies": ["p5.js CDN"],
+  "accessibility": {
+    "screenReader": true,
+    "keyboardNav": true
+  },
+  "controls": [
+    {
+      "type": "button",
+      "name": "Animation Controls",
+      "description": "Start, pause, and reset the forward propagation animation"
+    },
+    {
+      "type": "button",
+      "name": "Random Inputs",
+      "description": "Generate new random input values"
+    },
+    {
+      "type": "select",
+      "name": "Hidden Layers",
+      "description": "Configure number of hidden layers (1-4)",
+      "options": [1, 2, 3, 4]
+    },
+    {
+      "type": "select",
+      "name": "Nodes per Layer",
+      "description": "Configure nodes in each hidden layer (3-7)",
+      "options": [3, 4, 5, 6, 7]
+    }
+  ],
+  "modelType": "Neural network forward propagation",
+  "variables": ["Layer count", "Nodes per layer", "Activations", "Weights"],
+  "assumptions": [
+    "Uses simplified ReLU-like activation",
+    "Weights are randomly initialized",
+    "Forward pass only (no backpropagation shown)"
+  ],
+  "limitations": [
+    "Simplified activation function",
+    "No training/learning shown",
+    "Small network for visualization clarity"
+  ]
+}
