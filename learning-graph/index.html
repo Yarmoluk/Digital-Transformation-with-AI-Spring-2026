@@ -374,6 +374,28 @@
   
   
   
+    
+    
+      <li class="md-tabs__item">
+        <a href="../quizzes/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Quizzes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
     <li class="md-tabs__item">
       <a href="../glossary/" class="md-tabs__link">
         
@@ -382,6 +404,25 @@
     
   
   Glossary
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
 
       </a>
     </li>
@@ -642,6 +683,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -841,6 +886,62 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="learning-graph-mermaid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mermaid Diagrams
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="book-metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Book Metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -929,6 +1030,85 @@
   
   
   
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../quizzes/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quizzes
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../glossary/" class="md-nav__link">
         
@@ -938,6 +1118,33 @@
     
   
     Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
   
 
     
@@ -1041,6 +1248,17 @@
     <span class="md-ellipsis">
       
         Interactive Viewer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mermaid-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mermaid Diagrams
       
     </span>
   </a>
@@ -1284,7 +1502,17 @@
 </tbody>
 </table>
 <h2 id="interactive-viewer">Interactive Viewer<a class="headerlink" href="#interactive-viewer" title="Permanent link">&para;</a></h2>
-<p><em>The interactive vis-network viewer can be added using the <code>installer</code> skill with the <code>learning-graph-viewer</code> option.</em></p>
+<p><a href="graph-viewer.html" target="_blank" class="md-button md-button--primary">Open Interactive Graph Viewer</a></p>
+<p>The interactive viewer allows you to:</p>
+<ul>
+<li>Search and filter concepts by name</li>
+<li>Click nodes to see their dependencies</li>
+<li>Double-click to highlight connected concepts</li>
+<li>Switch between physics simulation and hierarchical layouts</li>
+<li>Filter by taxonomy category</li>
+</ul>
+<h2 id="mermaid-diagrams">Mermaid Diagrams<a class="headerlink" href="#mermaid-diagrams" title="Permanent link">&para;</a></h2>
+<p>Visual flowcharts showing key learning paths are available in the <a href="learning-graph-mermaid/">Mermaid Diagrams</a> page.</p>
 <h2 id="related-documents">Related Documents<a class="headerlink" href="#related-documents" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="course-description-assessment/">Course Description Assessment</a> - Quality analysis of the course description</li>
@@ -1311,8 +1539,20 @@
 <td>vis-network.js format for visualization</td>
 </tr>
 <tr>
+<td><code>seis-666-learning-graph.json</code></td>
+<td>Named copy for course-specific reference</td>
+</tr>
+<tr>
 <td><code>metadata.json</code></td>
 <td>Graph metadata (title, creator, etc.)</td>
+</tr>
+<tr>
+<td><code>graph-viewer.html</code></td>
+<td>Interactive vis-network.js graph viewer</td>
+</tr>
+<tr>
+<td><code>learning-graph-mermaid.md</code></td>
+<td>Mermaid diagram visualizations</td>
 </tr>
 <tr>
 <td><code>analyze-graph.py</code></td>
@@ -1330,9 +1570,9 @@
 </table>
 <h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Add interactive viewer with <code>installer</code> skill</li>
-<li>Generate chapter structure with <code>book-chapter-generator</code></li>
-<li>Create chapter content with <code>chapter-content-generator</code></li>
+<li>Review the <a href="graph-viewer.html">Interactive Graph Viewer</a> to explore concept relationships</li>
+<li>Generate chapter structure with <code>book-chapter-generator</code> skill</li>
+<li>Create chapter content with <code>chapter-content-generator</code> skill</li>
 </ol>
 
 

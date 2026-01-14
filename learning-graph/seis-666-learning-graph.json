@@ -1,0 +1,2282 @@
+{
+  "metadata": {
+    "title": "Digital Transformation 2.0 with Generative AI",
+    "description": "A graduate-level learning graph for SEIS 666 exploring how generative AI technologies are reshaping digital transformation, business models, and workforce dynamics. Covers 200 concepts from foundational AI principles to advanced business applications.",
+    "creator": "Daniel Yarmoluk",
+    "date": "2025-01-14",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "FOUND": {
+      "classifierName": "Foundation Concepts",
+      "color": "LightCoral",
+      "font": {
+        "color": "white"
+      }
+    },
+    "ARCH": {
+      "classifierName": "LLM Architecture",
+      "color": "PeachPuff",
+      "font": {
+        "color": "black"
+      }
+    },
+    "PLAT": {
+      "classifierName": "AI Platforms",
+      "color": "LightYellow",
+      "font": {
+        "color": "black"
+      }
+    },
+    "PROMPT": {
+      "classifierName": "Prompt Engineering",
+      "color": "Honeydew",
+      "font": {
+        "color": "black"
+      }
+    },
+    "CUSTOM": {
+      "classifierName": "Custom Solutions",
+      "color": "PaleGreen",
+      "font": {
+        "color": "black"
+      }
+    },
+    "API": {
+      "classifierName": "API Integration",
+      "color": "PaleTurquoise",
+      "font": {
+        "color": "black"
+      }
+    },
+    "MULTI": {
+      "classifierName": "Multimodal AI",
+      "color": "PowderBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "GOV": {
+      "classifierName": "Governance",
+      "color": "Lavender",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ETHICS": {
+      "classifierName": "Ethics",
+      "color": "LavenderBlush",
+      "font": {
+        "color": "black"
+      }
+    },
+    "WORK": {
+      "classifierName": "Workforce",
+      "color": "Thistle",
+      "font": {
+        "color": "black"
+      }
+    },
+    "BIZ": {
+      "classifierName": "Business Applications",
+      "color": "MistyRose",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ADV": {
+      "classifierName": "Advanced Topics",
+      "color": "Plum",
+      "font": {
+        "color": "white"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Digital Transformation",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Digitization",
+      "group": "FOUND"
+    },
+    {
+      "id": 3,
+      "label": "Digitalization",
+      "group": "FOUND"
+    },
+    {
+      "id": 4,
+      "label": "Digital Maturity",
+      "group": "FOUND"
+    },
+    {
+      "id": 5,
+      "label": "Digital Capability Model",
+      "group": "FOUND"
+    },
+    {
+      "id": 6,
+      "label": "Organizational Readiness",
+      "group": "FOUND"
+    },
+    {
+      "id": 7,
+      "label": "Business Drivers",
+      "group": "FOUND"
+    },
+    {
+      "id": 8,
+      "label": "Value Creation",
+      "group": "FOUND"
+    },
+    {
+      "id": 9,
+      "label": "Digital Economy",
+      "group": "FOUND"
+    },
+    {
+      "id": 10,
+      "label": "Competitive Advantage",
+      "group": "FOUND"
+    },
+    {
+      "id": 11,
+      "label": "Artificial Intelligence",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 12,
+      "label": "Machine Learning",
+      "group": "FOUND"
+    },
+    {
+      "id": 13,
+      "label": "Deep Learning",
+      "group": "ARCH"
+    },
+    {
+      "id": 14,
+      "label": "Neural Networks",
+      "group": "ARCH"
+    },
+    {
+      "id": 15,
+      "label": "Generative AI",
+      "group": "FOUND"
+    },
+    {
+      "id": 16,
+      "label": "Large Language Models",
+      "group": "ARCH"
+    },
+    {
+      "id": 17,
+      "label": "Transformer Architecture",
+      "group": "ARCH"
+    },
+    {
+      "id": 18,
+      "label": "Attention Mechanism",
+      "group": "ARCH"
+    },
+    {
+      "id": 19,
+      "label": "Self-Attention",
+      "group": "ARCH"
+    },
+    {
+      "id": 20,
+      "label": "Multi-Head Attention",
+      "group": "ARCH"
+    },
+    {
+      "id": 21,
+      "label": "Pre-Training",
+      "group": "ARCH"
+    },
+    {
+      "id": 22,
+      "label": "Fine-Tuning",
+      "group": "ARCH"
+    },
+    {
+      "id": 23,
+      "label": "RLHF",
+      "group": "ARCH"
+    },
+    {
+      "id": 24,
+      "label": "Token",
+      "group": "ARCH",
+      "shape": "box"
+    },
+    {
+      "id": 25,
+      "label": "Tokenization",
+      "group": "ARCH"
+    },
+    {
+      "id": 26,
+      "label": "Context Window",
+      "group": "ARCH"
+    },
+    {
+      "id": 27,
+      "label": "Model Parameters",
+      "group": "ARCH"
+    },
+    {
+      "id": 28,
+      "label": "Inference",
+      "group": "ARCH"
+    },
+    {
+      "id": 29,
+      "label": "Latency",
+      "group": "ARCH"
+    },
+    {
+      "id": 30,
+      "label": "Throughput",
+      "group": "ARCH"
+    },
+    {
+      "id": 31,
+      "label": "OpenAI",
+      "group": "PLAT"
+    },
+    {
+      "id": 32,
+      "label": "GPT-4",
+      "group": "PLAT"
+    },
+    {
+      "id": 33,
+      "label": "GPT-4 Turbo",
+      "group": "PLAT"
+    },
+    {
+      "id": 34,
+      "label": "GPT-4o",
+      "group": "PLAT"
+    },
+    {
+      "id": 35,
+      "label": "ChatGPT",
+      "group": "PLAT"
+    },
+    {
+      "id": 36,
+      "label": "Anthropic",
+      "group": "PLAT"
+    },
+    {
+      "id": 37,
+      "label": "Claude",
+      "group": "PLAT"
+    },
+    {
+      "id": 38,
+      "label": "Claude 3 Sonnet",
+      "group": "PLAT"
+    },
+    {
+      "id": 39,
+      "label": "Claude 3 Opus",
+      "group": "PLAT"
+    },
+    {
+      "id": 40,
+      "label": "Google Gemini",
+      "group": "PLAT"
+    },
+    {
+      "id": 41,
+      "label": "Gemini Pro",
+      "group": "PLAT"
+    },
+    {
+      "id": 42,
+      "label": "Gemini Ultra",
+      "group": "PLAT"
+    },
+    {
+      "id": 43,
+      "label": "Perplexity AI",
+      "group": "PLAT"
+    },
+    {
+      "id": 44,
+      "label": "Search-Augmented Gen",
+      "group": "PLAT"
+    },
+    {
+      "id": 45,
+      "label": "xAI Grok",
+      "group": "PLAT"
+    },
+    {
+      "id": 46,
+      "label": "Meta Llama",
+      "group": "PLAT"
+    },
+    {
+      "id": 47,
+      "label": "Mistral AI",
+      "group": "PLAT"
+    },
+    {
+      "id": 48,
+      "label": "Mixtral",
+      "group": "PLAT"
+    },
+    {
+      "id": 49,
+      "label": "Open-Source Models",
+      "group": "PLAT"
+    },
+    {
+      "id": 50,
+      "label": "Proprietary Models",
+      "group": "PLAT"
+    },
+    {
+      "id": 51,
+      "label": "Prompt Engineering",
+      "group": "PROMPT"
+    },
+    {
+      "id": 52,
+      "label": "Zero-Shot Prompting",
+      "group": "PROMPT"
+    },
+    {
+      "id": 53,
+      "label": "Few-Shot Prompting",
+      "group": "PROMPT"
+    },
+    {
+      "id": 54,
+      "label": "In-Context Learning",
+      "group": "PROMPT"
+    },
+    {
+      "id": 55,
+      "label": "Chain-of-Thought",
+      "group": "PROMPT"
+    },
+    {
+      "id": 56,
+      "label": "Tree-of-Thought",
+      "group": "PROMPT"
+    },
+    {
+      "id": 57,
+      "label": "Self-Consistency",
+      "group": "PROMPT"
+    },
+    {
+      "id": 58,
+      "label": "System Prompt",
+      "group": "PROMPT"
+    },
+    {
+      "id": 59,
+      "label": "User Prompt",
+      "group": "PROMPT"
+    },
+    {
+      "id": 60,
+      "label": "Persona Design",
+      "group": "PROMPT"
+    },
+    {
+      "id": 61,
+      "label": "Output Formatting",
+      "group": "PROMPT"
+    },
+    {
+      "id": 62,
+      "label": "Structured Output",
+      "group": "PROMPT"
+    },
+    {
+      "id": 63,
+      "label": "JSON Output",
+      "group": "PROMPT"
+    },
+    {
+      "id": 64,
+      "label": "Markdown Output",
+      "group": "PROMPT"
+    },
+    {
+      "id": 65,
+      "label": "Prompt Templates",
+      "group": "PROMPT"
+    },
+    {
+      "id": 66,
+      "label": "Prompt Libraries",
+      "group": "PROMPT"
+    },
+    {
+      "id": 67,
+      "label": "Prompt Iteration",
+      "group": "PROMPT"
+    },
+    {
+      "id": 68,
+      "label": "Prompt Optimization",
+      "group": "PROMPT"
+    },
+    {
+      "id": 69,
+      "label": "Custom GPT",
+      "group": "CUSTOM"
+    },
+    {
+      "id": 70,
+      "label": "GPT Builder",
+      "group": "CUSTOM"
+    },
+    {
+      "id": 71,
+      "label": "GPT Actions",
+      "group": "CUSTOM"
+    },
+    {
+      "id": 72,
+      "label": "AI Agents",
+      "group": "CUSTOM"
+    },
+    {
+      "id": 73,
+      "label": "Autonomous Systems",
+      "group": "CUSTOM"
+    },
+    {
+      "id": 74,
+      "label": "Agent Workflows",
+      "group": "CUSTOM"
+    },
+    {
+      "id": 75,
+      "label": "No-Code AI Tools",
+      "group": "CUSTOM"
+    },
+    {
+      "id": 76,
+      "label": "Low-Code Platforms",
+      "group": "CUSTOM"
+    },
+    {
+      "id": 77,
+      "label": "Workflow Automation",
+      "group": "CUSTOM"
+    },
+    {
+      "id": 78,
+      "label": "RAG",
+      "group": "CUSTOM"
+    },
+    {
+      "id": 79,
+      "label": "Retrieval Systems",
+      "group": "CUSTOM"
+    },
+    {
+      "id": 80,
+      "label": "Knowledge Bases",
+      "group": "CUSTOM"
+    },
+    {
+      "id": 81,
+      "label": "Vector Database",
+      "group": "CUSTOM"
+    },
+    {
+      "id": 82,
+      "label": "Embeddings",
+      "group": "ARCH"
+    },
+    {
+      "id": 83,
+      "label": "Semantic Search",
+      "group": "CUSTOM"
+    },
+    {
+      "id": 84,
+      "label": "Similarity Search",
+      "group": "CUSTOM"
+    },
+    {
+      "id": 85,
+      "label": "Cosine Similarity",
+      "group": "CUSTOM"
+    },
+    {
+      "id": 86,
+      "label": "API Fundamentals",
+      "group": "API",
+      "shape": "box"
+    },
+    {
+      "id": 87,
+      "label": "REST API",
+      "group": "API"
+    },
+    {
+      "id": 88,
+      "label": "SDK",
+      "group": "API"
+    },
+    {
+      "id": 89,
+      "label": "OpenAI API",
+      "group": "API"
+    },
+    {
+      "id": 90,
+      "label": "Anthropic API",
+      "group": "API"
+    },
+    {
+      "id": 91,
+      "label": "API Endpoints",
+      "group": "API"
+    },
+    {
+      "id": 92,
+      "label": "API Authentication",
+      "group": "API"
+    },
+    {
+      "id": 93,
+      "label": "API Keys",
+      "group": "API"
+    },
+    {
+      "id": 94,
+      "label": "Temperature Parameter",
+      "group": "API"
+    },
+    {
+      "id": 95,
+      "label": "Top-P Parameter",
+      "group": "API"
+    },
+    {
+      "id": 96,
+      "label": "Max Tokens Parameter",
+      "group": "API"
+    },
+    {
+      "id": 97,
+      "label": "Stop Sequences",
+      "group": "API"
+    },
+    {
+      "id": 98,
+      "label": "Streaming Responses",
+      "group": "API"
+    },
+    {
+      "id": 99,
+      "label": "Rate Limiting",
+      "group": "API"
+    },
+    {
+      "id": 100,
+      "label": "Cost Optimization",
+      "group": "API"
+    },
+    {
+      "id": 101,
+      "label": "API Pricing",
+      "group": "API"
+    },
+    {
+      "id": 102,
+      "label": "Token Counting",
+      "group": "API"
+    },
+    {
+      "id": 103,
+      "label": "Multimodal AI",
+      "group": "MULTI"
+    },
+    {
+      "id": 104,
+      "label": "Text-to-Image",
+      "group": "MULTI"
+    },
+    {
+      "id": 105,
+      "label": "DALL-E",
+      "group": "MULTI"
+    },
+    {
+      "id": 106,
+      "label": "Midjourney",
+      "group": "MULTI"
+    },
+    {
+      "id": 107,
+      "label": "Stable Diffusion",
+      "group": "MULTI"
+    },
+    {
+      "id": 108,
+      "label": "Diffusion Models",
+      "group": "MULTI"
+    },
+    {
+      "id": 109,
+      "label": "Image Generation",
+      "group": "MULTI"
+    },
+    {
+      "id": 110,
+      "label": "Image Analysis",
+      "group": "MULTI"
+    },
+    {
+      "id": 111,
+      "label": "Vision Capabilities",
+      "group": "MULTI"
+    },
+    {
+      "id": 112,
+      "label": "GPT-4 Vision",
+      "group": "MULTI"
+    },
+    {
+      "id": 113,
+      "label": "Text-to-Video",
+      "group": "MULTI"
+    },
+    {
+      "id": 114,
+      "label": "Sora",
+      "group": "MULTI"
+    },
+    {
+      "id": 115,
+      "label": "Audio AI",
+      "group": "MULTI"
+    },
+    {
+      "id": 116,
+      "label": "Speech-to-Text",
+      "group": "MULTI"
+    },
+    {
+      "id": 117,
+      "label": "Text-to-Speech",
+      "group": "MULTI"
+    },
+    {
+      "id": 118,
+      "label": "Voice Cloning",
+      "group": "MULTI"
+    },
+    {
+      "id": 119,
+      "label": "Multimodal Applications",
+      "group": "MULTI"
+    },
+    {
+      "id": 120,
+      "label": "GAI Center of Excellence",
+      "group": "GOV"
+    },
+    {
+      "id": 121,
+      "label": "GAICoE Charter",
+      "group": "GOV"
+    },
+    {
+      "id": 122,
+      "label": "AI Governance",
+      "group": "GOV"
+    },
+    {
+      "id": 123,
+      "label": "AI Policy",
+      "group": "GOV"
+    },
+    {
+      "id": 124,
+      "label": "AI Strategy",
+      "group": "GOV"
+    },
+    {
+      "id": 125,
+      "label": "AI Roadmap",
+      "group": "GOV"
+    },
+    {
+      "id": 126,
+      "label": "Change Management",
+      "group": "GOV"
+    },
+    {
+      "id": 127,
+      "label": "Stakeholder Engagement",
+      "group": "GOV"
+    },
+    {
+      "id": 128,
+      "label": "Executive Sponsorship",
+      "group": "GOV"
+    },
+    {
+      "id": 129,
+      "label": "AI Champions",
+      "group": "GOV"
+    },
+    {
+      "id": 130,
+      "label": "Scaling AI",
+      "group": "GOV"
+    },
+    {
+      "id": 131,
+      "label": "Enterprise AI",
+      "group": "GOV"
+    },
+    {
+      "id": 132,
+      "label": "AI Maturity Model",
+      "group": "GOV"
+    },
+    {
+      "id": 133,
+      "label": "AI Bias",
+      "group": "ETHICS"
+    },
+    {
+      "id": 134,
+      "label": "Bias Detection",
+      "group": "ETHICS"
+    },
+    {
+      "id": 135,
+      "label": "Bias Mitigation",
+      "group": "ETHICS"
+    },
+    {
+      "id": 136,
+      "label": "Hallucination",
+      "group": "ETHICS"
+    },
+    {
+      "id": 137,
+      "label": "Factual Accuracy",
+      "group": "ETHICS"
+    },
+    {
+      "id": 138,
+      "label": "Grounding",
+      "group": "ETHICS"
+    },
+    {
+      "id": 139,
+      "label": "Data Privacy",
+      "group": "ETHICS"
+    },
+    {
+      "id": 140,
+      "label": "Data Security",
+      "group": "ETHICS"
+    },
+    {
+      "id": 141,
+      "label": "PII Protection",
+      "group": "ETHICS"
+    },
+    {
+      "id": 142,
+      "label": "GDPR Compliance",
+      "group": "ETHICS"
+    },
+    {
+      "id": 143,
+      "label": "AI Regulations",
+      "group": "ETHICS"
+    },
+    {
+      "id": 144,
+      "label": "EU AI Act",
+      "group": "ETHICS"
+    },
+    {
+      "id": 145,
+      "label": "Intellectual Property",
+      "group": "ETHICS"
+    },
+    {
+      "id": 146,
+      "label": "Copyright AI Content",
+      "group": "ETHICS"
+    },
+    {
+      "id": 147,
+      "label": "Responsible AI",
+      "group": "ETHICS"
+    },
+    {
+      "id": 148,
+      "label": "AI Ethics",
+      "group": "ETHICS"
+    },
+    {
+      "id": 149,
+      "label": "Transparency",
+      "group": "ETHICS"
+    },
+    {
+      "id": 150,
+      "label": "Explainability",
+      "group": "ETHICS"
+    },
+    {
+      "id": 151,
+      "label": "Accountability",
+      "group": "ETHICS"
+    },
+    {
+      "id": 152,
+      "label": "Red-Teaming",
+      "group": "ETHICS"
+    },
+    {
+      "id": 153,
+      "label": "Adversarial Testing",
+      "group": "ETHICS"
+    },
+    {
+      "id": 154,
+      "label": "Safety Guardrails",
+      "group": "ETHICS"
+    },
+    {
+      "id": 155,
+      "label": "Content Moderation",
+      "group": "ETHICS"
+    },
+    {
+      "id": 156,
+      "label": "Future of Work",
+      "group": "WORK"
+    },
+    {
+      "id": 157,
+      "label": "AI-Augmented Workforce",
+      "group": "WORK"
+    },
+    {
+      "id": 158,
+      "label": "Skill Transformation",
+      "group": "WORK"
+    },
+    {
+      "id": 159,
+      "label": "Reskilling",
+      "group": "WORK"
+    },
+    {
+      "id": 160,
+      "label": "Upskilling",
+      "group": "WORK"
+    },
+    {
+      "id": 161,
+      "label": "Role Evolution",
+      "group": "WORK"
+    },
+    {
+      "id": 162,
+      "label": "Job Displacement",
+      "group": "WORK"
+    },
+    {
+      "id": 163,
+      "label": "Job Creation",
+      "group": "WORK"
+    },
+    {
+      "id": 164,
+      "label": "Human-AI Collaboration",
+      "group": "WORK"
+    },
+    {
+      "id": 165,
+      "label": "Augmented Intelligence",
+      "group": "WORK"
+    },
+    {
+      "id": 166,
+      "label": "Productivity Enhancement",
+      "group": "WORK"
+    },
+    {
+      "id": 167,
+      "label": "Creativity Enhancement",
+      "group": "WORK"
+    },
+    {
+      "id": 168,
+      "label": "Organizational Change",
+      "group": "WORK"
+    },
+    {
+      "id": 169,
+      "label": "AI Use Case",
+      "group": "BIZ"
+    },
+    {
+      "id": 170,
+      "label": "Use Case Identification",
+      "group": "BIZ"
+    },
+    {
+      "id": 171,
+      "label": "Value Mapping",
+      "group": "BIZ"
+    },
+    {
+      "id": 172,
+      "label": "ROI Estimation",
+      "group": "BIZ"
+    },
+    {
+      "id": 173,
+      "label": "Prioritization Framework",
+      "group": "BIZ"
+    },
+    {
+      "id": 174,
+      "label": "Feasibility Analysis",
+      "group": "BIZ"
+    },
+    {
+      "id": 175,
+      "label": "Impact Assessment",
+      "group": "BIZ"
+    },
+    {
+      "id": 176,
+      "label": "Quick Wins",
+      "group": "BIZ"
+    },
+    {
+      "id": 177,
+      "label": "Strategic Initiatives",
+      "group": "BIZ"
+    },
+    {
+      "id": 178,
+      "label": "Industry Use Cases",
+      "group": "BIZ"
+    },
+    {
+      "id": 179,
+      "label": "Healthcare AI",
+      "group": "BIZ"
+    },
+    {
+      "id": 180,
+      "label": "Finance AI",
+      "group": "BIZ"
+    },
+    {
+      "id": 181,
+      "label": "Retail AI",
+      "group": "BIZ"
+    },
+    {
+      "id": 182,
+      "label": "Manufacturing AI",
+      "group": "BIZ"
+    },
+    {
+      "id": 183,
+      "label": "Success Factors",
+      "group": "BIZ"
+    },
+    {
+      "id": 184,
+      "label": "Failure Patterns",
+      "group": "BIZ"
+    },
+    {
+      "id": 185,
+      "label": "Case Study Analysis",
+      "group": "BIZ"
+    },
+    {
+      "id": 186,
+      "label": "Best Practices",
+      "group": "BIZ"
+    },
+    {
+      "id": 187,
+      "label": "Lessons Learned",
+      "group": "BIZ"
+    },
+    {
+      "id": 188,
+      "label": "Converging Technologies",
+      "group": "ADV"
+    },
+    {
+      "id": 189,
+      "label": "IoT and AI",
+      "group": "ADV"
+    },
+    {
+      "id": 190,
+      "label": "Blockchain and AI",
+      "group": "ADV"
+    },
+    {
+      "id": 191,
+      "label": "Edge AI",
+      "group": "ADV"
+    },
+    {
+      "id": 192,
+      "label": "AI Infrastructure",
+      "group": "ADV"
+    },
+    {
+      "id": 193,
+      "label": "Cloud AI Services",
+      "group": "ADV"
+    },
+    {
+      "id": 194,
+      "label": "Hybrid AI",
+      "group": "ADV"
+    },
+    {
+      "id": 195,
+      "label": "AI Transformation",
+      "group": "ADV"
+    },
+    {
+      "id": 196,
+      "label": "Business Model Innovation",
+      "group": "ADV"
+    },
+    {
+      "id": 197,
+      "label": "Customer Experience AI",
+      "group": "ADV"
+    },
+    {
+      "id": 198,
+      "label": "Operational Excellence",
+      "group": "ADV"
+    },
+    {
+      "id": 199,
+      "label": "AI Strategy Document",
+      "group": "ADV"
+    },
+    {
+      "id": 200,
+      "label": "Capstone Project",
+      "group": "ADV"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 4,
+      "to": 1
+    },
+    {
+      "from": 4,
+      "to": 3
+    },
+    {
+      "from": 5,
+      "to": 4
+    },
+    {
+      "from": 6,
+      "to": 4
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 7,
+      "to": 1
+    },
+    {
+      "from": 8,
+      "to": 1
+    },
+    {
+      "from": 8,
+      "to": 7
+    },
+    {
+      "from": 9,
+      "to": 1
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 10,
+      "to": 1
+    },
+    {
+      "from": 10,
+      "to": 8
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 12,
+      "to": 11
+    },
+    {
+      "from": 13,
+      "to": 12
+    },
+    {
+      "from": 14,
+      "to": 13
+    },
+    {
+      "from": 15,
+      "to": 11
+    },
+    {
+      "from": 15,
+      "to": 13
+    },
+    {
+      "from": 16,
+      "to": 15
+    },
+    {
+      "from": 16,
+      "to": 14
+    },
+    {
+      "from": 17,
+      "to": 16
+    },
+    {
+      "from": 17,
+      "to": 14
+    },
+    {
+      "from": 18,
+      "to": 17
+    },
+    {
+      "from": 19,
+      "to": 18
+    },
+    {
+      "from": 20,
+      "to": 19
+    },
+    {
+      "from": 21,
+      "to": 16
+    },
+    {
+      "from": 22,
+      "to": 21
+    },
+    {
+      "from": 23,
+      "to": 22
+    },
+    {
+      "from": 25,
+      "to": 24
+    },
+    {
+      "from": 25,
+      "to": 16
+    },
+    {
+      "from": 26,
+      "to": 25
+    },
+    {
+      "from": 27,
+      "to": 16
+    },
+    {
+      "from": 28,
+      "to": 16
+    },
+    {
+      "from": 28,
+      "to": 27
+    },
+    {
+      "from": 29,
+      "to": 28
+    },
+    {
+      "from": 30,
+      "to": 28
+    },
+    {
+      "from": 30,
+      "to": 29
+    },
+    {
+      "from": 31,
+      "to": 15
+    },
+    {
+      "from": 32,
+      "to": 31
+    },
+    {
+      "from": 32,
+      "to": 16
+    },
+    {
+      "from": 33,
+      "to": 32
+    },
+    {
+      "from": 34,
+      "to": 32
+    },
+    {
+      "from": 34,
+      "to": 33
+    },
+    {
+      "from": 35,
+      "to": 32
+    },
+    {
+      "from": 36,
+      "to": 15
+    },
+    {
+      "from": 37,
+      "to": 36
+    },
+    {
+      "from": 37,
+      "to": 16
+    },
+    {
+      "from": 38,
+      "to": 37
+    },
+    {
+      "from": 39,
+      "to": 37
+    },
+    {
+      "from": 39,
+      "to": 38
+    },
+    {
+      "from": 40,
+      "to": 15
+    },
+    {
+      "from": 40,
+      "to": 16
+    },
+    {
+      "from": 41,
+      "to": 40
+    },
+    {
+      "from": 42,
+      "to": 40
+    },
+    {
+      "from": 42,
+      "to": 41
+    },
+    {
+      "from": 43,
+      "to": 15
+    },
+    {
+      "from": 44,
+      "to": 43
+    },
+    {
+      "from": 44,
+      "to": 78
+    },
+    {
+      "from": 45,
+      "to": 15
+    },
+    {
+      "from": 46,
+      "to": 15
+    },
+    {
+      "from": 46,
+      "to": 49
+    },
+    {
+      "from": 47,
+      "to": 15
+    },
+    {
+      "from": 47,
+      "to": 49
+    },
+    {
+      "from": 48,
+      "to": 47
+    },
+    {
+      "from": 49,
+      "to": 15
+    },
+    {
+      "from": 50,
+      "to": 15
+    },
+    {
+      "from": 50,
+      "to": 31
+    },
+    {
+      "from": 50,
+      "to": 36
+    },
+    {
+      "from": 50,
+      "to": 40
+    },
+    {
+      "from": 51,
+      "to": 16
+    },
+    {
+      "from": 51,
+      "to": 35
+    },
+    {
+      "from": 52,
+      "to": 51
+    },
+    {
+      "from": 53,
+      "to": 51
+    },
+    {
+      "from": 53,
+      "to": 52
+    },
+    {
+      "from": 54,
+      "to": 53
+    },
+    {
+      "from": 55,
+      "to": 51
+    },
+    {
+      "from": 55,
+      "to": 54
+    },
+    {
+      "from": 56,
+      "to": 55
+    },
+    {
+      "from": 57,
+      "to": 55
+    },
+    {
+      "from": 57,
+      "to": 56
+    },
+    {
+      "from": 58,
+      "to": 51
+    },
+    {
+      "from": 59,
+      "to": 51
+    },
+    {
+      "from": 59,
+      "to": 58
+    },
+    {
+      "from": 60,
+      "to": 58
+    },
+    {
+      "from": 61,
+      "to": 51
+    },
+    {
+      "from": 62,
+      "to": 61
+    },
+    {
+      "from": 63,
+      "to": 62
+    },
+    {
+      "from": 64,
+      "to": 62
+    },
+    {
+      "from": 65,
+      "to": 51
+    },
+    {
+      "from": 65,
+      "to": 61
+    },
+    {
+      "from": 66,
+      "to": 65
+    },
+    {
+      "from": 67,
+      "to": 51
+    },
+    {
+      "from": 68,
+      "to": 67
+    },
+    {
+      "from": 68,
+      "to": 66
+    },
+    {
+      "from": 69,
+      "to": 35
+    },
+    {
+      "from": 69,
+      "to": 51
+    },
+    {
+      "from": 70,
+      "to": 69
+    },
+    {
+      "from": 71,
+      "to": 69
+    },
+    {
+      "from": 71,
+      "to": 70
+    },
+    {
+      "from": 72,
+      "to": 15
+    },
+    {
+      "from": 72,
+      "to": 69
+    },
+    {
+      "from": 73,
+      "to": 72
+    },
+    {
+      "from": 74,
+      "to": 72
+    },
+    {
+      "from": 74,
+      "to": 73
+    },
+    {
+      "from": 75,
+      "to": 69
+    },
+    {
+      "from": 76,
+      "to": 75
+    },
+    {
+      "from": 77,
+      "to": 74
+    },
+    {
+      "from": 77,
+      "to": 76
+    },
+    {
+      "from": 78,
+      "to": 16
+    },
+    {
+      "from": 78,
+      "to": 82
+    },
+    {
+      "from": 79,
+      "to": 78
+    },
+    {
+      "from": 80,
+      "to": 78
+    },
+    {
+      "from": 80,
+      "to": 79
+    },
+    {
+      "from": 81,
+      "to": 82
+    },
+    {
+      "from": 82,
+      "to": 16
+    },
+    {
+      "from": 83,
+      "to": 82
+    },
+    {
+      "from": 83,
+      "to": 81
+    },
+    {
+      "from": 84,
+      "to": 83
+    },
+    {
+      "from": 85,
+      "to": 84
+    },
+    {
+      "from": 87,
+      "to": 86
+    },
+    {
+      "from": 88,
+      "to": 86
+    },
+    {
+      "from": 88,
+      "to": 87
+    },
+    {
+      "from": 89,
+      "to": 31
+    },
+    {
+      "from": 89,
+      "to": 87
+    },
+    {
+      "from": 90,
+      "to": 36
+    },
+    {
+      "from": 90,
+      "to": 87
+    },
+    {
+      "from": 91,
+      "to": 87
+    },
+    {
+      "from": 92,
+      "to": 87
+    },
+    {
+      "from": 92,
+      "to": 91
+    },
+    {
+      "from": 93,
+      "to": 92
+    },
+    {
+      "from": 94,
+      "to": 89
+    },
+    {
+      "from": 94,
+      "to": 90
+    },
+    {
+      "from": 95,
+      "to": 94
+    },
+    {
+      "from": 96,
+      "to": 94
+    },
+    {
+      "from": 96,
+      "to": 26
+    },
+    {
+      "from": 97,
+      "to": 94
+    },
+    {
+      "from": 98,
+      "to": 89
+    },
+    {
+      "from": 98,
+      "to": 90
+    },
+    {
+      "from": 99,
+      "to": 89
+    },
+    {
+      "from": 99,
+      "to": 90
+    },
+    {
+      "from": 100,
+      "to": 99
+    },
+    {
+      "from": 100,
+      "to": 101
+    },
+    {
+      "from": 101,
+      "to": 89
+    },
+    {
+      "from": 101,
+      "to": 90
+    },
+    {
+      "from": 102,
+      "to": 25
+    },
+    {
+      "from": 102,
+      "to": 101
+    },
+    {
+      "from": 103,
+      "to": 15
+    },
+    {
+      "from": 104,
+      "to": 103
+    },
+    {
+      "from": 105,
+      "to": 104
+    },
+    {
+      "from": 105,
+      "to": 31
+    },
+    {
+      "from": 106,
+      "to": 104
+    },
+    {
+      "from": 107,
+      "to": 104
+    },
+    {
+      "from": 107,
+      "to": 108
+    },
+    {
+      "from": 108,
+      "to": 103
+    },
+    {
+      "from": 109,
+      "to": 104
+    },
+    {
+      "from": 110,
+      "to": 103
+    },
+    {
+      "from": 111,
+      "to": 103
+    },
+    {
+      "from": 111,
+      "to": 110
+    },
+    {
+      "from": 112,
+      "to": 32
+    },
+    {
+      "from": 112,
+      "to": 111
+    },
+    {
+      "from": 113,
+      "to": 103
+    },
+    {
+      "from": 114,
+      "to": 113
+    },
+    {
+      "from": 114,
+      "to": 31
+    },
+    {
+      "from": 115,
+      "to": 103
+    },
+    {
+      "from": 116,
+      "to": 115
+    },
+    {
+      "from": 117,
+      "to": 115
+    },
+    {
+      "from": 118,
+      "to": 117
+    },
+    {
+      "from": 119,
+      "to": 103
+    },
+    {
+      "from": 119,
+      "to": 111
+    },
+    {
+      "from": 119,
+      "to": 115
+    },
+    {
+      "from": 120,
+      "to": 15
+    },
+    {
+      "from": 120,
+      "to": 124
+    },
+    {
+      "from": 121,
+      "to": 120
+    },
+    {
+      "from": 122,
+      "to": 120
+    },
+    {
+      "from": 123,
+      "to": 122
+    },
+    {
+      "from": 124,
+      "to": 1
+    },
+    {
+      "from": 124,
+      "to": 15
+    },
+    {
+      "from": 125,
+      "to": 124
+    },
+    {
+      "from": 126,
+      "to": 120
+    },
+    {
+      "from": 126,
+      "to": 127
+    },
+    {
+      "from": 127,
+      "to": 120
+    },
+    {
+      "from": 128,
+      "to": 127
+    },
+    {
+      "from": 129,
+      "to": 126
+    },
+    {
+      "from": 129,
+      "to": 128
+    },
+    {
+      "from": 130,
+      "to": 120
+    },
+    {
+      "from": 130,
+      "to": 129
+    },
+    {
+      "from": 131,
+      "to": 130
+    },
+    {
+      "from": 132,
+      "to": 4
+    },
+    {
+      "from": 132,
+      "to": 120
+    },
+    {
+      "from": 133,
+      "to": 15
+    },
+    {
+      "from": 133,
+      "to": 147
+    },
+    {
+      "from": 134,
+      "to": 133
+    },
+    {
+      "from": 135,
+      "to": 134
+    },
+    {
+      "from": 136,
+      "to": 16
+    },
+    {
+      "from": 137,
+      "to": 136
+    },
+    {
+      "from": 138,
+      "to": 78
+    },
+    {
+      "from": 138,
+      "to": 137
+    },
+    {
+      "from": 139,
+      "to": 147
+    },
+    {
+      "from": 140,
+      "to": 139
+    },
+    {
+      "from": 141,
+      "to": 139
+    },
+    {
+      "from": 141,
+      "to": 140
+    },
+    {
+      "from": 142,
+      "to": 139
+    },
+    {
+      "from": 142,
+      "to": 143
+    },
+    {
+      "from": 143,
+      "to": 147
+    },
+    {
+      "from": 144,
+      "to": 143
+    },
+    {
+      "from": 145,
+      "to": 147
+    },
+    {
+      "from": 146,
+      "to": 145
+    },
+    {
+      "from": 147,
+      "to": 15
+    },
+    {
+      "from": 148,
+      "to": 147
+    },
+    {
+      "from": 149,
+      "to": 147
+    },
+    {
+      "from": 149,
+      "to": 148
+    },
+    {
+      "from": 150,
+      "to": 149
+    },
+    {
+      "from": 151,
+      "to": 147
+    },
+    {
+      "from": 151,
+      "to": 149
+    },
+    {
+      "from": 152,
+      "to": 147
+    },
+    {
+      "from": 152,
+      "to": 153
+    },
+    {
+      "from": 153,
+      "to": 147
+    },
+    {
+      "from": 154,
+      "to": 147
+    },
+    {
+      "from": 154,
+      "to": 152
+    },
+    {
+      "from": 155,
+      "to": 154
+    },
+    {
+      "from": 156,
+      "to": 11
+    },
+    {
+      "from": 156,
+      "to": 1
+    },
+    {
+      "from": 157,
+      "to": 156
+    },
+    {
+      "from": 158,
+      "to": 156
+    },
+    {
+      "from": 158,
+      "to": 157
+    },
+    {
+      "from": 159,
+      "to": 158
+    },
+    {
+      "from": 160,
+      "to": 158
+    },
+    {
+      "from": 160,
+      "to": 159
+    },
+    {
+      "from": 161,
+      "to": 156
+    },
+    {
+      "from": 162,
+      "to": 156
+    },
+    {
+      "from": 162,
+      "to": 161
+    },
+    {
+      "from": 163,
+      "to": 156
+    },
+    {
+      "from": 163,
+      "to": 162
+    },
+    {
+      "from": 164,
+      "to": 156
+    },
+    {
+      "from": 164,
+      "to": 157
+    },
+    {
+      "from": 165,
+      "to": 164
+    },
+    {
+      "from": 166,
+      "to": 157
+    },
+    {
+      "from": 166,
+      "to": 165
+    },
+    {
+      "from": 167,
+      "to": 157
+    },
+    {
+      "from": 167,
+      "to": 165
+    },
+    {
+      "from": 168,
+      "to": 126
+    },
+    {
+      "from": 168,
+      "to": 156
+    },
+    {
+      "from": 169,
+      "to": 15
+    },
+    {
+      "from": 169,
+      "to": 1
+    },
+    {
+      "from": 170,
+      "to": 169
+    },
+    {
+      "from": 171,
+      "to": 170
+    },
+    {
+      "from": 171,
+      "to": 8
+    },
+    {
+      "from": 172,
+      "to": 171
+    },
+    {
+      "from": 173,
+      "to": 170
+    },
+    {
+      "from": 173,
+      "to": 172
+    },
+    {
+      "from": 174,
+      "to": 173
+    },
+    {
+      "from": 175,
+      "to": 174
+    },
+    {
+      "from": 176,
+      "to": 173
+    },
+    {
+      "from": 176,
+      "to": 175
+    },
+    {
+      "from": 177,
+      "to": 173
+    },
+    {
+      "from": 177,
+      "to": 176
+    },
+    {
+      "from": 178,
+      "to": 169
+    },
+    {
+      "from": 179,
+      "to": 178
+    },
+    {
+      "from": 180,
+      "to": 178
+    },
+    {
+      "from": 181,
+      "to": 178
+    },
+    {
+      "from": 182,
+      "to": 178
+    },
+    {
+      "from": 183,
+      "to": 185
+    },
+    {
+      "from": 184,
+      "to": 185
+    },
+    {
+      "from": 185,
+      "to": 178
+    },
+    {
+      "from": 186,
+      "to": 183
+    },
+    {
+      "from": 186,
+      "to": 185
+    },
+    {
+      "from": 187,
+      "to": 184
+    },
+    {
+      "from": 187,
+      "to": 185
+    },
+    {
+      "from": 188,
+      "to": 15
+    },
+    {
+      "from": 189,
+      "to": 188
+    },
+    {
+      "from": 190,
+      "to": 188
+    },
+    {
+      "from": 191,
+      "to": 188
+    },
+    {
+      "from": 192,
+      "to": 130
+    },
+    {
+      "from": 192,
+      "to": 188
+    },
+    {
+      "from": 193,
+      "to": 192
+    },
+    {
+      "from": 194,
+      "to": 192
+    },
+    {
+      "from": 194,
+      "to": 193
+    },
+    {
+      "from": 195,
+      "to": 1
+    },
+    {
+      "from": 195,
+      "to": 15
+    },
+    {
+      "from": 195,
+      "to": 124
+    },
+    {
+      "from": 196,
+      "to": 195
+    },
+    {
+      "from": 197,
+      "to": 195
+    },
+    {
+      "from": 197,
+      "to": 196
+    },
+    {
+      "from": 198,
+      "to": 195
+    },
+    {
+      "from": 198,
+      "to": 197
+    },
+    {
+      "from": 199,
+      "to": 124
+    },
+    {
+      "from": 199,
+      "to": 125
+    },
+    {
+      "from": 199,
+      "to": 195
+    },
+    {
+      "from": 200,
+      "to": 195
+    },
+    {
+      "from": 200,
+      "to": 199
+    },
+    {
+      "from": 200,
+      "to": 121
+    }
+  ]
+}
