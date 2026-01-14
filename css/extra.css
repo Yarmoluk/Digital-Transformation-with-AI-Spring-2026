@@ -1,42 +1,165 @@
 /* Custom branding colors for Digital Transformation 2.0 with Generative AI */
-/* Primary color: Deep Blue - representing technology and trust */
+/* Modern tech aesthetic - teal/cyan gradient with purple accents */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-  --md-primary-fg-color: #1565C0;
-  --md-primary-fg-color--light: #1E88E5;
-  --md-primary-fg-color--dark: #0D47A1;
-  --md-accent-fg-color: #FF6D00;
-  --md-typeset-a-color: #1565C0;
+  --md-primary-fg-color: #0891B2;
+  --md-primary-fg-color--light: #22D3EE;
+  --md-primary-fg-color--dark: #0E7490;
+  --md-accent-fg-color: #8B5CF6;
+  --md-typeset-a-color: #0891B2;
+
+  /* Custom tech variables */
+  --tech-gradient: linear-gradient(135deg, #0891B2 0%, #8B5CF6 100%);
+  --tech-glow: 0 0 20px rgba(8, 145, 178, 0.3);
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --card-shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* Font */
+  --md-text-font: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --md-code-font: "JetBrains Mono", SFMono-Regular, Consolas, monospace;
 }
 
 /* Dark mode adjustments */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #42A5F5;
-  --md-primary-fg-color--light: #64B5F6;
-  --md-primary-fg-color--dark: #1E88E5;
-  --md-accent-fg-color: #FFAB40;
-  --md-typeset-a-color: #64B5F6;
+  --md-primary-fg-color: #22D3EE;
+  --md-primary-fg-color--light: #67E8F9;
+  --md-primary-fg-color--dark: #06B6D4;
+  --md-accent-fg-color: #A78BFA;
+  --md-typeset-a-color: #22D3EE;
+  --md-default-bg-color: #0F172A;
+  --md-default-bg-color--light: #1E293B;
+  --tech-glow: 0 0 30px rgba(34, 211, 238, 0.2);
 }
 
-/* Header styling */
+/* Header styling - gradient effect */
 .md-header {
-  background-color: var(--md-primary-fg-color);
+  background: var(--tech-gradient);
+  box-shadow: var(--tech-glow);
+}
+
+.md-header[data-md-state="shadow"] {
+  box-shadow: var(--card-shadow), var(--tech-glow);
 }
 
 /* Navigation tabs */
 .md-tabs {
-  background-color: var(--md-primary-fg-color--dark);
+  background: linear-gradient(135deg, var(--md-primary-fg-color--dark) 0%, #6D28D9 100%);
 }
 
-/* Button styling */
+/* Smooth transitions everywhere */
+* {
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* Button styling - modern with hover effects */
 .md-button--primary {
-  background-color: var(--md-primary-fg-color);
-  border-color: var(--md-primary-fg-color);
+  background: var(--tech-gradient);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  box-shadow: var(--card-shadow);
 }
 
 .md-button--primary:hover {
-  background-color: var(--md-primary-fg-color--dark);
-  border-color: var(--md-primary-fg-color--dark);
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow-hover), var(--tech-glow);
+}
+
+/* Navigation sidebar polish */
+.md-nav__link {
+  border-radius: 6px;
+  margin: 2px 8px;
+  padding: 8px 12px !important;
+}
+
+.md-nav__link:hover {
+  background-color: rgba(8, 145, 178, 0.1);
+}
+
+.md-nav__link--active {
+  background-color: rgba(8, 145, 178, 0.15);
+  font-weight: 600;
+}
+
+/* Content cards for admonitions */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  border-left-width: 4px;
+  overflow: hidden;
+}
+
+.md-typeset .admonition:hover,
+.md-typeset details:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* Hero section styling for home page */
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.hero-banner {
+  background: var(--tech-gradient);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: var(--card-shadow), var(--tech-glow);
+}
+
+.hero-banner h1 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.hero-banner p {
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+/* Feature cards grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  background: var(--md-default-bg-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  border: 1px solid rgba(8, 145, 178, 0.1);
+}
+
+.feature-card:hover {
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-4px);
+  border-color: var(--md-primary-fg-color);
+}
+
+.feature-card h3 {
+  color: var(--md-primary-fg-color);
+  margin-top: 0;
+}
+
+/* Code blocks - modern styling */
+.md-typeset pre {
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+}
+
+.md-typeset code {
+  border-radius: 4px;
+  font-size: 0.875em;
 }
 
 /* Admonition custom styling */
