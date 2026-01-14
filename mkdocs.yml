@@ -1,4 +1,4 @@
-site_name: Digital Transformation 2.0 with Generative AI
+site_name: SEIS 666
 site_description: A graduate-level intelligent textbook for SEIS 666 exploring how generative AI technologies are reshaping digital transformation, business models, and workforce dynamics.
 site_author: Daniel Yarmoluk
 repo_name: Digital-Transformation-with-AI-Spring-2026
@@ -44,23 +44,30 @@ nav:
 
 theme:
   name: material
-  # logo: img/logo.png  # TODO: Add custom logo
-  # favicon: img/favicon.ico  # TODO: Add custom favicon
+  logo: img/favicon.svg
+  favicon: img/favicon.svg
   custom_dir: docs/overrides
   include_search_page: true
   search_index_only: false
   features:
     - content.code.copy
     - content.action.edit
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
     - navigation.expand
     - navigation.path
     - navigation.prune
     - navigation.indexes
     - navigation.top
     - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
     - toc.follow
     - search.suggest
     - search.highlight
+    - announce.dismiss
+    - header.autohide
   palette:
     - scheme: default
       primary: custom
@@ -111,5 +118,21 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Yarmoluk/Digital-Transformation-with-AI-Spring-2026
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com
+  generator: false
+  analytics:
+    provider: google
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: Thanks for your feedback!
 
-copyright: Copyright &copy; 2025 Daniel Yarmoluk - University of St. Thomas
+copyright: Copyright &copy; 2026 Daniel Yarmoluk - University of St. Thomas
