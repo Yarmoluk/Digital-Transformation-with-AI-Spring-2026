@@ -1,0 +1,121 @@
+/* Custom branding colors for Digital Transformation 2.0 with Generative AI */
+/* Primary color: Deep Blue - representing technology and trust */
+
+:root {
+  --md-primary-fg-color: #1565C0;
+  --md-primary-fg-color--light: #1E88E5;
+  --md-primary-fg-color--dark: #0D47A1;
+  --md-accent-fg-color: #FF6D00;
+  --md-typeset-a-color: #1565C0;
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #42A5F5;
+  --md-primary-fg-color--light: #64B5F6;
+  --md-primary-fg-color--dark: #1E88E5;
+  --md-accent-fg-color: #FFAB40;
+  --md-typeset-a-color: #64B5F6;
+}
+
+/* Header styling */
+.md-header {
+  background-color: var(--md-primary-fg-color);
+}
+
+/* Navigation tabs */
+.md-tabs {
+  background-color: var(--md-primary-fg-color--dark);
+}
+
+/* Button styling */
+.md-button--primary {
+  background-color: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+}
+
+.md-button--primary:hover {
+  background-color: var(--md-primary-fg-color--dark);
+  border-color: var(--md-primary-fg-color--dark);
+}
+
+/* Admonition custom styling */
+.md-typeset .admonition.ai,
+.md-typeset details.ai {
+  border-color: #7C4DFF;
+}
+
+.md-typeset .ai > .admonition-title,
+.md-typeset .ai > summary {
+  background-color: rgba(124, 77, 255, 0.1);
+}
+
+.md-typeset .ai > .admonition-title::before,
+.md-typeset .ai > summary::before {
+  background-color: #7C4DFF;
+  -webkit-mask-image: var(--md-admonition-icon--tip);
+  mask-image: var(--md-admonition-icon--tip);
+}
+
+/* MicroSim iframe styling */
+.microsim-container {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.microsim-container iframe {
+  width: 100%;
+  min-height: 400px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+}
+
+/* Learning graph container */
+.learning-graph-container {
+  width: 100%;
+  height: 600px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+}
+
+/* Code block enhancements */
+.md-typeset pre > code {
+  font-size: 0.85rem;
+}
+
+/* Table enhancements */
+.md-typeset table:not([class]) {
+  font-size: 0.85rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: white;
+}
+
+/* Quiz styling */
+.quiz-container {
+  background-color: var(--md-code-bg-color);
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+/* Bloom's Taxonomy level indicators */
+.bloom-remember { color: #E53935; }
+.bloom-understand { color: #FB8C00; }
+.bloom-apply { color: #FDD835; }
+.bloom-analyze { color: #43A047; }
+.bloom-evaluate { color: #1E88E5; }
+.bloom-create { color: #8E24AA; }
+
+/* Concept tag styling */
+.concept-tag {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  margin: 0.125rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  background-color: var(--md-primary-fg-color--light);
+  color: white;
+}

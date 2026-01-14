@@ -1,0 +1,10 @@
+{
+  "title": "Digital Transformation 2.0 with Generative AI",
+  "description": "A graduate-level learning graph for SEIS 666 exploring how generative AI technologies are reshaping digital transformation, business models, and workforce dynamics. Covers 200 concepts from foundational AI principles to advanced business applications.",
+  "creator": "Daniel Yarmoluk",
+  "date": "2025-01-14",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}

@@ -1,0 +1,115 @@
+site_name: Digital Transformation 2.0 with Generative AI
+site_description: A graduate-level intelligent textbook for SEIS 666 exploring how generative AI technologies are reshaping digital transformation, business models, and workforce dynamics.
+site_author: Daniel Yarmoluk
+repo_name: Digital-Transformation-with-AI-Spring-2026
+site_url: https://yarmoluk.github.io/Digital-Transformation-with-AI-Spring-2026/
+repo_url: https://github.com/Yarmoluk/Digital-Transformation-with-AI-Spring-2026
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Course Description: course-description.md
+  - Chapters:
+    - Overview: chapters/index.md
+    - 1. Digital Transformation and AI Foundations: chapters/01-digital-transformation-ai-foundations/index.md
+    - 2. Large Language Model Architecture: chapters/02-llm-architecture/index.md
+    - 3. AI Platform Landscape: chapters/03-ai-platform-landscape/index.md
+    - 4. Prompt Engineering Fundamentals: chapters/04-prompt-engineering/index.md
+    - 5. Custom GPTs, Agents, and RAG Systems: chapters/05-custom-gpts-agents-rag/index.md
+    - 6. LLM API Integration: chapters/06-llm-api-integration/index.md
+    - 7. Multimodal AI: chapters/07-multimodal-ai/index.md
+    - 8. AI Governance, Ethics, and Responsible AI: chapters/08-governance-ethics-responsible-ai/index.md
+    - 9. Future of Work and Workforce Transformation: chapters/09-future-of-work/index.md
+    - 10. Business Applications and AI Transformation: chapters/10-business-applications-transformation/index.md
+  - Learning Graph:
+    - Overview: learning-graph/index.md
+    - Course Description Assessment: learning-graph/course-description-assessment.md
+    - Concept Enumeration: learning-graph/concept-list.md
+    - Graph Quality Analysis: learning-graph/quality-metrics.md
+    - Concept Taxonomy: learning-graph/concept-taxonomy.md
+    - Taxonomy Distribution: learning-graph/taxonomy-distribution-report.md
+  - MicroSims:
+    - Overview: sims/index.md
+    - Digital Maturity Quadrant: sims/digital-maturity-quadrant/index.md
+    - Neural Network Visualization: sims/neural-network-visualization/index.md
+    - Tokenization Process: sims/tokenization-process/index.md
+    - Self-Attention Visualization: sims/self-attention-visualization/index.md
+    - Vector Similarity: sims/vector-similarity/index.md
+    - Human-AI Task Allocation: sims/human-ai-task-allocation/index.md
+    - AI Use Case Prioritization: sims/ai-use-case-prioritization/index.md
+    - AI Strategy Assessment: sims/ai-strategy-assessment/index.md
+  - Glossary: glossary.md
+  - References: references.md
+
+theme:
+  name: material
+  # logo: img/logo.png  # TODO: Add custom logo
+  # favicon: img/favicon.ico  # TODO: Add custom favicon
+  custom_dir: docs/overrides
+  include_search_page: true
+  search_index_only: false
+  features:
+    - content.code.copy
+    - content.action.edit
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: custom
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+extra_css:
+  - css/extra.css
+
+plugins:
+  - search
+  - social
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Yarmoluk/Digital-Transformation-with-AI-Spring-2026
+
+copyright: Copyright &copy; 2025 Daniel Yarmoluk - University of St. Thomas

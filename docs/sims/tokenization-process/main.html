@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tokenization Process Visualization MicroSim</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #canvas-container {
+            width: 100%;
+        }
+        .controls {
+            padding: 10px 20px;
+            background: #f5f5f5;
+            border-top: 1px solid #ddd;
+        }
+        .input-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        #text-input {
+            flex: 1;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            min-height: 60px;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background 0.2s;
+        }
+        .btn-primary {
+            background: #4a90d9;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #3a7bc8;
+        }
+        .btn-secondary {
+            background: #888;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background: #666;
+        }
+        .example-buttons {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .btn-example {
+            padding: 6px 12px;
+            font-size: 12px;
+            background: #e8e8e8;
+            border: 1px solid #ccc;
+        }
+        .btn-example:hover {
+            background: #d8d8d8;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="canvas-container"></div>
+        <div class="controls">
+            <div class="input-row">
+                <textarea id="text-input" placeholder="Enter text to tokenize...">Hello, how are you doing today? The quick brown fox jumps over the lazy dog.</textarea>
+                <button class="btn btn-primary" onclick="analyzeText()">Analyze</button>
+                <button class="btn btn-secondary" onclick="clearInput()">Clear</button>
+            </div>
+            <div class="example-buttons">
+                <span style="margin-right: 10px; color: #666;">Examples:</span>
+                <button class="btn btn-example" onclick="setExample(0)">Simple</button>
+                <button class="btn btn-example" onclick="setExample(1)">Contractions</button>
+                <button class="btn btn-example" onclick="setExample(2)">Numbers</button>
+                <button class="btn btn-example" onclick="setExample(3)">Code</button>
+                <button class="btn btn-example" onclick="setExample(4)">Mixed</button>
+            </div>
+        </div>
+    </main>
+    <script src="tokenization-process.js"></script>
+    <br/>
+    <a href=".">Back to Documentation</a>
+</body>
+</html>

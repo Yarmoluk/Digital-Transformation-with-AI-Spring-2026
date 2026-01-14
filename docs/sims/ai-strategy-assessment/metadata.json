@@ -1,0 +1,73 @@
+{
+  "title": "AI Strategy Completeness Assessment",
+  "description": "Interactive radar chart tool for assessing AI strategy document completeness and quality across ten key dimensions with improvement suggestions",
+  "creator": "Claude Code",
+  "subject": ["AI Strategy", "Assessment", "Capstone Project", "Strategy Document"],
+  "date": "2026-01-14",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "gradeLevel": "Graduate",
+  "subjectArea": "Business/Technology",
+  "topic": "AI Strategy Assessment",
+  "learningObjectives": [
+    "Evaluate strategy documents against quality criteria",
+    "Analyze gaps and weaknesses in AI strategies",
+    "Create improvement plans for identified gaps"
+  ],
+  "bloomsTaxonomy": ["Analyze", "Evaluate", "Create"],
+  "duration": "10-15 minutes",
+  "prerequisites": ["Understanding of AI strategy components", "Familiarity with capstone requirements"],
+  "framework": "p5.js",
+  "canvasDimensions": "1000x600",
+  "responsive": "Width-responsive",
+  "dependencies": ["p5.js CDN"],
+  "accessibility": {
+    "screenReader": true,
+    "keyboardNav": true
+  },
+  "controls": [
+    {
+      "type": "checkbox",
+      "name": "Section Present",
+      "description": "Mark whether each strategy section is included",
+      "count": 10
+    },
+    {
+      "type": "slider",
+      "name": "Quality Rating",
+      "description": "Rate section quality from 1 (Poor) to 5 (Excellent)",
+      "min": 1,
+      "max": 5,
+      "count": 10
+    },
+    {
+      "type": "button",
+      "name": "Reset All",
+      "description": "Clear all assessments"
+    },
+    {
+      "type": "button",
+      "name": "Weak Example",
+      "description": "Load an example weak strategy assessment"
+    },
+    {
+      "type": "button",
+      "name": "Strong Example",
+      "description": "Load an example strong strategy assessment"
+    }
+  ],
+  "modelType": "Assessment visualization",
+  "variables": ["Section presence (boolean)", "Quality score (1-5)", "Overall completeness", "Average quality"],
+  "assumptions": [
+    "All ten dimensions are equally weighted",
+    "Quality can be meaningfully assessed on a 5-point scale",
+    "Missing sections score 0 in overall calculations"
+  ],
+  "limitations": [
+    "Does not capture interdependencies between sections",
+    "Quality assessment is subjective",
+    "Cannot evaluate actual content, only presence and perceived quality"
+  ]
+}

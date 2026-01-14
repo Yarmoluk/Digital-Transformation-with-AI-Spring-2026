@@ -1,0 +1,201 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Digital Transformation,,FOUND
+2,Digitization,1,FOUND
+3,Digitalization,1|2,FOUND
+4,Digital Maturity,1|3,FOUND
+5,Digital Capability Model,4,FOUND
+6,Organizational Readiness,4|5,FOUND
+7,Business Drivers,1,FOUND
+8,Value Creation,1|7,FOUND
+9,Digital Economy,1|8,FOUND
+10,Competitive Advantage,1|8|9,FOUND
+11,Artificial Intelligence,,FOUND
+12,Machine Learning,11,FOUND
+13,Deep Learning,12,ARCH
+14,Neural Networks,13,ARCH
+15,Generative AI,11|13,FOUND
+16,Large Language Models,15|14,ARCH
+17,Transformer Architecture,16|14,ARCH
+18,Attention Mechanism,17,ARCH
+19,Self-Attention,18,ARCH
+20,Multi-Head Attention,19,ARCH
+21,Pre-Training,16,ARCH
+22,Fine-Tuning,21,ARCH
+23,RLHF,22,ARCH
+24,Token,,ARCH
+25,Tokenization,24|16,ARCH
+26,Context Window,25,ARCH
+27,Model Parameters,16,ARCH
+28,Inference,16|27,ARCH
+29,Latency,28,ARCH
+30,Throughput,28|29,ARCH
+31,OpenAI,15,PLAT
+32,GPT-4,31|16,PLAT
+33,GPT-4 Turbo,32,PLAT
+34,GPT-4o,32|33,PLAT
+35,ChatGPT,32,PLAT
+36,Anthropic,15,PLAT
+37,Claude,36|16,PLAT
+38,Claude 3 Sonnet,37,PLAT
+39,Claude 3 Opus,37|38,PLAT
+40,Google Gemini,15|16,PLAT
+41,Gemini Pro,40,PLAT
+42,Gemini Ultra,40|41,PLAT
+43,Perplexity AI,15,PLAT
+44,Search-Augmented Gen,43|78,PLAT
+45,xAI Grok,15,PLAT
+46,Meta Llama,15|49,PLAT
+47,Mistral AI,15|49,PLAT
+48,Mixtral,47,PLAT
+49,Open-Source Models,15,PLAT
+50,Proprietary Models,15|31|36|40,PLAT
+51,Prompt Engineering,16|35,PROMPT
+52,Zero-Shot Prompting,51,PROMPT
+53,Few-Shot Prompting,51|52,PROMPT
+54,In-Context Learning,53,PROMPT
+55,Chain-of-Thought,51|54,PROMPT
+56,Tree-of-Thought,55,PROMPT
+57,Self-Consistency,55|56,PROMPT
+58,System Prompt,51,PROMPT
+59,User Prompt,51|58,PROMPT
+60,Persona Design,58,PROMPT
+61,Output Formatting,51,PROMPT
+62,Structured Output,61,PROMPT
+63,JSON Output,62,PROMPT
+64,Markdown Output,62,PROMPT
+65,Prompt Templates,51|61,PROMPT
+66,Prompt Libraries,65,PROMPT
+67,Prompt Iteration,51,PROMPT
+68,Prompt Optimization,67|66,PROMPT
+69,Custom GPT,35|51,CUSTOM
+70,GPT Builder,69,CUSTOM
+71,GPT Actions,69|70,CUSTOM
+72,AI Agents,15|69,CUSTOM
+73,Autonomous Systems,72,CUSTOM
+74,Agent Workflows,72|73,CUSTOM
+75,No-Code AI Tools,69,CUSTOM
+76,Low-Code Platforms,75,CUSTOM
+77,Workflow Automation,74|76,CUSTOM
+78,RAG,16|82,CUSTOM
+79,Retrieval Systems,78,CUSTOM
+80,Knowledge Bases,78|79,CUSTOM
+81,Vector Database,82,CUSTOM
+82,Embeddings,16,ARCH
+83,Semantic Search,82|81,CUSTOM
+84,Similarity Search,83,CUSTOM
+85,Cosine Similarity,84,CUSTOM
+86,API Fundamentals,,API
+87,REST API,86,API
+88,SDK,86|87,API
+89,OpenAI API,31|87,API
+90,Anthropic API,36|87,API
+91,API Endpoints,87,API
+92,API Authentication,87|91,API
+93,API Keys,92,API
+94,Temperature Parameter,89|90,API
+95,Top-P Parameter,94,API
+96,Max Tokens Parameter,94|26,API
+97,Stop Sequences,94,API
+98,Streaming Responses,89|90,API
+99,Rate Limiting,89|90,API
+100,Cost Optimization,99|101,API
+101,API Pricing,89|90,API
+102,Token Counting,25|101,API
+103,Multimodal AI,15,MULTI
+104,Text-to-Image,103,MULTI
+105,DALL-E,104|31,MULTI
+106,Midjourney,104,MULTI
+107,Stable Diffusion,104|108,MULTI
+108,Diffusion Models,103,MULTI
+109,Image Generation,104,MULTI
+110,Image Analysis,103,MULTI
+111,Vision Capabilities,103|110,MULTI
+112,GPT-4 Vision,32|111,MULTI
+113,Text-to-Video,103,MULTI
+114,Sora,113|31,MULTI
+115,Audio AI,103,MULTI
+116,Speech-to-Text,115,MULTI
+117,Text-to-Speech,115,MULTI
+118,Voice Cloning,117,MULTI
+119,Multimodal Applications,103|111|115,MULTI
+120,GAI Center of Excellence,15|124,GOV
+121,GAICoE Charter,120,GOV
+122,AI Governance,120,GOV
+123,AI Policy,122,GOV
+124,AI Strategy,1|15,GOV
+125,AI Roadmap,124,GOV
+126,Change Management,120|127,GOV
+127,Stakeholder Engagement,120,GOV
+128,Executive Sponsorship,127,GOV
+129,AI Champions,126|128,GOV
+130,Scaling AI,120|129,GOV
+131,Enterprise AI,130,GOV
+132,AI Maturity Model,4|120,GOV
+133,AI Bias,15|147,ETHICS
+134,Bias Detection,133,ETHICS
+135,Bias Mitigation,134,ETHICS
+136,Hallucination,16,ETHICS
+137,Factual Accuracy,136,ETHICS
+138,Grounding,78|137,ETHICS
+139,Data Privacy,147,ETHICS
+140,Data Security,139,ETHICS
+141,PII Protection,139|140,ETHICS
+142,GDPR Compliance,139|143,ETHICS
+143,AI Regulations,147,ETHICS
+144,EU AI Act,143,ETHICS
+145,Intellectual Property,147,ETHICS
+146,Copyright AI Content,145,ETHICS
+147,Responsible AI,15,ETHICS
+148,AI Ethics,147,ETHICS
+149,Transparency,147|148,ETHICS
+150,Explainability,149,ETHICS
+151,Accountability,147|149,ETHICS
+152,Red-Teaming,147|153,ETHICS
+153,Adversarial Testing,147,ETHICS
+154,Safety Guardrails,147|152,ETHICS
+155,Content Moderation,154,ETHICS
+156,Future of Work,11|1,WORK
+157,AI-Augmented Workforce,156,WORK
+158,Skill Transformation,156|157,WORK
+159,Reskilling,158,WORK
+160,Upskilling,158|159,WORK
+161,Role Evolution,156,WORK
+162,Job Displacement,156|161,WORK
+163,Job Creation,156|162,WORK
+164,Human-AI Collaboration,156|157,WORK
+165,Augmented Intelligence,164,WORK
+166,Productivity Enhancement,157|165,WORK
+167,Creativity Enhancement,157|165,WORK
+168,Organizational Change,126|156,WORK
+169,AI Use Case,15|1,BIZ
+170,Use Case Identification,169,BIZ
+171,Value Mapping,170|8,BIZ
+172,ROI Estimation,171,BIZ
+173,Prioritization Framework,170|172,BIZ
+174,Feasibility Analysis,173,BIZ
+175,Impact Assessment,174,BIZ
+176,Quick Wins,173|175,BIZ
+177,Strategic Initiatives,173|176,BIZ
+178,Industry Use Cases,169,BIZ
+179,Healthcare AI,178,BIZ
+180,Finance AI,178,BIZ
+181,Retail AI,178,BIZ
+182,Manufacturing AI,178,BIZ
+183,Success Factors,185,BIZ
+184,Failure Patterns,185,BIZ
+185,Case Study Analysis,178,BIZ
+186,Best Practices,183|185,BIZ
+187,Lessons Learned,184|185,BIZ
+188,Converging Technologies,15,ADV
+189,IoT and AI,188,ADV
+190,Blockchain and AI,188,ADV
+191,Edge AI,188,ADV
+192,AI Infrastructure,130|188,ADV
+193,Cloud AI Services,192,ADV
+194,Hybrid AI,192|193,ADV
+195,AI Transformation,1|15|124,ADV
+196,Business Model Innovation,195,ADV
+197,Customer Experience AI,195|196,ADV
+198,Operational Excellence,195|197,ADV
+199,AI Strategy Document,124|125|195,ADV
+200,Capstone Project,195|199|121,ADV
