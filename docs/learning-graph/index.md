@@ -41,7 +41,19 @@ These concepts have no prerequisites and serve as entry points:
 
 ## Interactive Viewer
 
-*The interactive vis-network viewer can be added using the `installer` skill with the `learning-graph-viewer` option.*
+<a href="graph-viewer.html" target="_blank" class="md-button md-button--primary">Open Interactive Graph Viewer</a>
+
+The interactive viewer allows you to:
+
+- Search and filter concepts by name
+- Click nodes to see their dependencies
+- Double-click to highlight connected concepts
+- Switch between physics simulation and hierarchical layouts
+- Filter by taxonomy category
+
+## Mermaid Diagrams
+
+Visual flowcharts showing key learning paths are available in the [Mermaid Diagrams](learning-graph-mermaid.md) page.
 
 ## Related Documents
 
@@ -57,13 +69,16 @@ These concepts have no prerequisites and serve as entry points:
 |------|-------------|
 | `learning-graph.csv` | Source data with dependencies and taxonomy |
 | `learning-graph.json` | vis-network.js format for visualization |
+| `seis-666-learning-graph.json` | Named copy for course-specific reference |
 | `metadata.json` | Graph metadata (title, creator, etc.) |
+| `graph-viewer.html` | Interactive vis-network.js graph viewer |
+| `learning-graph-mermaid.md` | Mermaid diagram visualizations |
 | `analyze-graph.py` | Quality validation script |
 | `csv-to-json.py` | CSV to JSON conversion script |
 | `taxonomy-distribution.py` | Distribution analysis script |
 
 ## Next Steps
 
-1. Add interactive viewer with `installer` skill
-2. Generate chapter structure with `book-chapter-generator`
-3. Create chapter content with `chapter-content-generator`
+1. Review the [Interactive Graph Viewer](graph-viewer.html) to explore concept relationships
+2. Generate chapter structure with `book-chapter-generator` skill
+3. Create chapter content with `chapter-content-generator` skill

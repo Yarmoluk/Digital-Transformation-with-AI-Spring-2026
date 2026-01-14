@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEIS 666 Learning Graph Viewer</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 20px 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1em;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 20px;
+        }
+
+        .sidebar {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-height: calc(100vh - 160px);
+            overflow-y: auto;
+        }
+
+        .sidebar h3 {
+            color: #333;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .legend-item:hover {
+            background: #f5f5f5;
+        }
+
+        .legend-color {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .legend-text {
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        .legend-count {
+            margin-left: auto;
+            background: #eee;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.8em;
+            color: #666;
+        }
+
+        .graph-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .graph-toolbar {
+            display: flex;
+            gap: 10px;
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #eee;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-box:focus {
+            border-color: #667eea;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5a6fd6;
+        }
+
+        .btn-secondary {
+            background: #e9ecef;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #dee2e6;
+        }
+
+        #network {
+            width: 100%;
+            height: calc(100vh - 260px);
+            min-height: 500px;
+        }
+
+        .stats-bar {
+            display: flex;
+            gap: 20px;
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #eee;
+        }
+
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.85em;
+        }
+
+        .stat-value {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .node-info {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .node-info.active {
+            display: block;
+        }
+
+        .node-info h4 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .node-info p {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        .filter-section {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .filter-section label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-size: 0.9em;
+        }
+
+        .filter-section select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 900px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                max-height: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SEIS 666: Digital Transformation 2.0 with Generative AI</h1>
+            <p class="subtitle">Interactive Learning Graph - 200 Concepts</p>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <h3>Taxonomy Legend</h3>
+                <div id="legend"></div>
+
+                <div class="filter-section">
+                    <label for="layoutSelect">Graph Layout:</label>
+                    <select id="layoutSelect">
+                        <option value="default">Physics Simulation</option>
+                        <option value="hierarchical">Hierarchical (Top-Down)</option>
+                        <option value="hierarchicalLR">Hierarchical (Left-Right)</option>
+                    </select>
+                </div>
+
+                <div class="node-info" id="nodeInfo">
+                    <h4 id="nodeName">Select a Node</h4>
+                    <p><strong>ID:</strong> <span id="nodeId"></span></p>
+                    <p><strong>Group:</strong> <span id="nodeGroup"></span></p>
+                    <p><strong>Dependencies:</strong> <span id="nodeDeps"></span></p>
+                    <p><strong>Dependents:</strong> <span id="nodeDepends"></span></p>
+                </div>
+            </aside>
+
+            <div class="graph-container">
+                <div class="graph-toolbar">
+                    <input type="text" class="search-box" id="searchBox" placeholder="Search concepts...">
+                    <button class="btn btn-primary" id="fitBtn">Fit to View</button>
+                    <button class="btn btn-secondary" id="resetBtn">Reset</button>
+                    <button class="btn btn-secondary" id="togglePhysics">Toggle Physics</button>
+                </div>
+
+                <div id="network"></div>
+
+                <div class="stats-bar">
+                    <div class="stat">
+                        <span class="stat-label">Concepts:</span>
+                        <span class="stat-value" id="nodeCount">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Dependencies:</span>
+                        <span class="stat-value" id="edgeCount">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Categories:</span>
+                        <span class="stat-value" id="groupCount">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Learning graph data will be loaded from external JSON
+        let graphData = null;
+        let network = null;
+        let allNodes = null;
+        let allEdges = null;
+        let physicsEnabled = true;
+
+        // Color mapping for groups
+        const groupColors = {
+            "FOUND": { background: "#F08080", font: "white" },
+            "ARCH": { background: "#FFDAB9", font: "black" },
+            "PLAT": { background: "#FFFFE0", font: "black" },
+            "PROMPT": { background: "#F0FFF0", font: "black" },
+            "CUSTOM": { background: "#98FB98", font: "black" },
+            "API": { background: "#AFEEEE", font: "black" },
+            "MULTI": { background: "#B0E0E6", font: "black" },
+            "GOV": { background: "#E6E6FA", font: "black" },
+            "ETHICS": { background: "#FFF0F5", font: "black" },
+            "WORK": { background: "#D8BFD8", font: "black" },
+            "BIZ": { background: "#FFE4E1", font: "black" },
+            "ADV": { background: "#DDA0DD", font: "white" }
+        };
+
+        // Group names
+        const groupNames = {
+            "FOUND": "Foundation Concepts",
+            "ARCH": "LLM Architecture",
+            "PLAT": "AI Platforms",
+            "PROMPT": "Prompt Engineering",
+            "CUSTOM": "Custom Solutions",
+            "API": "API Integration",
+            "MULTI": "Multimodal AI",
+            "GOV": "Governance",
+            "ETHICS": "Ethics",
+            "WORK": "Workforce",
+            "BIZ": "Business Applications",
+            "ADV": "Advanced Topics"
+        };
+
+        // Load the learning graph data
+        async function loadGraph() {
+            try {
+                const response = await fetch('seis-666-learning-graph.json');
+                graphData = await response.json();
+                initializeGraph();
+            } catch (error) {
+                console.error('Error loading graph:', error);
+                // Try alternative path
+                try {
+                    const response = await fetch('learning-graph.json');
+                    graphData = await response.json();
+                    initializeGraph();
+                } catch (e) {
+                    alert('Could not load learning graph data. Please ensure the JSON file is in the same directory.');
+                }
+            }
+        }
+
+        function initializeGraph() {
+            // Process nodes
+            const nodes = graphData.nodes.map(node => ({
+                id: node.id,
+                label: node.label,
+                group: node.group,
+                color: {
+                    background: groupColors[node.group]?.background || '#ccc',
+                    border: groupColors[node.group]?.background || '#999',
+                    highlight: {
+                        background: '#FFD700',
+                        border: '#FFA500'
+                    }
+                },
+                font: {
+                    color: groupColors[node.group]?.font || 'black',
+                    size: 14
+                },
+                shape: node.shape || 'ellipse',
+                borderWidth: 2
+            }));
+
+            // Process edges
+            const edges = graphData.edges.map(edge => ({
+                from: edge.from,
+                to: edge.to,
+                arrows: 'to',
+                color: { color: '#999', opacity: 0.6 },
+                width: 1
+            }));
+
+            allNodes = new vis.DataSet(nodes);
+            allEdges = new vis.DataSet(edges);
+
+            // Create network
+            const container = document.getElementById('network');
+            const data = { nodes: allNodes, edges: allEdges };
+
+            const options = {
+                nodes: {
+                    font: { size: 14 },
+                    borderWidth: 2,
+                    shadow: true
+                },
+                edges: {
+                    smooth: {
+                        type: 'cubicBezier',
+                        forceDirection: 'vertical'
+                    }
+                },
+                physics: {
+                    enabled: true,
+                    solver: 'forceAtlas2Based',
+                    forceAtlas2Based: {
+                        gravitationalConstant: -50,
+                        centralGravity: 0.01,
+                        springLength: 100,
+                        springConstant: 0.08
+                    },
+                    stabilization: {
+                        iterations: 100
+                    }
+                },
+                interaction: {
+                    hover: true,
+                    tooltipDelay: 200,
+                    zoomView: true,
+                    dragView: true
+                }
+            };
+
+            network = new vis.Network(container, data, options);
+
+            // Update stats
+            document.getElementById('nodeCount').textContent = nodes.length;
+            document.getElementById('edgeCount').textContent = edges.length;
+            document.getElementById('groupCount').textContent = Object.keys(graphData.groups || groupNames).length;
+
+            // Build legend
+            buildLegend(nodes);
+
+            // Event handlers
+            network.on('click', function(params) {
+                if (params.nodes.length > 0) {
+                    showNodeInfo(params.nodes[0]);
+                }
+            });
+
+            network.on('doubleClick', function(params) {
+                if (params.nodes.length > 0) {
+                    highlightConnected(params.nodes[0]);
+                }
+            });
+        }
+
+        function buildLegend(nodes) {
+            const legend = document.getElementById('legend');
+            const groupCounts = {};
+
+            nodes.forEach(node => {
+                groupCounts[node.group] = (groupCounts[node.group] || 0) + 1;
+            });
+
+            legend.innerHTML = '';
+
+            Object.keys(groupNames).forEach(groupId => {
+                const item = document.createElement('div');
+                item.className = 'legend-item';
+                item.innerHTML = `
+                    <div class="legend-color" style="background: ${groupColors[groupId]?.background || '#ccc'}"></div>
+                    <span class="legend-text">${groupNames[groupId]}</span>
+                    <span class="legend-count">${groupCounts[groupId] || 0}</span>
+                `;
+                item.addEventListener('click', () => filterByGroup(groupId));
+                legend.appendChild(item);
+            });
+        }
+
+        function showNodeInfo(nodeId) {
+            const node = allNodes.get(nodeId);
+            const inEdges = allEdges.get({ filter: e => e.to === nodeId });
+            const outEdges = allEdges.get({ filter: e => e.from === nodeId });
+
+            document.getElementById('nodeName').textContent = node.label;
+            document.getElementById('nodeId').textContent = node.id;
+            document.getElementById('nodeGroup').textContent = groupNames[node.group] || node.group;
+            document.getElementById('nodeDeps').textContent = inEdges.length;
+            document.getElementById('nodeDepends').textContent = outEdges.length;
+            document.getElementById('nodeInfo').classList.add('active');
+        }
+
+        function highlightConnected(nodeId) {
+            const connectedNodes = network.getConnectedNodes(nodeId);
+            connectedNodes.push(nodeId);
+
+            allNodes.forEach(node => {
+                if (connectedNodes.includes(node.id)) {
+                    allNodes.update({ id: node.id, opacity: 1 });
+                } else {
+                    allNodes.update({ id: node.id, opacity: 0.2 });
+                }
+            });
+        }
+
+        function filterByGroup(groupId) {
+            const nodeIds = allNodes.get({ filter: n => n.group === groupId }).map(n => n.id);
+            network.selectNodes(nodeIds);
+            network.fit({ nodes: nodeIds, animation: true });
+        }
+
+        // Search functionality
+        document.getElementById('searchBox').addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase();
+            if (query.length < 2) {
+                allNodes.forEach(node => {
+                    allNodes.update({ id: node.id, opacity: 1 });
+                });
+                return;
+            }
+
+            const matchingIds = allNodes.get({
+                filter: n => n.label.toLowerCase().includes(query)
+            }).map(n => n.id);
+
+            allNodes.forEach(node => {
+                if (matchingIds.includes(node.id)) {
+                    allNodes.update({ id: node.id, opacity: 1 });
+                } else {
+                    allNodes.update({ id: node.id, opacity: 0.2 });
+                }
+            });
+
+            if (matchingIds.length > 0) {
+                network.selectNodes(matchingIds);
+            }
+        });
+
+        // Button handlers
+        document.getElementById('fitBtn').addEventListener('click', () => {
+            network.fit({ animation: true });
+        });
+
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            allNodes.forEach(node => {
+                allNodes.update({ id: node.id, opacity: 1 });
+            });
+            network.unselectAll();
+            document.getElementById('searchBox').value = '';
+            document.getElementById('nodeInfo').classList.remove('active');
+        });
+
+        document.getElementById('togglePhysics').addEventListener('click', () => {
+            physicsEnabled = !physicsEnabled;
+            network.setOptions({ physics: { enabled: physicsEnabled } });
+        });
+
+        // Layout selector
+        document.getElementById('layoutSelect').addEventListener('change', function(e) {
+            const layout = e.target.value;
+            let options = {};
+
+            if (layout === 'hierarchical') {
+                options = {
+                    layout: {
+                        hierarchical: {
+                            direction: 'UD',
+                            sortMethod: 'directed',
+                            levelSeparation: 100,
+                            nodeSpacing: 150
+                        }
+                    },
+                    physics: { enabled: false }
+                };
+            } else if (layout === 'hierarchicalLR') {
+                options = {
+                    layout: {
+                        hierarchical: {
+                            direction: 'LR',
+                            sortMethod: 'directed',
+                            levelSeparation: 150,
+                            nodeSpacing: 100
+                        }
+                    },
+                    physics: { enabled: false }
+                };
+            } else {
+                options = {
+                    layout: { hierarchical: false },
+                    physics: { enabled: true }
+                };
+            }
+
+            network.setOptions(options);
+            setTimeout(() => network.fit({ animation: true }), 500);
+        });
+
+        // Initialize
+        loadGraph();
+    </script>
+</body>
+</html>

@@ -29,6 +29,8 @@ nav:
     - Graph Quality Analysis: learning-graph/quality-metrics.md
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Taxonomy Distribution: learning-graph/taxonomy-distribution-report.md
+    - Mermaid Diagrams: learning-graph/learning-graph-mermaid.md
+    - Book Metrics: learning-graph/book-metrics.md
   - MicroSims:
     - Overview: sims/index.md
     - Digital Maturity Quadrant: sims/digital-maturity-quadrant/index.md
@@ -39,7 +41,20 @@ nav:
     - Human-AI Task Allocation: sims/human-ai-task-allocation/index.md
     - AI Use Case Prioritization: sims/ai-use-case-prioritization/index.md
     - AI Strategy Assessment: sims/ai-strategy-assessment/index.md
+  - Quizzes:
+    - Overview: quizzes/index.md
+    - "Quiz 1: DT & AI Foundations": quizzes/quiz-01.md
+    - "Quiz 2: LLM Architecture": quizzes/quiz-02.md
+    - "Quiz 3: AI Platforms": quizzes/quiz-03.md
+    - "Quiz 4: Prompt Engineering": quizzes/quiz-04.md
+    - "Quiz 5: Custom GPTs & RAG": quizzes/quiz-05.md
+    - "Quiz 6: API Integration": quizzes/quiz-06.md
+    - "Quiz 7: Multimodal AI": quizzes/quiz-07.md
+    - "Quiz 8: Governance & Ethics": quizzes/quiz-08.md
+    - "Quiz 9: Future of Work": quizzes/quiz-09.md
+    - "Quiz 10: Business Applications": quizzes/quiz-10.md
   - Glossary: glossary.md
+  - FAQ: faq.md
   - References: references.md
 
 theme:
