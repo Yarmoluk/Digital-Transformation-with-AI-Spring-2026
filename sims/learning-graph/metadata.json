@@ -1,0 +1,78 @@
+{
+  "title": "Learning Graph for Deep Learning Course",
+  "description": "Interactive visualization of the learning graph showing concept dependencies for a Deep Learning course.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "Learning Graphs",
+    "Concept Dependencies",
+    "Educational Design",
+    "Deep Learning"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "publisher": "Dan McCreary",
+  "educationalLevel": "Professional",
+  "learningResourceType": "simulation",
+  "audience": "Educators, Instructional Designers",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand",
+    "Apply"
+  ],
+  "concepts": [
+    "Learning Graphs",
+    "Concept Dependencies",
+    "Curriculum Design"
+  ],
+  "prerequisites": [],
+  "library": "vis-network",
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation",
+    "timeline"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of learning graph for deep learning course",
+    "Explore learning graph for deep learning course through interactive visualization",
+    "Apply knowledge of learning graph for deep learning course to solve problems",
+    "Experiment with parameters to observe their effects on learning graph for deep learning course"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "remember",
+      "understand",
+      "apply"
+    ],
+    "bloomVerbs": [
+      "define",
+      "identify",
+      "list",
+      "recognize",
+      "state"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "delayed",
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "observe"
+  }
+}
