@@ -133,7 +133,7 @@ extra_css:
 plugins:
   - search
   - social
-  
+  - social_override
 
 markdown_extensions:
   - admonition
