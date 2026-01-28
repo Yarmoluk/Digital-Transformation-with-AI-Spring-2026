@@ -1013,6 +1013,55 @@
           
         
       
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../slides/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Slides
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
         
           
         
@@ -1738,7 +1787,13 @@
 <p>This chapter demystifies the technical machinery underlying LLMs. While business professionals need not understand every mathematical detail, a working knowledge of how these systems function—their architecture, training processes, and operational characteristics—is essential for making informed decisions about AI adoption, evaluating platform capabilities, and anticipating both the possibilities and limitations of generative AI.</p>
 <h2 id="understanding-large-language-models">Understanding Large Language Models<a class="headerlink" href="#understanding-large-language-models" title="Permanent link">&para;</a></h2>
 <h3 id="what-are-large-language-models">What Are Large Language Models?<a class="headerlink" href="#what-are-large-language-models" title="Permanent link">&para;</a></h3>
-<p><strong>Large Language Models (LLMs)</strong> are neural networks trained on massive text corpora to understand and generate human language. The term "large" refers to the number of parameters—the learnable weights that the model adjusts during training. Modern LLMs range from billions to trillions of parameters:</p>
+<p><strong>Large Language Models (LLMs)</strong> are neural networks trained on massive text corpora to understand and generate human language. The term "large" refers to the number of parameters—the learnable weights that the model adjusts during training.</p>
+<h4 id="neural-network-foundation">Neural Network Foundation<a class="headerlink" href="#neural-network-foundation" title="Permanent link">&para;</a></h4>
+<p>Before diving into LLM specifics, the following visualization shows how data flows through a basic neural network. Understanding this forward propagation process is essential for grasping how LLMs process tokens through their many layers.</p>
+<iframe src="../../sims/neural-network-visualization/main.html" height="652px" width="100%" scrolling="no" style="overflow: hidden;"></iframe>
+
+<p><a class="md-button" href="../../sims/neural-network-visualization/">Explore the Neural Network MicroSim →</a></p>
+<p>Modern LLMs range from billions to trillions of parameters:</p>
 <table>
 <thead>
 <tr>
@@ -1800,6 +1855,11 @@
 <li>The process repeats with "The capital of France is Paris" as input</li>
 </ol>
 <p>This autoregressive process continues until the model generates a stop token or reaches a maximum length. Each generation step considers all previous context, enabling coherent multi-paragraph outputs.</p>
+<h4 id="autoregressive-generation-visualization">Autoregressive Generation Visualization<a class="headerlink" href="#autoregressive-generation-visualization" title="Permanent link">&para;</a></h4>
+<p>The following interactive simulation demonstrates how tokens flow through neural network layers during autoregressive generation. Watch as information is compressed through hidden layers to predict the next token, which then becomes part of the input for the next prediction cycle.</p>
+<iframe src="../../sims/autoregressive/main.html" height="600px" width="100%" scrolling="no" style="overflow: hidden;"></iframe>
+
+<p><a class="md-button" href="../../sims/autoregressive/">Explore the Autoregressive MicroSim →</a></p>
 <div class="admonition note">
 <p class="admonition-title">Temperature and Sampling</p>
 <p>The selection of the next token need not be deterministic. The <strong>temperature</strong> parameter controls randomness: temperature=0 always selects the highest-probability token, while higher temperatures introduce diversity by making the selection more random. This is why the same prompt can yield different responses.</p>
@@ -1845,6 +1905,11 @@
 <li><strong>WordPiece</strong>: Used by BERT. Similar to BPE but uses likelihood-based merging.</li>
 <li><strong>SentencePiece</strong>: Used by Llama and others. Language-agnostic tokenization that works directly on raw text.</li>
 </ul>
+<h4 id="interactive-tokenizer">Interactive Tokenizer<a class="headerlink" href="#interactive-tokenizer" title="Permanent link">&para;</a></h4>
+<p>Try the interactive tokenizer below to see how different text inputs are broken into tokens. Notice how common words typically become single tokens while rare or compound words are split into multiple subword pieces.</p>
+<iframe src="../../sims/tokenizer/main.html" height="470px" width="100%" scrolling="no" style="overflow: hidden;"></iframe>
+
+<p><a class="md-button" href="../../sims/tokenizer/">Explore the Tokenizer MicroSim →</a></p>
 <h4 id="diagram-tokenization-process-visualization">Diagram: Tokenization Process Visualization<a class="headerlink" href="#diagram-tokenization-process-visualization" title="Permanent link">&para;</a></h4>
 <details>
 <summary>Tokenization Process Visualization</summary>
@@ -2034,6 +2099,11 @@
 <li>Attend to contextual words that disambiguate meaning</li>
 </ul>
 <p>This mechanism enables sophisticated contextual understanding without explicit programming of linguistic rules.</p>
+<h4 id="interactive-self-attention-visualization">Interactive Self-Attention Visualization<a class="headerlink" href="#interactive-self-attention-visualization" title="Permanent link">&para;</a></h4>
+<p>Explore the self-attention mechanism with this interactive visualization. Select different sentences and click on tokens to see how they attend to other tokens in the sequence. Notice how pronouns strongly attend to their referents and how verbs connect to their subjects.</p>
+<iframe src="../../sims/self-attention-visualization/main.html" height="652px" width="100%" scrolling="no" style="overflow: hidden;"></iframe>
+
+<p><a class="md-button" href="../../sims/self-attention-visualization/">Explore the Self-Attention MicroSim →</a></p>
 <h4 id="diagram-self-attention-visualization">Diagram: Self-Attention Visualization<a class="headerlink" href="#diagram-self-attention-visualization" title="Permanent link">&para;</a></h4>
 <details>
 <summary>Self-Attention Visualization</summary>
@@ -2115,6 +2185,56 @@
 </tr>
 </tbody>
 </table>
+<h4 id="diagram-multi-head-attention-comparison">Diagram: Multi-Head Attention Comparison<a class="headerlink" href="#diagram-multi-head-attention-comparison" title="Permanent link">&para;</a></h4>
+<details>
+<summary>Multi-Head Attention Comparison Visualization</summary>
+<p><strong>Type:</strong> microsim</p>
+<p><strong>Purpose:</strong> Interactive visualization showing how different attention heads within a transformer focus on different aspects of the input simultaneously</p>
+<p><strong>Bloom Taxonomy:</strong> Analyze (L4) - Compare and contrast what different attention heads learn to focus on</p>
+<p><strong>Learning Objective:</strong> Students should be able to explain why multi-head attention is more powerful than single-head attention and identify what different head types capture</p>
+<p><strong>Canvas layout (responsive, minimum 900x600px):</strong></p>
+<ul>
+<li>Top: Input sentence with selectable tokens</li>
+<li>Middle: Grid of 8 attention head visualizations (2x4 layout)</li>
+<li>Bottom: Legend and explanation panel</li>
+</ul>
+<p><strong>Visual elements:</strong></p>
+<ul>
+<li>Input sentence displayed as horizontal token sequence</li>
+<li>Each attention head shown as a mini attention matrix or connection diagram</li>
+<li>Color-coded attention weights (heat map from light to dark)</li>
+<li>Head labels indicating learned focus type (e.g., "Positional", "Syntactic", "Semantic")</li>
+<li>Aggregate attention view combining all heads</li>
+</ul>
+<p><strong>Interactive controls:</strong></p>
+<ul>
+<li>Text input field for custom sentences</li>
+<li>Number of heads selector (4, 8, 12)</li>
+<li>Layer selector slider (1-12)</li>
+<li>Toggle: Individual heads / Aggregated view</li>
+<li>Button: "Show Head Specialization"</li>
+</ul>
+<p><strong>Behavior:</strong></p>
+<ul>
+<li>Click on any attention head to expand it to full view</li>
+<li>Hover over attention matrix cells to see exact weight values</li>
+<li>Side panel explains what linguistic phenomenon each head appears to capture</li>
+<li>Animation mode: step through heads showing different perspectives</li>
+</ul>
+<p><strong>Sample sentences:</strong></p>
+<ul>
+<li>"The cat sat on the mat because it was tired."</li>
+<li>"The programmer fixed the bug that was causing crashes."</li>
+<li>"She told him that he should go to the bank."</li>
+</ul>
+<p><strong>Annotations:</strong></p>
+<ul>
+<li>Identify head patterns: local attention, global attention, syntactic structure</li>
+<li>Show how heads specialize for different tasks</li>
+<li>Highlight complementary information captured by different heads</li>
+</ul>
+<p><strong>Implementation:</strong> p5.js with grid layout for multiple attention visualizations</p>
+</details>
 <h2 id="embeddings-representing-meaning-as-numbers">Embeddings: Representing Meaning as Numbers<a class="headerlink" href="#embeddings-representing-meaning-as-numbers" title="Permanent link">&para;</a></h2>
 <h3 id="what-are-embeddings">What Are Embeddings?<a class="headerlink" href="#what-are-embeddings" title="Permanent link">&para;</a></h3>
 <p><strong>Embeddings</strong> are dense vector representations of tokens (or other discrete entities) in a continuous high-dimensional space. Rather than treating words as arbitrary symbols, embeddings encode semantic relationships through geometric proximity—similar concepts cluster together.</p>
@@ -2128,6 +2248,11 @@
 <p>The famous demonstration of embedding arithmetic:</p>
 <div class="arithmatex">\[\vec{king} - \vec{man} + \vec{woman} \approx \vec{queen}\]</div>
 <p>This suggests embeddings capture semantic relationships that support analogical reasoning.</p>
+<h4 id="vector-similarity-visualization">Vector Similarity Visualization<a class="headerlink" href="#vector-similarity-visualization" title="Permanent link">&para;</a></h4>
+<p>The following interactive visualization demonstrates how word embeddings cluster semantically related words together. Click on different words to compare their cosine similarity scores and observe how the geometric distance reflects semantic relatedness.</p>
+<iframe src="../../sims/vector-similarity/main.html" height="652px" width="100%" scrolling="no" style="overflow: hidden;"></iframe>
+
+<p><a class="md-button" href="../../sims/vector-similarity/">Explore the Vector Similarity MicroSim →</a></p>
 <h3 id="types-of-embeddings-in-llms">Types of Embeddings in LLMs<a class="headerlink" href="#types-of-embeddings-in-llms" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -2164,6 +2289,65 @@
 <p class="admonition-title">Business Applications of Embeddings</p>
 <p>Embeddings enable powerful applications beyond text generation: semantic search (finding similar documents), clustering (grouping related items), classification (categorizing content), and recommendation systems (suggesting related content). Many organizations extract embeddings from LLMs for these downstream applications.</p>
 </div>
+<h4 id="diagram-embedding-dimensions-explorer">Diagram: Embedding Dimensions Explorer<a class="headerlink" href="#diagram-embedding-dimensions-explorer" title="Permanent link">&para;</a></h4>
+<details>
+<summary>Embedding Dimensions Explorer</summary>
+<p><strong>Type:</strong> microsim</p>
+<p><strong>Purpose:</strong> Interactive visualization showing how embedding dimensions capture different semantic features and how dimensionality affects representation quality</p>
+<p><strong>Bloom Taxonomy:</strong> Understand (L2) - Explain how embedding dimensions encode meaning</p>
+<p><strong>Learning Objective:</strong> Students should be able to describe how embedding dimensions capture semantic features and understand the tradeoffs between different embedding sizes</p>
+<p><strong>Canvas layout (responsive, minimum 800x500px):</strong></p>
+<ul>
+<li>Left panel: Word input and embedding vector display</li>
+<li>Center: 3D projection of embedding space (reducible to 2D)</li>
+<li>Right panel: Dimension feature analysis</li>
+</ul>
+<p><strong>Visual elements:</strong></p>
+<ul>
+<li>3D scatter plot of word embeddings (PCA/t-SNE reduced)</li>
+<li>Color-coded clusters by semantic category</li>
+<li>Selected word's raw embedding vector as bar chart</li>
+<li>"Feature activation" view showing which dimensions activate for concepts</li>
+<li>Dimension labels showing learned features (gender, size, animate, etc.)</li>
+</ul>
+<p><strong>Interactive controls:</strong></p>
+<ul>
+<li>Text input: Enter word to visualize</li>
+<li>Slider: Embedding dimensions (50, 100, 300, 768, 1536)</li>
+<li>Toggle: 2D / 3D projection view</li>
+<li>Dropdown: Projection method (PCA, t-SNE, UMAP)</li>
+<li>Button: "Show Similar Words"</li>
+<li>Button: "Analyze Dimension Features"</li>
+</ul>
+<p><strong>Display metrics:</strong></p>
+<ul>
+<li>Embedding dimension count</li>
+<li>Sparsity percentage</li>
+<li>Nearest neighbors in embedding space</li>
+<li>Dimension-by-dimension breakdown</li>
+</ul>
+<p><strong>Behavior:</strong></p>
+<ul>
+<li>Entering a word shows its position in projected space</li>
+<li>Hover over dimensions to see what feature they might represent</li>
+<li>Click two words to see vector difference (analogies)</li>
+<li>Animation: word "morphing" through embedding space</li>
+</ul>
+<p><strong>Educational demonstrations:</strong></p>
+<ul>
+<li>Show how "king - man + woman ≈ queen" works geometrically</li>
+<li>Display how synonyms cluster together</li>
+<li>Illustrate how adding dimensions improves discrimination</li>
+</ul>
+<p><strong>Sample word sets:</strong></p>
+<ul>
+<li>Animals: cat, dog, lion, fish, bird</li>
+<li>Professions: doctor, nurse, teacher, engineer</li>
+<li>Actions: run, walk, sprint, jog</li>
+<li>Concepts: love, hate, fear, joy</li>
+</ul>
+<p><strong>Implementation:</strong> p5.js with 3D rendering or three.js</p>
+</details>
 <h2 id="training-large-language-models">Training Large Language Models<a class="headerlink" href="#training-large-language-models" title="Permanent link">&para;</a></h2>
 <h3 id="pre-training-learning-from-the-internet">Pre-Training: Learning from the Internet<a class="headerlink" href="#pre-training-learning-from-the-internet" title="Permanent link">&para;</a></h3>
 <p><strong>Pre-training</strong> is the initial, computationally intensive phase where the model learns from massive text corpora. The objective is typically next-token prediction (for autoregressive models like GPT) or masked language modeling (for bidirectional models like BERT).</p>
@@ -2312,6 +2496,61 @@
 <li>More parameters → greater risk of memorization vs. generalization</li>
 </ul>
 <p>The scaling laws observed in LLM research suggest that performance improves predictably with increases in parameters, training data, and compute, though with diminishing returns at the frontier.</p>
+<h4 id="diagram-llm-scaling-laws-visualization">Diagram: LLM Scaling Laws Visualization<a class="headerlink" href="#diagram-llm-scaling-laws-visualization" title="Permanent link">&para;</a></h4>
+<details>
+<summary>LLM Scaling Laws Visualization</summary>
+<p><strong>Type:</strong> microsim</p>
+<p><strong>Purpose:</strong> Interactive demonstration of how model performance scales with parameters, training data, and compute according to Chinchilla and other scaling law research</p>
+<p><strong>Bloom Taxonomy:</strong> Apply (L3) - Use scaling laws to predict model performance tradeoffs</p>
+<p><strong>Learning Objective:</strong> Students should be able to interpret scaling law curves and understand the relationship between model size, training data, and expected performance</p>
+<p><strong>Canvas layout (responsive, minimum 800x500px):</strong></p>
+<ul>
+<li>Main area: Log-log plot showing scaling curves</li>
+<li>Right panel: Model configuration inputs</li>
+<li>Bottom: Results summary and cost estimates</li>
+</ul>
+<p><strong>Visual elements:</strong></p>
+<ul>
+<li>X-axis: Training compute (FLOPs) or model parameters (log scale)</li>
+<li>Y-axis: Loss or benchmark score (log scale)</li>
+<li>Multiple curves showing: Parameters only, Data only, Compute-optimal allocation</li>
+<li>Reference points for known models (GPT-3, GPT-4, Claude, Llama)</li>
+<li>Chinchilla optimal frontier line</li>
+<li>Isocompute curves showing different parameter/data tradeoffs</li>
+</ul>
+<p><strong>Interactive controls:</strong></p>
+<ul>
+<li>Slider: Model parameters (1B - 1T, log scale)</li>
+<li>Slider: Training tokens (10B - 10T, log scale)</li>
+<li>Dropdown: Benchmark metric (Loss, MMLU, HumanEval)</li>
+<li>Toggle: Show/hide Chinchilla optimal line</li>
+<li>Toggle: Show/hide real model markers</li>
+<li>Button: "Calculate Optimal Allocation"</li>
+</ul>
+<p><strong>Display metrics:</strong></p>
+<ul>
+<li>Predicted loss/performance</li>
+<li>Training FLOPs required</li>
+<li>Estimated training cost ($)</li>
+<li>Compute-optimal ratio (tokens per parameter)</li>
+<li>Distance from Chinchilla optimal</li>
+</ul>
+<p><strong>Behavior:</strong></p>
+<ul>
+<li>Dragging model parameter slider updates predicted performance</li>
+<li>Show "undertrained" or "overtrained" region shading</li>
+<li>Highlight when configuration deviates significantly from optimal</li>
+<li>Click model markers to see actual vs predicted performance</li>
+<li>Animation: trace training progress over time</li>
+</ul>
+<p><strong>Scaling law equations displayed:</strong></p>
+<ul>
+<li>Loss ≈ C / N^α (parameter scaling)</li>
+<li>Loss ≈ D / T^β (data scaling)</li>
+<li>Chinchilla: N_opt ∝ C^0.5, T_opt ∝ C^0.5</li>
+</ul>
+<p><strong>Implementation:</strong> Chart.js or p5.js with logarithmic axes</p>
+</details>
 <h3 id="inference-running-the-model">Inference: Running the Model<a class="headerlink" href="#inference-running-the-model" title="Permanent link">&para;</a></h3>
 <p><strong>Inference</strong> is the process of using a trained model to generate outputs for new inputs. Unlike training (which updates parameters), inference uses fixed parameters to transform inputs through the network.</p>
 <p>Inference considerations include:</p>
@@ -2372,6 +2611,68 @@
 <li><strong>Speculative decoding</strong>: Generating multiple tokens in parallel with verification</li>
 <li><strong>Model parallelism</strong>: Distributing the model across multiple GPUs</li>
 </ul>
+<h4 id="diagram-inference-performance-tradeoffs">Diagram: Inference Performance Tradeoffs<a class="headerlink" href="#diagram-inference-performance-tradeoffs" title="Permanent link">&para;</a></h4>
+<details>
+<summary>Inference Latency and Throughput Visualization</summary>
+<p><strong>Type:</strong> microsim</p>
+<p><strong>Purpose:</strong> Interactive exploration of how model size, batch size, context length, and optimization techniques affect inference latency and throughput</p>
+<p><strong>Bloom Taxonomy:</strong> Apply (L3) - Calculate and compare inference metrics for different configurations</p>
+<p><strong>Learning Objective:</strong> Students should be able to estimate latency and throughput for different LLM deployment configurations and understand key tradeoffs</p>
+<p><strong>Canvas layout (responsive, minimum 800x500px):</strong></p>
+<ul>
+<li>Top: Configuration panel with sliders</li>
+<li>Middle: Dual-axis chart (latency + throughput)</li>
+<li>Bottom: Cost and capacity estimates</li>
+</ul>
+<p><strong>Visual elements:</strong></p>
+<ul>
+<li>Bar/line chart showing Time to First Token (TTFT) and Inter-Token Latency</li>
+<li>Throughput gauge (tokens/second)</li>
+<li>GPU memory utilization bar</li>
+<li>Cost-per-token indicator</li>
+<li>Visual timeline of a sample request lifecycle</li>
+</ul>
+<p><strong>Interactive controls:</strong></p>
+<ul>
+<li>Dropdown: Model size (7B, 13B, 70B, 405B)</li>
+<li>Slider: Batch size (1-64)</li>
+<li>Slider: Input context length (256 - 128K tokens)</li>
+<li>Slider: Output length (100 - 4K tokens)</li>
+<li>Dropdown: Quantization (FP16, INT8, INT4)</li>
+<li>Toggle: KV-Cache enabled</li>
+<li>Toggle: Speculative decoding</li>
+</ul>
+<p><strong>Display metrics:</strong></p>
+<ul>
+<li>Time to First Token (TTFT) in milliseconds</li>
+<li>Inter-Token Latency (ITL) in milliseconds</li>
+<li>Total response time</li>
+<li>Throughput (tokens/second/GPU)</li>
+<li>GPU memory usage (GB)</li>
+<li>Cost per 1K tokens ($)</li>
+</ul>
+<p><strong>Behavior:</strong></p>
+<ul>
+<li>Real-time updates as sliders change</li>
+<li>Show "bottleneck" indicator (memory-bound vs compute-bound)</li>
+<li>Warning when configuration exceeds typical GPU memory</li>
+<li>Comparison mode: side-by-side configs</li>
+<li>Animation: visualize token generation timeline</li>
+</ul>
+<p><strong>Reference configurations:</strong></p>
+<ul>
+<li>"Interactive chat" (low latency, small batch)</li>
+<li>"Batch processing" (high throughput, large batch)</li>
+<li>"Long document" (large context, optimized caching)</li>
+</ul>
+<p><strong>Educational annotations:</strong></p>
+<ul>
+<li>Explain why larger batch sizes improve throughput but increase latency</li>
+<li>Show KV-cache memory scaling with context length</li>
+<li>Demonstrate quantization speedup vs quality tradeoff</li>
+</ul>
+<p><strong>Implementation:</strong> Chart.js with dynamic updates, or p5.js with custom visualization</p>
+</details>
 <h2 id="the-context-window">The Context Window<a class="headerlink" href="#the-context-window" title="Permanent link">&para;</a></h2>
 <h3 id="what-is-a-context-window">What Is a Context Window?<a class="headerlink" href="#what-is-a-context-window" title="Permanent link">&para;</a></h3>
 <p>The <strong>context window</strong> is the maximum number of tokens a model can process in a single forward pass—including both input and output tokens. This limit is architectural, determined by positional encoding schemes and attention computation memory requirements.</p>
