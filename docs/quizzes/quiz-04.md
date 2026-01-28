@@ -9,10 +9,13 @@ Test your understanding of prompt engineering techniques and strategies.
 ### Question 1 (Remember)
 **What is zero-shot prompting?**
 
-- [x] A) Asking the model to perform a task without providing examples
-- [ ] B) Using no system prompt
-- [ ] C) Generating zero tokens
-- [ ] D) A technique that always fails
+<div class="upper-alpha" markdown>
+1. Asking the model to perform a task without providing examples
+1. Using no system prompt
+1. Generating zero tokens
+1. A technique that always fails
+</div>
+
 
 ??? success "Answer"
     **A) Asking the model to perform a task without providing examples** - Zero-shot prompting relies on the model's pre-trained knowledge without task-specific examples. The model must understand the task from instructions alone.
@@ -22,10 +25,13 @@ Test your understanding of prompt engineering techniques and strategies.
 ### Question 2 (Remember)
 **What is chain-of-thought prompting?**
 
-- [ ] A) Linking multiple prompts together
-- [x] B) Encouraging the model to show step-by-step reasoning
-- [ ] C) Using multiple models in sequence
-- [ ] D) A type of system prompt
+<div class="upper-alpha" markdown>
+1. Linking multiple prompts together
+1. Encouraging the model to show step-by-step reasoning
+1. Using multiple models in sequence
+1. A type of system prompt
+</div>
+
 
 ??? success "Answer"
     **B) Encouraging the model to show step-by-step reasoning** - Chain-of-thought prompting asks the model to "think step by step," which improves accuracy on complex reasoning tasks by making intermediate steps explicit.
@@ -35,10 +41,13 @@ Test your understanding of prompt engineering techniques and strategies.
 ### Question 3 (Understand)
 **Why does few-shot prompting often outperform zero-shot for specialized tasks?**
 
-- [ ] A) It uses more tokens
-- [ ] B) It costs more
-- [x] C) Examples demonstrate the desired pattern and format
-- [ ] D) It always produces longer outputs
+<div class="upper-alpha" markdown>
+1. It uses more tokens
+1. It costs more
+1. Examples demonstrate the desired pattern and format
+1. It always produces longer outputs
+</div>
+
 
 ??? success "Answer"
     **C) Examples demonstrate the desired pattern and format** - Few-shot examples show the model exactly what input/output patterns you expect, reducing ambiguity and improving consistency for specialized tasks.
@@ -48,10 +57,13 @@ Test your understanding of prompt engineering techniques and strategies.
 ### Question 4 (Understand)
 **What is the purpose of a system prompt?**
 
-- [ ] A) To increase token count
-- [x] B) To define the AI's behavior, persona, and constraints
-- [ ] C) To bypass safety features
-- [ ] D) To reduce costs
+<div class="upper-alpha" markdown>
+1. To increase token count
+1. To define the AI's behavior, persona, and constraints
+1. To bypass safety features
+1. To reduce costs
+</div>
+
 
 ??? success "Answer"
     **B) To define the AI's behavior, persona, and constraints** - System prompts establish context, role, communication style, and boundaries that persist throughout the conversation.
@@ -61,10 +73,13 @@ Test your understanding of prompt engineering techniques and strategies.
 ### Question 5 (Apply)
 **You need consistent JSON output from an LLM. Which technique is most effective?**
 
-- [ ] A) Ask politely for JSON
-- [x] B) Provide JSON schema and examples, specify "respond only with valid JSON"
-- [ ] C) Use maximum temperature
-- [ ] D) Avoid all instructions
+<div class="upper-alpha" markdown>
+1. Ask politely for JSON
+1. Provide JSON schema and examples, specify "respond only with valid JSON"
+1. Use maximum temperature
+1. Avoid all instructions
+</div>
+
 
 ??? success "Answer"
     **B) Provide JSON schema and examples, specify "respond only with valid JSON"** - Structured output requires clear format specification, examples of the expected structure, and explicit instructions to output only the specified format.
@@ -74,10 +89,13 @@ Test your understanding of prompt engineering techniques and strategies.
 ### Question 6 (Apply)
 **A user complains that AI responses are too verbose. What prompt modification would help?**
 
-- [ ] A) "Give me more details"
-- [x] B) "Respond in 2-3 sentences maximum"
-- [ ] C) Remove the system prompt
-- [ ] D) Increase temperature
+- "Give me more details"
+- "Respond in 2-3 sentences maximum"
+<div class="upper-alpha" markdown>
+1. Remove the system prompt
+1. Increase temperature
+</div>
+
 
 ??? success "Answer"
     **B) "Respond in 2-3 sentences maximum"** - Explicit length constraints in the prompt directly address verbosity. Being specific about desired output length helps control response size.
@@ -87,10 +105,13 @@ Test your understanding of prompt engineering techniques and strategies.
 ### Question 7 (Analyze)
 **Compare tree-of-thought with chain-of-thought prompting:**
 
-- [ ] A) They are identical techniques
-- [ ] B) Tree-of-thought is simpler
-- [x] C) Tree-of-thought explores multiple reasoning branches before selecting
-- [ ] D) Chain-of-thought explores more options
+<div class="upper-alpha" markdown>
+1. They are identical techniques
+1. Tree-of-thought is simpler
+1. Tree-of-thought explores multiple reasoning branches before selecting
+1. Chain-of-thought explores more options
+</div>
+
 
 ??? success "Answer"
     **C) Tree-of-thought explores multiple reasoning branches before selecting** - Chain-of-thought follows a single reasoning path, while tree-of-thought explores multiple branches and evaluates alternatives before choosing the best approach.
@@ -100,10 +121,13 @@ Test your understanding of prompt engineering techniques and strategies.
 ### Question 8 (Analyze)
 **Why might a prompt template with placeholders be preferable to writing prompts from scratch?**
 
-- [ ] A) Templates are always cheaper
-- [ ] B) Templates require no customization
-- [x] C) Templates ensure consistency and encode best practices
-- [ ] D) Templates eliminate the need for prompt engineering
+<div class="upper-alpha" markdown>
+1. Templates are always cheaper
+1. Templates require no customization
+1. Templates ensure consistency and encode best practices
+1. Templates eliminate the need for prompt engineering
+</div>
+
 
 ??? success "Answer"
     **C) Templates ensure consistency and encode best practices** - Templates standardize effective prompt patterns, making them reusable, consistent, and incorporating lessons learned from iteration.
@@ -113,10 +137,13 @@ Test your understanding of prompt engineering techniques and strategies.
 ### Question 9 (Evaluate)
 **Which scenario would benefit MOST from self-consistency prompting?**
 
-- [ ] A) Simple factual questions
-- [ ] B) Creative writing
-- [x] C) Complex reasoning with multiple valid approaches
-- [ ] D) Generating random content
+<div class="upper-alpha" markdown>
+1. Simple factual questions
+1. Creative writing
+1. Complex reasoning with multiple valid approaches
+1. Generating random content
+</div>
+
 
 ??? success "Answer"
     **C) Complex reasoning with multiple valid approaches** - Self-consistency generates multiple reasoning paths and selects the most common answer, which is most valuable when problems have multiple solution approaches.
@@ -126,10 +153,13 @@ Test your understanding of prompt engineering techniques and strategies.
 ### Question 10 (Create)
 **Design a prompt strategy for a customer service bot that must: (1) maintain a friendly tone, (2) provide accurate product information, (3) escalate complex issues.**
 
-- [ ] A) Just use zero-shot with "be helpful"
-- [ ] B) Maximum temperature for creativity
-- [x] C) System prompt defining persona and escalation rules, few-shot examples of good responses, structured output for escalation flags
-- [ ] D) No prompt engineering needed
+<div class="upper-alpha" markdown>
+1. Just use zero-shot with "be helpful"
+1. Maximum temperature for creativity
+1. System prompt defining persona and escalation rules, few-shot examples of good responses, structured output for escalation flags
+1. No prompt engineering needed
+</div>
+
 
 ??? success "Answer"
     **C) System prompt defining persona and escalation rules, few-shot examples of good responses, structured output for escalation flags** - This combines multiple techniques: system prompt for behavior, few-shot for quality patterns, and structured output for actionable escalation.

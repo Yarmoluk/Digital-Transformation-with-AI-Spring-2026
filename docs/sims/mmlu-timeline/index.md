@@ -78,3 +78,67 @@ This updated visualization should help track the rapid advancement in AI capabil
 ## References
 
 [Data Is Beautiful Visualization](https://informationisbeautiful.net/visualizations/the-rise-of-generative-ai-large-language-models-llms-like-chatgpt/)
+
+## Self-Assessment Quiz
+
+Test your understanding of the MMLU benchmark and AI progress.
+
+<div class="upper-alpha" markdown>
+**Question 1: What does MMLU stand for?**
+
+1. Machine Model Language Understanding
+2. Massive Multitask Language Understanding
+3. Multiple Machine Learning Units
+4. Modern Model Learning Utility
+</div>
+
+??? success "Answer"
+    B) Massive Multitask Language Understanding - MMLU is a benchmark that tests AI models across 57 subjects ranging from STEM fields to humanities.
+
+<div class="upper-alpha" markdown>
+**Question 2: Approximately what MMLU score range do the best AI models achieve as of 2025?**
+
+1. 40-50%
+2. 60-70%
+3. Over 90%
+4. Under 30%
+</div>
+
+??? success "Answer"
+    C) Over 90% - Frontier models like Grok-3, GPT-4.1, and GPT-5 achieve scores above 90% on MMLU, compared to earlier models that scored in the 40-50% range.
+
+<div class="upper-alpha" markdown>
+**Question 3: What trend does the MMLU timeline demonstrate?**
+
+1. AI performance has remained constant
+2. AI performance has dramatically improved from mid-40s% to over 90% in a few years
+3. AI performance has declined
+4. Only one model has ever been tested
+</div>
+
+??? success "Answer"
+    B) AI performance has dramatically improved from mid-40s% to over 90% in a few years - The timeline shows rapid improvement in AI capabilities, with scores improving by roughly 50 percentage points in just a few years.
+
+<div class="upper-alpha" markdown>
+**Question 4: Why might direct comparison of MMLU scores between models be challenging?**
+
+1. Scores are measured in different units
+2. Different measurement methodologies and prompting techniques can affect scores
+3. MMLU tests change every day
+4. Scores are not made public
+</div>
+
+??? success "Answer"
+    B) Different measurement methodologies and prompting techniques can affect scores - Model creators may use different prompting approaches or evaluation methods, making direct comparisons difficult without standardized testing conditions.
+
+<div class="upper-alpha" markdown>
+**Question 5: What does it mean when AI models surpass average human performance on MMLU?**
+
+1. AI is generally smarter than all humans
+2. AI can now answer academic knowledge questions at college-educated human levels
+3. MMLU is no longer a valid benchmark
+4. Human education has failed
+</div>
+
+??? success "Answer"
+    B) AI can now answer academic knowledge questions at college-educated human levels - Surpassing human average performance on MMLU indicates AI can demonstrate knowledge across academic subjects comparable to educated humans, though this doesn't mean general superiority in all tasks.

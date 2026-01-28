@@ -133,3 +133,67 @@ Here are the original source references from the Metr site:
 
 - [METR: Measuring AI Ability to Complete Long Tasks](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/)
 - [METR Benchmark Results (YAML)](https://metr.org/assets/benchmark_results.yaml)
+
+## Self-Assessment Quiz
+
+Test your understanding of AI task completion doubling rates.
+
+<div class="upper-alpha" markdown>
+**Question 1: According to METR research, approximately how often does the length of tasks AI can complete autonomously double?**
+
+1. Every 2 years
+2. Every 12 months
+3. Every 7 months
+4. Every 3 months
+</div>
+
+??? success "Answer"
+    C) Every 7 months - The research shows that the length of tasks AI models can complete with 50% reliability has been doubling approximately every seven months for the past several years.
+
+<div class="upper-alpha" markdown>
+**Question 2: What does "task horizon" mean in the context of AI benchmarking?**
+
+1. How far in the future AI can make predictions
+2. The length of tasks (measured in human time) that AI can complete autonomously
+3. The maximum number of tasks AI can handle simultaneously
+4. The geographic regions where AI is deployed
+</div>
+
+??? success "Answer"
+    B) The length of tasks (measured in human time) that AI can complete autonomously - Task horizon measures how long a task takes a skilled human professional, and then tests whether AI can complete equivalent tasks with a certain reliability threshold.
+
+<div class="upper-alpha" markdown>
+**Question 3: If the 7-month doubling rate continues, what task duration might AI handle by late 2027?**
+
+1. 10 minutes
+2. 1 hour
+3. About 40 hours (1 week of human work)
+4. 1 year of human work
+</div>
+
+??? success "Answer"
+    C) About 40 hours (1 week of human work) - Based on the exponential projection starting from approximately 5 hours in late 2025, doubling every 7 months would reach approximately 40 hours by August 2027.
+
+<div class="upper-alpha" markdown>
+**Question 4: What does a 50% success rate threshold indicate in METR's measurements?**
+
+1. AI fails half the time at any task
+2. AI has a 50% chance of successfully completing tasks up to the measured horizon length
+3. Half of all AI models meet the benchmark
+4. AI uses 50% of available computing resources
+</div>
+
+??? success "Answer"
+    B) AI has a 50% chance of successfully completing tasks up to the measured horizon length - The 50% success rate is the probability threshold used to define the task horizon, meaning tasks at that duration have a coin-flip chance of successful completion.
+
+<div class="upper-alpha" markdown>
+**Question 5: What is an important caveat when interpreting these exponential AI capability trends?**
+
+1. The measurements are completely inaccurate
+2. AI may still need supervision, and these are test environments not real-world conditions
+3. The doubling rate will definitely continue forever
+4. Only OpenAI models are measured
+</div>
+
+??? success "Answer"
+    B) AI may still need supervision, and these are test environments not real-world conditions - While the trend data is valuable for planning, a 50% success rate still means significant failures, and laboratory benchmark performance may not fully translate to real-world deployment scenarios.

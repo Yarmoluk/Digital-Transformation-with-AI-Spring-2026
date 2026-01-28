@@ -114,4 +114,68 @@ The MicroSim is built using p5.js and adapts to different screen sizes by:
 
 By exploring this MicroSim, users can gain a deeper understanding of how educational content is evolving with technology and the important considerations that come with these advancements.
 
+## Self-Assessment Quiz
+
+Test your understanding of the five levels of intelligent textbooks.
+
+<div class="upper-alpha" markdown>
+**Question 1: What percentage of college textbooks remain at Level 1 (Static) according to this framework?**
+
+1. About 10%
+2. About 50%
+3. Over 90%
+4. About 25%
+</div>
+
+??? success "Answer"
+    C) Over 90% - Despite technological advances, the vast majority of college textbooks remain static with no interactive elements.
+
+<div class="upper-alpha" markdown>
+**Question 2: At which level do textbooks begin collecting student data to enable personalization?**
+
+1. Level 1 - Static
+2. Level 2 - Interactive Content
+3. Level 3 - Adaptive
+4. Level 5 - Autonomous AI
+</div>
+
+??? success "Answer"
+    C) Level 3 - Adaptive - Adaptive textbooks begin collecting student performance data to enable personalized learning pathways, raising privacy considerations.
+
+<div class="upper-alpha" markdown>
+**Question 3: What is a key feature of Level 4 (Textbooks with Chatbots)?**
+
+1. Only printed content with no digital elements
+2. LLM-powered tutoring assistants that can answer student questions
+3. Simple keyword search functionality
+4. Automatic grading only
+</div>
+
+??? success "Answer"
+    B) LLM-powered tutoring assistants that can answer student questions - Level 4 integrates conversational AI that can provide personalized tutoring and answer student queries.
+
+<div class="upper-alpha" markdown>
+**Question 4: Why does the framework describe Level 5 (Autonomous AI Textbooks) as "aspirational"?**
+
+1. Nobody wants this type of textbook
+2. It requires advanced hardware and more reliable AI that doesn't yet exist
+3. It is illegal in most countries
+4. It has already been fully implemented everywhere
+</div>
+
+??? success "Answer"
+    B) It requires advanced hardware and more reliable AI that doesn't yet exist - Level 5 represents future systems that would fully understand individual learner needs and generate customized lessons in real-time, requiring technological advances not yet achieved.
+
+<div class="upper-alpha" markdown>
+**Question 5: How do privacy concerns change across the five levels?**
+
+1. Privacy concerns remain constant at all levels
+2. Privacy concerns decrease as levels increase
+3. Privacy concerns increase significantly from Level 1 to Level 5
+4. Privacy is only a concern at Level 1
+</div>
+
+??? success "Answer"
+    C) Privacy concerns increase significantly from Level 1 to Level 5 - As textbooks become more intelligent and personalized, they collect more student data, from minimal data at Levels 1-2 to comprehensive profiling at Level 5.
+
 

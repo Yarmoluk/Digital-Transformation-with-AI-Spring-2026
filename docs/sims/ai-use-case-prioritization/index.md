@@ -110,3 +110,67 @@ Analyze the overall portfolio distribution:
 1. McFarland, K. R. (2017). *The Breakthrough Imperative*. Crown Business.
 2. Brynjolfsson, E., & McAfee, A. (2017). *Machine, Platform, Crowd*. W.W. Norton.
 3. Fountaine, T., McCarthy, B., & Saleh, T. (2019). Building the AI-Powered Organization. *Harvard Business Review*, 97(4).
+
+## Self-Assessment Quiz
+
+Test your understanding of AI use case prioritization.
+
+<div class="upper-alpha" markdown>
+**Question 1: What are the two axes used in the AI Use Case Prioritization matrix?**
+
+1. Cost and Time
+2. Business Value and Implementation Complexity
+3. Risk and Reward
+4. Technology and People
+</div>
+
+??? success "Answer"
+    B) Business Value and Implementation Complexity - The matrix plots use cases based on their potential business value (X-axis) and the complexity of implementing them (Y-axis).
+
+<div class="upper-alpha" markdown>
+**Question 2: Which quadrant represents "Quick Wins" in the prioritization matrix?**
+
+1. Low value, Low complexity
+2. Low value, High complexity
+3. High value, Low complexity
+4. High value, High complexity
+</div>
+
+??? success "Answer"
+    C) High value, Low complexity - Quick Wins are initiatives that deliver high business value with relatively low implementation complexity, making them ideal for immediate implementation.
+
+<div class="upper-alpha" markdown>
+**Question 3: What strategy is recommended for use cases in the "Avoid" quadrant?**
+
+1. Implement immediately
+2. Plan carefully with a phased approach
+3. Deprioritize or eliminate from consideration
+4. Consider if resources are available
+</div>
+
+??? success "Answer"
+    C) Deprioritize or eliminate from consideration - The "Avoid" quadrant (low value, high complexity) represents poor investments that should be deprioritized or removed from the portfolio.
+
+<div class="upper-alpha" markdown>
+**Question 4: What does bubble size represent in this visualization?**
+
+1. Number of employees needed
+2. Estimated investment amount
+3. Project duration
+4. Risk level
+</div>
+
+??? success "Answer"
+    B) Estimated investment amount - Larger bubbles indicate use cases requiring higher investment, adding a third dimension to the value-complexity analysis.
+
+<div class="upper-alpha" markdown>
+**Question 5: Why should organizations pursue "Quick Wins" before "Strategic" initiatives?**
+
+1. Quick Wins are more profitable in the long term
+2. Quick Wins build momentum, credibility, and organizational learning
+3. Strategic initiatives are always failures
+4. Quick Wins require no investment
+</div>
+
+??? success "Answer"
+    B) Quick Wins build momentum, credibility, and organizational learning - Starting with Quick Wins demonstrates AI value early, builds organizational capabilities, and creates support for tackling more complex Strategic initiatives later.

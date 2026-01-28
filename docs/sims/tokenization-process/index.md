@@ -110,3 +110,67 @@ After using this tool, students should be able to:
 1. Sennrich, R., Haddow, B., & Birch, A. (2016). Neural Machine Translation of Rare Words with Subword Units. *ACL*.
 2. OpenAI Tokenizer: https://platform.openai.com/tokenizer
 3. Hugging Face Tokenizers Library Documentation
+
+## Self-Assessment Quiz
+
+Test your understanding of the tokenization process.
+
+<div class="upper-alpha" markdown>
+**Question 1: What is tokenization in the context of language models?**
+
+1. Creating physical tokens for arcade games
+2. Converting text into smaller units (tokens) that the model can process
+3. Encrypting text for security
+4. Translating text between languages
+</div>
+
+??? success "Answer"
+    B) Converting text into smaller units (tokens) that the model can process - Tokenization breaks text into pieces (words, subwords, or characters) that are converted to numerical IDs the model can understand.
+
+<div class="upper-alpha" markdown>
+**Question 2: Approximately how many characters equal one token for English text?**
+
+1. Exactly 1 character per token
+2. About 4 characters per token on average
+3. 100 characters per token
+4. 10 words per token
+</div>
+
+??? success "Answer"
+    B) About 4 characters per token on average - A common rule of thumb is that ~4 characters equals approximately 1 token for typical English text.
+
+<div class="upper-alpha" markdown>
+**Question 3: Why does understanding tokenization matter for API cost estimation?**
+
+1. Tokenization has no cost impact
+2. LLM API pricing is typically based on the number of tokens processed
+3. Tokens are free
+4. Cost is only based on time
+</div>
+
+??? success "Answer"
+    B) LLM API pricing is typically based on the number of tokens processed - Understanding how text converts to tokens helps estimate costs and optimize prompts for efficiency.
+
+<div class="upper-alpha" markdown>
+**Question 4: What type of text typically requires more tokens than natural language?**
+
+1. Short sentences
+2. Code, non-English text, and rare words
+3. Common English words
+4. Numbers under 10
+</div>
+
+??? success "Answer"
+    B) Code, non-English text, and rare words - Code has special syntax, non-English text may use characters not well-represented in training data, and rare words may be split into multiple subword tokens.
+
+<div class="upper-alpha" markdown>
+**Question 5: What is "Byte Pair Encoding" (BPE)?**
+
+1. A method for compressing files
+2. An algorithm that iteratively merges frequent character pairs to create a tokenizer vocabulary
+3. A way to encrypt tokens
+4. A type of neural network
+</div>
+
+??? success "Answer"
+    B) An algorithm that iteratively merges frequent character pairs to create a tokenizer vocabulary - BPE builds a vocabulary by starting with individual characters and progressively merging the most common adjacent pairs, creating subword tokens.

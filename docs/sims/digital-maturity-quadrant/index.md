@@ -114,3 +114,67 @@ After using this tool, students should be able to:
 1. Westerman, G., Bonnet, D., & McAfee, A. (2014). *Leading Digital: Turning Technology into Business Transformation*. Harvard Business Review Press.
 2. MIT Sloan Center for Digital Business. Digital Maturity Framework.
 3. Kane, G. C., et al. (2015). Strategy, Not Technology, Drives Digital Transformation. *MIT Sloan Management Review*.
+
+## Self-Assessment Quiz
+
+Test your understanding of the Digital Maturity Quadrant Model.
+
+<div class="upper-alpha" markdown>
+**Question 1: What are the two dimensions used to classify organizations in the Digital Maturity model?**
+
+1. Revenue and Profit
+2. Digital Intensity and Transformation Management Intensity
+3. Technology and Marketing
+4. Size and Industry
+</div>
+
+??? success "Answer"
+    B) Digital Intensity and Transformation Management Intensity - Organizations are evaluated on their technology adoption (Digital Intensity) and their ability to manage digital change (Transformation Management Intensity).
+
+<div class="upper-alpha" markdown>
+**Question 2: Which quadrant represents "Digirati" organizations?**
+
+1. Low Digital Intensity, Low Transformation Management
+2. Low Digital Intensity, High Transformation Management
+3. High Digital Intensity, Low Transformation Management
+4. High Digital Intensity, High Transformation Management
+</div>
+
+??? success "Answer"
+    D) High Digital Intensity, High Transformation Management - Digirati are digital leaders who combine strong technology adoption with mature governance and management processes.
+
+<div class="upper-alpha" markdown>
+**Question 3: What is the primary risk for organizations in the "Fashionista" quadrant?**
+
+1. They are too slow to adopt technology
+2. They adopt technology without proper integration and governance
+3. They have no digital capabilities
+4. They focus too much on governance
+</div>
+
+??? success "Answer"
+    B) They adopt technology without proper integration and governance - Fashionistas are technology-forward but lack the management intensity to effectively integrate and govern their digital investments.
+
+<div class="upper-alpha" markdown>
+**Question 4: What strategic recommendation is appropriate for "Conservative" organizations?**
+
+1. Reduce technology investment
+2. Eliminate all governance processes
+3. Accelerate technology adoption while leveraging existing strong governance
+4. Stay in the current quadrant permanently
+</div>
+
+??? success "Answer"
+    C) Accelerate technology adoption while leveraging existing strong governance - Conservatives have strong management processes but cautious technology adoption, so they should use their governance strength to enable faster, well-managed digital investments.
+
+<div class="upper-alpha" markdown>
+**Question 5: Why might an organization choose to remain in the "Conservative" quadrant?**
+
+1. They want to fail
+2. Regulatory constraints or their competitive advantage comes from non-technology factors
+3. They have unlimited resources
+4. They don't understand technology
+</div>
+
+??? success "Answer"
+    B) Regulatory constraints or their competitive advantage comes from non-technology factors - Some industries with strict regulations or organizations whose value comes from factors other than technology may appropriately maintain a conservative digital posture.

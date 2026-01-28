@@ -274,3 +274,67 @@ After completing SWOT analysis, introduce Porter's Five Forces as the logical ne
 ## Conclusion
 
 The SWOT analysis provides a structured foundation for AI strategy development, but it's most valuable when used as a living document that evolves with your organization's AI journey. Regular updates and honest assessments will help ensure your AI strategy remains relevant and effective in a rapidly changing landscape.
+
+## Self-Assessment Quiz
+
+Test your understanding of SWOT analysis for AI strategy.
+
+<div class="upper-alpha" markdown>
+**Question 1: What do the four letters in SWOT stand for?**
+
+1. Strategy, Weakness, Opportunity, Technology
+2. Strengths, Weaknesses, Opportunities, Threats
+3. Systems, Workflows, Operations, Tactics
+4. Speed, Willpower, Organization, Timing
+</div>
+
+??? success "Answer"
+    B) Strengths, Weaknesses, Opportunities, Threats - SWOT analyzes internal factors (Strengths and Weaknesses) and external factors (Opportunities and Threats) to inform strategic planning.
+
+<div class="upper-alpha" markdown>
+**Question 2: Which SWOT quadrants represent internal factors vs. external factors?**
+
+1. All four are internal factors
+2. Strengths and Weaknesses are internal; Opportunities and Threats are external
+3. All four are external factors
+4. Strengths and Opportunities are internal; Weaknesses and Threats are external
+</div>
+
+??? success "Answer"
+    B) Strengths and Weaknesses are internal; Opportunities and Threats are external - Internal factors are things the organization controls (capabilities, resources), while external factors are market and environmental conditions.
+
+<div class="upper-alpha" markdown>
+**Question 3: What is a "Strength-Opportunity (SO) Strategy" in SWOT analysis?**
+
+1. A strategy that ignores weaknesses
+2. A strategy that leverages internal strengths to capitalize on external opportunities
+3. A strategy focused only on threats
+4. A defensive strategy to protect market share
+</div>
+
+??? success "Answer"
+    B) A strategy that leverages internal strengths to capitalize on external opportunities - SO strategies are offensive approaches that use what the organization does well to take advantage of favorable external conditions.
+
+<div class="upper-alpha" markdown>
+**Question 4: Why is SWOT analysis particularly valuable for AI strategy?**
+
+1. It was designed specifically for AI
+2. AI landscapes evolve rapidly, requiring systematic assessment of internal capabilities and external factors
+3. SWOT is only used for AI companies
+4. AI does not require strategic planning
+</div>
+
+??? success "Answer"
+    B) AI landscapes evolve rapidly, requiring systematic assessment of internal capabilities and external factors - The fast-changing nature of AI technology, regulations, and competition makes regular strategic assessment essential.
+
+<div class="upper-alpha" markdown>
+**Question 5: What is a key limitation of SWOT analysis that Porter's Five Forces can address?**
+
+1. SWOT is too detailed
+2. SWOT provides a static snapshot and lacks structured analysis of competitive industry dynamics
+3. SWOT takes too long to complete
+4. SWOT can only be used once
+</div>
+
+??? success "Answer"
+    B) SWOT provides a static snapshot and lacks structured analysis of competitive industry dynamics - While SWOT gives a useful overview, Porter's Five Forces adds deeper analysis of the competitive forces (suppliers, buyers, substitutes, new entrants, rivalry) that shape industry profitability.

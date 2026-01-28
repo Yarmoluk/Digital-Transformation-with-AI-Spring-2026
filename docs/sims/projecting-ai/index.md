@@ -262,3 +262,67 @@ max: new Date('2035-12-31').getTime()
 This MicroSim reimagines METR's task completion horizon chart with a temporal perspective, making it easy to see how AI capabilities have evolved and where they might be heading. By placing time on the horizontal axis and extending the exponential trend to 2030, it helps viewers understand both the historical trajectory and potential future of AI task completion capabilities.
 
 The 7-month doubling time, if sustained, would represent one of the fastest capability growth rates in any technology domain. Understanding this trajectory is crucial for strategic planning, risk assessment, and opportunity identification in an AI-enabled future.
+
+## Self-Assessment Quiz
+
+Test your understanding of AI capability projections.
+
+<div class="upper-alpha" markdown>
+**Question 1: What is the approximate doubling time for AI task completion capabilities according to METR research?**
+
+1. 2 years
+2. 12 months
+3. 7 months
+4. 1 month
+</div>
+
+??? success "Answer"
+    C) 7 months - The research shows AI task completion capabilities have been doubling approximately every 7 months, one of the fastest capability growth rates observed in technology.
+
+<div class="upper-alpha" markdown>
+**Question 2: If AI can handle 5-hour tasks in late 2025, what duration might be possible by early 2027 if the trend continues?**
+
+1. 6 hours
+2. 10-20 hours
+3. The same 5 hours
+4. Less than 1 hour
+</div>
+
+??? success "Answer"
+    B) 10-20 hours - With 7-month doubling, capabilities would roughly double twice in 14 months, going from 5 hours to approximately 10 hours to 20 hours by early 2027.
+
+<div class="upper-alpha" markdown>
+**Question 3: Why is the projection visualized with time on the horizontal axis?**
+
+1. It saves space on the chart
+2. It makes the temporal progression and future projections easier to understand
+3. Time axes are required by law
+4. It makes the chart more colorful
+</div>
+
+??? success "Answer"
+    B) It makes the temporal progression and future projections easier to understand - Placing time horizontally allows viewers to see historical progress and future projections in an intuitive timeline format.
+
+<div class="upper-alpha" markdown>
+**Question 4: What is an important caveat about exponential AI capability projections?**
+
+1. Exponential trends always continue forever
+2. Projections are predictions, not certainties, and may be limited by physical, economic, or other barriers
+3. The projections are guaranteed to be accurate
+4. Only positive outcomes are possible
+</div>
+
+??? success "Answer"
+    B) Projections are predictions, not certainties, and may be limited by physical, economic, or other barriers - Exponential trends don't continue indefinitely; diminishing returns, measurement challenges, and fundamental limits could slow or stop the trend.
+
+<div class="upper-alpha" markdown>
+**Question 5: How should organizations use these projections for strategic planning?**
+
+1. Ignore them because they might be wrong
+2. Plan for a range of scenarios and prepare for capabilities arriving faster than intuition suggests
+3. Wait until 2030 to start planning
+4. Assume the projections are impossible
+</div>
+
+??? success "Answer"
+    B) Plan for a range of scenarios and prepare for capabilities arriving faster than intuition suggests - Organizations should use projections to consider multiple futures and develop flexible strategies that can adapt as AI capabilities evolve.

@@ -122,3 +122,67 @@ For your lowest-scoring dimensions:
 1. Davenport, T. H., & Ronanki, R. (2018). Artificial Intelligence for the Real World. *Harvard Business Review*, 96(1).
 2. Ransbotham, S., et al. (2020). Expanding AI's Impact With Organizational Learning. *MIT Sloan Management Review*.
 3. Fountaine, T., McCarthy, B., & Saleh, T. (2019). Building the AI-Powered Organization. *Harvard Business Review*, 97(4).
+
+## Self-Assessment Quiz
+
+Test your understanding of AI strategy assessment components.
+
+<div class="upper-alpha" markdown>
+**Question 1: How many key dimensions does the AI Strategy Assessment tool evaluate?**
+
+1. Five dimensions
+2. Eight dimensions
+3. Ten dimensions
+4. Twelve dimensions
+</div>
+
+??? success "Answer"
+    C) Ten dimensions - The tool evaluates Executive Summary, Current State, Vision/Objectives, Use Case Portfolio, Technology Strategy, Organization Plan, Governance Framework, Implementation Roadmap, Investment Case, and Risk Assessment.
+
+<div class="upper-alpha" markdown>
+**Question 2: What overall assessment score indicates a strategy is "Ready for Implementation"?**
+
+1. 40% or higher
+2. 60% or higher
+3. 80% or higher
+4. 100% only
+</div>
+
+??? success "Answer"
+    C) 80% or higher - According to the assessment ratings, 80%+ indicates "Excellent - Ready for Implementation" while lower scores indicate varying degrees of needed improvement.
+
+<div class="upper-alpha" markdown>
+**Question 3: What does the radar chart visualization help users understand?**
+
+1. The geographic distribution of AI projects
+2. The visual completeness profile of a strategy across all dimensions
+3. The timeline for AI implementation
+4. The budget allocation for each project
+</div>
+
+??? success "Answer"
+    B) The visual completeness profile of a strategy across all dimensions - The radar chart shows how a strategy's shape compares to an ideal (full) radar, making gaps in coverage immediately visible.
+
+<div class="upper-alpha" markdown>
+**Question 4: Which dimension includes ethics guidelines, accountability, and risk management?**
+
+1. Technology Strategy
+2. Investment Case
+3. Governance Framework
+4. Organization Plan
+</div>
+
+??? success "Answer"
+    C) Governance Framework - The Governance Framework dimension encompasses ethics guidelines, accountability structures, and risk management approaches for AI initiatives.
+
+<div class="upper-alpha" markdown>
+**Question 5: What quality score (1-5) indicates a section that is "Comprehensive, well-supported with evidence, actionable"?**
+
+1. Score of 3
+2. Score of 4
+3. Score of 5
+4. Score of 2
+</div>
+
+??? success "Answer"
+    C) Score of 5 - A score of 5 (Excellent) indicates the section is comprehensive, well-supported with evidence, and actionable, while lower scores indicate varying degrees of completeness and quality.

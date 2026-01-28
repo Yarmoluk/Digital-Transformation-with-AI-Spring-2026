@@ -9,10 +9,13 @@ Test your understanding of digital transformation concepts and AI fundamentals.
 ### Question 1 (Remember)
 **Which term describes the conversion of analog information into digital format?**
 
-- [ ] A) Digital transformation
-- [ ] B) Digitalization
-- [x] C) Digitization
-- [ ] D) Digital maturity
+<div class="upper-alpha" markdown>
+1. Digital transformation
+1. Digitalization
+1. Digitization
+1. Digital maturity
+</div>
+
 
 ??? success "Answer"
     **C) Digitization** - Digitization is specifically the conversion of analog to digital format. Digital transformation is the broader integration of technology into business operations. Digitalization uses digital technologies to change business models.
@@ -22,10 +25,13 @@ Test your understanding of digital transformation concepts and AI fundamentals.
 ### Question 2 (Remember)
 **What percentage of organizations successfully execute their digital transformation strategies, according to research?**
 
-- [ ] A) More than 75%
-- [ ] B) About 50%
-- [x] C) Fewer than 25%
-- [ ] D) About 90%
+<div class="upper-alpha" markdown>
+1. More than 75%
+1. About 50%
+1. Fewer than 25%
+1. About 90%
+</div>
+
 
 ??? success "Answer"
     **C) Fewer than 25%** - Research consistently shows that fewer than one in four organizations successfully execute their digital transformation strategies, highlighting the difficulty of transformation initiatives.
@@ -35,10 +41,13 @@ Test your understanding of digital transformation concepts and AI fundamentals.
 ### Question 3 (Understand)
 **What is the relationship between digitization, digitalization, and digital transformation?**
 
-- [ ] A) They are interchangeable terms
-- [ ] B) Digital transformation comes before digitization
-- [x] C) They represent a progression from basic to strategic change
-- [ ] D) Digitalization is the broadest term
+<div class="upper-alpha" markdown>
+1. They are interchangeable terms
+1. Digital transformation comes before digitization
+1. They represent a progression from basic to strategic change
+1. Digitalization is the broadest term
+</div>
+
 
 ??? success "Answer"
     **C) They represent a progression from basic to strategic change** - Digitization (converting to digital) → Digitalization (using digital to change processes) → Digital transformation (fundamental business reinvention through technology).
@@ -48,10 +57,13 @@ Test your understanding of digital transformation concepts and AI fundamentals.
 ### Question 4 (Understand)
 **What distinguishes Digital Transformation 2.0 from earlier digital transformation initiatives?**
 
-- [ ] A) Focus on cloud migration
-- [ ] B) Emphasis on data infrastructure
-- [x] C) Integration of generative AI capabilities
-- [ ] D) Adoption of mobile technologies
+<div class="upper-alpha" markdown>
+1. Focus on cloud migration
+1. Emphasis on data infrastructure
+1. Integration of generative AI capabilities
+1. Adoption of mobile technologies
+</div>
+
 
 ??? success "Answer"
     **C) Integration of generative AI capabilities** - Digital Transformation 2.0 represents the convergence of mature digital infrastructure with generative AI technologies like LLMs and multimodal AI.
@@ -61,10 +73,13 @@ Test your understanding of digital transformation concepts and AI fundamentals.
 ### Question 5 (Apply)
 **An organization wants to assess its readiness for AI adoption. Which framework would be most appropriate?**
 
-- [ ] A) Prompt engineering guidelines
-- [x] B) Digital capability model
-- [ ] C) API documentation
-- [ ] D) Token counting methodology
+<div class="upper-alpha" markdown>
+1. Prompt engineering guidelines
+1. Digital capability model
+1. API documentation
+1. Token counting methodology
+</div>
+
 
 ??? success "Answer"
     **B) Digital capability model** - Digital capability models and maturity assessments help organizations evaluate their readiness for AI adoption by examining their current digital competencies.
@@ -74,10 +89,13 @@ Test your understanding of digital transformation concepts and AI fundamentals.
 ### Question 6 (Apply)
 **A company achieved digital maturity and now delivers products twice as fast. This benefit is best described as:**
 
-- [ ] A) Cost optimization
-- [x] B) Competitive advantage
-- [ ] C) Digitization
-- [ ] D) AI governance
+<div class="upper-alpha" markdown>
+1. Cost optimization
+1. Competitive advantage
+1. Digitization
+1. AI governance
+</div>
+
 
 ??? success "Answer"
     **B) Competitive advantage** - Delivering products faster than competitors represents a competitive advantage gained through digital transformation.
@@ -87,10 +105,13 @@ Test your understanding of digital transformation concepts and AI fundamentals.
 ### Question 7 (Analyze)
 **Compare the primary focus of machine learning versus generative AI:**
 
-- [ ] A) Both focus on generating new content
-- [ ] B) Both focus on classification tasks
-- [x] C) ML focuses on patterns/predictions; Gen AI focuses on content creation
-- [ ] D) Gen AI is a prerequisite for ML
+<div class="upper-alpha" markdown>
+1. Both focus on generating new content
+1. Both focus on classification tasks
+1. ML focuses on patterns/predictions; Gen AI focuses on content creation
+1. Gen AI is a prerequisite for ML
+</div>
+
 
 ??? success "Answer"
     **C) ML focuses on patterns/predictions; Gen AI focuses on content creation** - Machine learning identifies patterns to make predictions, while generative AI creates new content (text, images, etc.) based on learned patterns.
@@ -100,10 +121,13 @@ Test your understanding of digital transformation concepts and AI fundamentals.
 ### Question 8 (Analyze)
 **Which factor most differentiates successful digital transformation initiatives from unsuccessful ones?**
 
-- [ ] A) Budget size
-- [ ] B) Technology choices
-- [x] C) Embedding AI-driven capabilities into operations
-- [ ] D) Number of employees trained
+<div class="upper-alpha" markdown>
+1. Budget size
+1. Technology choices
+1. Embedding AI-driven capabilities into operations
+1. Number of employees trained
+</div>
+
 
 ??? success "Answer"
     **C) Embedding AI-driven capabilities into operations** - Research shows the key differentiator is the ability to embed AI-driven capabilities into the fabric of business operations, not just technology adoption.
@@ -113,10 +137,13 @@ Test your understanding of digital transformation concepts and AI fundamentals.
 ### Question 9 (Evaluate)
 **An organization is debating whether to pursue incremental digital improvements or a full AI transformation. Which approach is most appropriate for an organization with low digital maturity?**
 
-- [x] A) Start with foundational digitalization before AI
-- [ ] B) Jump directly to advanced AI implementation
-- [ ] C) Avoid AI entirely
-- [ ] D) Outsource all technology decisions
+<div class="upper-alpha" markdown>
+1. Start with foundational digitalization before AI
+1. Jump directly to advanced AI implementation
+1. Avoid AI entirely
+1. Outsource all technology decisions
+</div>
+
 
 ??? success "Answer"
     **A) Start with foundational digitalization before AI** - Organizations need digital foundations (data infrastructure, digital processes) before successfully implementing advanced AI. Jumping to AI without foundations often leads to failure.
@@ -126,10 +153,13 @@ Test your understanding of digital transformation concepts and AI fundamentals.
 ### Question 10 (Create)
 **You are designing a digital transformation roadmap for a traditional manufacturing company. Which sequence represents the best approach?**
 
-- [ ] A) Deploy AI chatbots → Assess maturity → Train employees
-- [ ] B) Train employees → Deploy AI → Assess results
-- [x] C) Assess maturity → Identify use cases → Build capabilities → Scale AI
-- [ ] D) Scale AI → Identify use cases → Assess maturity
+<div class="upper-alpha" markdown>
+1. Deploy AI chatbots → Assess maturity → Train employees
+1. Train employees → Deploy AI → Assess results
+1. Assess maturity → Identify use cases → Build capabilities → Scale AI
+1. Scale AI → Identify use cases → Assess maturity
+</div>
+
 
 ??? success "Answer"
     **C) Assess maturity → Identify use cases → Build capabilities → Scale AI** - Successful transformation starts with understanding current state, identifying valuable applications, building necessary capabilities, then scaling proven solutions.

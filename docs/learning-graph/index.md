@@ -1,5 +1,7 @@
 # Learning Graph
 
+[View the Learning Graph](../sims/learning-graph/view-graph.html)
+
 The learning graph is a directed acyclic graph (DAG) that maps the relationships between 200 concepts in the **SEIS 666: Digital Transformation 2.0 with Generative AI** course.
 
 ## Graph Statistics

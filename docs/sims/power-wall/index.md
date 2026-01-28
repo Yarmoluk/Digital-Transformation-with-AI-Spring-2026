@@ -70,3 +70,67 @@ The visualization uses p5.js with the following technical approaches:
 -   **Scale Toggle**: Button to switch between linear and logarithmic scales
 
 This visualization complements the Moore's Law transistor count visualization by showing how another aspect of CPU performance (clock speed) faced fundamental physical limitations that transistor counts did not, illustrating why the industry shifted to multi-core designs as the primary way to improve performance.
+
+## Self-Assessment Quiz
+
+Test your understanding of the Power Wall phenomenon in CPU development.
+
+<div class="upper-alpha" markdown>
+**Question 1: What was the "Power Wall" that CPUs encountered around 2004?**
+
+1. A physical wall built around data centers
+2. Thermal and power consumption limits that prevented further increases in clock speed
+3. A legal barrier to CPU manufacturing
+4. A marketing campaign limitation
+</div>
+
+??? success "Answer"
+    B) Thermal and power consumption limits that prevented further increases in clock speed - Higher clock speeds generate more heat, and by 2004, CPUs like the Pentium 4 Prescott were producing so much heat that further frequency increases became impractical.
+
+<div class="upper-alpha" markdown>
+**Question 2: How did the CPU industry respond to hitting the Power Wall?**
+
+1. They stopped making CPUs
+2. They shifted focus from higher clock speeds to multi-core processors
+3. They made clock speeds even higher
+4. They returned to vacuum tube technology
+</div>
+
+??? success "Answer"
+    B) They shifted focus from higher clock speeds to multi-core processors - Instead of faster single cores, manufacturers added multiple cores to increase total processing power while keeping each core at manageable heat levels.
+
+<div class="upper-alpha" markdown>
+**Question 3: What trend characterized CPU clock speeds from 2000-2004?**
+
+1. Steady decline in speeds
+2. Rapid increase from 1.5 GHz to 3.4 GHz (the "clock speed race" era)
+3. No change in clock speeds
+4. Speeds oscillated randomly
+</div>
+
+??? success "Answer"
+    B) Rapid increase from 1.5 GHz to 3.4 GHz (the "clock speed race" era) - This period saw intense competition to reach higher clock speeds, with both Intel and AMD pushing frequencies higher before thermal limits intervened.
+
+<div class="upper-alpha" markdown>
+**Question 4: Why is understanding the Power Wall relevant to AI strategy?**
+
+1. It has no relevance to AI
+2. It shows how physical limits can redirect technology development, similar to potential AI limits
+3. It only affects game consoles
+4. AI does not use processors
+</div>
+
+??? success "Answer"
+    B) It shows how physical limits can redirect technology development, similar to potential AI limits - The Power Wall illustrates how exponential trends can hit fundamental barriers, causing technology to evolve in new directions rather than continuing on the same path.
+
+<div class="upper-alpha" markdown>
+**Question 5: What recent development has allowed clock speeds to rise again after the Power Wall era?**
+
+1. Magic
+2. Advanced manufacturing processes (smaller nanometer nodes) that improve power efficiency
+3. Clock speeds have not risen since 2004
+4. Removing all cooling systems
+</div>
+
+??? success "Answer"
+    B) Advanced manufacturing processes (smaller nanometer nodes) that improve power efficiency - Newer fabrication processes at 7nm, 5nm, and smaller have enabled modest clock speed increases by improving transistor efficiency and reducing power consumption.

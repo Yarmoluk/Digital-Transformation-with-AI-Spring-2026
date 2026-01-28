@@ -115,3 +115,67 @@ After using this tool, students should be able to:
 1. Mikolov, T., et al. (2013). Efficient Estimation of Word Representations in Vector Space. *ICLR*.
 2. Pennington, J., Socher, R., & Manning, C. (2014). GloVe: Global Vectors for Word Representation. *EMNLP*.
 3. Reimers, N., & Gurevych, I. (2019). Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. *EMNLP*.
+
+## Self-Assessment Quiz
+
+Test your understanding of vector similarity and word embeddings.
+
+<div class="upper-alpha" markdown>
+**Question 1: What is a word embedding?**
+
+1. A physical object embedded in text
+2. A dense numerical vector that represents the meaning of a word
+3. A type of font style
+4. A grammar checking tool
+</div>
+
+??? success "Answer"
+    B) A dense numerical vector that represents the meaning of a word - Word embeddings convert words into multi-dimensional vectors where semantic relationships are preserved as geometric relationships.
+
+<div class="upper-alpha" markdown>
+**Question 2: What does cosine similarity measure?**
+
+1. The physical distance between two objects
+2. The angle between two vectors, indicating how similar their directions are
+3. The size of two vectors
+4. The color difference between vectors
+</div>
+
+??? success "Answer"
+    B) The angle between two vectors, indicating how similar their directions are - Cosine similarity measures the cosine of the angle between vectors, with values closer to 1 indicating more similar meanings.
+
+<div class="upper-alpha" markdown>
+**Question 3: In a well-trained embedding space, what happens to words with similar meanings?**
+
+1. They are placed far apart
+2. They cluster together in the vector space
+3. They are deleted
+4. They become identical
+</div>
+
+??? success "Answer"
+    B) They cluster together in the vector space - Words with similar meanings (like "car" and "automobile") are positioned near each other in the embedding space.
+
+<div class="upper-alpha" markdown>
+**Question 4: Why does semantic search outperform keyword matching?**
+
+1. Semantic search is always faster
+2. Semantic search finds conceptually similar content even without exact word matches
+3. Keyword matching is illegal
+4. Semantic search uses less computing power
+</div>
+
+??? success "Answer"
+    B) Semantic search finds conceptually similar content even without exact word matches - Semantic search using embeddings can find documents about "automobiles" when searching for "cars" because it understands meaning, not just word presence.
+
+<div class="upper-alpha" markdown>
+**Question 5: How are vector embeddings used in RAG (Retrieval Augmented Generation) systems?**
+
+1. They are not used in RAG
+2. They enable finding relevant document chunks based on semantic similarity to user queries
+3. They replace the language model
+4. They generate random content
+</div>
+
+??? success "Answer"
+    B) They enable finding relevant document chunks based on semantic similarity to user queries - RAG systems embed both documents and queries into the same vector space, then retrieve chunks with high similarity to provide relevant context to the LLM.

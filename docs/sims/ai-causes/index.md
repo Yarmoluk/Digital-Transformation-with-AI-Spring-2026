@@ -447,4 +447,68 @@ Each participant commits to specific actions they will take within the next two 
 
 This lesson plan provides a comprehensive framework for understanding and applying the AI acceleration feedback loop to organizational strategy. The interactive and hands-on approach ensures participants not only understand the concepts but can immediately apply them to their strategic planning processes.
 
+## Self-Assessment Quiz
+
+Test your understanding of AI acceleration feedback loops.
+
+<div class="upper-alpha" markdown>
+**Question 1: What are the four key components shown in the AI Acceleration feedback loop diagram?**
+
+1. Hardware, Software, Users, and Profits
+2. Training Data, New Algorithms, Better Hardware, and Better AI
+3. Input, Processing, Output, and Storage
+4. Design, Development, Testing, and Deployment
+</div>
+
+??? success "Answer"
+    B) Training Data, New Algorithms, Better Hardware, and Better AI - These four components form a causal loop where improvements in each area drive improvements in the others, creating a positive reinforcement cycle.
+
+<div class="upper-alpha" markdown>
+**Question 2: What type of feedback loop is illustrated in the AI Causes diagram?**
+
+1. Negative feedback loop that stabilizes the system
+2. Positive reinforcement loop that accelerates improvement
+3. Linear progression with no feedback
+4. Random variation with no pattern
+</div>
+
+??? success "Answer"
+    B) Positive reinforcement loop that accelerates improvement - The diagram shows how each component reinforces the others, creating exponential rather than linear improvement in AI capabilities.
+
+<div class="upper-alpha" markdown>
+**Question 3: How does "Better AI" contribute back to the acceleration cycle?**
+
+1. It only benefits end users and does not affect the cycle
+2. It helps generate more training data, discover new algorithms, and design better hardware
+3. It stops the cycle once AI reaches a certain level
+4. It only affects the hardware component
+</div>
+
+??? success "Answer"
+    B) It helps generate more training data, discover new algorithms, and design better hardware - Better AI systems can be used to create synthetic training data, assist in algorithm research, and even help design more efficient AI-specific hardware, completing the feedback loop.
+
+<div class="upper-alpha" markdown>
+**Question 4: Which strategic framework does this visualization represent?**
+
+1. SWOT Analysis
+2. Porter's Five Forces
+3. Systems Thinking / Causal Loop Diagram
+4. Technology Adoption Lifecycle
+</div>
+
+??? success "Answer"
+    C) Systems Thinking / Causal Loop Diagram - This is a Causal Loop Diagram (CLD) from Systems Thinking that shows how different components interact and influence each other over time.
+
+<div class="upper-alpha" markdown>
+**Question 5: What is the strategic implication of understanding this feedback loop for organizations?**
+
+1. Organizations should wait until AI development slows down
+2. Organizations can identify leverage points to participate in or benefit from AI acceleration
+3. Organizations should ignore AI trends entirely
+4. Organizations must only focus on hardware investments
+</div>
+
+??? success "Answer"
+    B) Organizations can identify leverage points to participate in or benefit from AI acceleration - Understanding the feedback loop helps organizations identify where they can most effectively invest resources and participate in the AI ecosystem to gain competitive advantage.
+
 

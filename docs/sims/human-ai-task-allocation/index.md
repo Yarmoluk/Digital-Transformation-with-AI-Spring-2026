@@ -108,3 +108,67 @@ Keep the scenario fixed but vary the complexity slider from 1 to 10. Observe:
 1. Brynjolfsson, E., & McAfee, A. (2017). *Machine, Platform, Crowd: Harnessing Our Digital Future*. W.W. Norton.
 2. Daugherty, P. R., & Wilson, H. J. (2018). *Human + Machine: Reimagining Work in the Age of AI*. Harvard Business Review Press.
 3. Raisch, S., & Krakowski, S. (2021). Artificial Intelligence and Management: The Automation-Augmentation Paradox. *Academy of Management Review*, 46(1).
+
+## Self-Assessment Quiz
+
+Test your understanding of human-AI task allocation principles.
+
+<div class="upper-alpha" markdown>
+**Question 1: According to the simulation's allocation logic, which complexity level tasks are best suited for AI-only processing?**
+
+1. High complexity (8-10)
+2. Medium complexity (4-7)
+3. Low complexity (1-3)
+4. All tasks regardless of complexity
+</div>
+
+??? success "Answer"
+    C) Low complexity (1-3) - Simple, routine tasks with clear rules and low ambiguity are efficiently handled by AI alone, with high accuracy and low cost.
+
+<div class="upper-alpha" markdown>
+**Question 2: What type of tasks benefit most from collaborative human-AI processing?**
+
+1. Very simple routine tasks
+2. Medium complexity tasks that benefit from both human judgment and AI efficiency
+3. Tasks that require no thinking
+4. Tasks that cannot be defined
+</div>
+
+??? success "Answer"
+    B) Medium complexity tasks that benefit from both human judgment and AI efficiency - Collaborative allocation leverages AI strengths (speed, consistency) combined with human strengths (judgment, context awareness) for optimal results.
+
+<div class="upper-alpha" markdown>
+**Question 3: Why are high-complexity tasks typically allocated to humans in this model?**
+
+1. AI cannot process any complex information
+2. These tasks require judgment, expertise, and handling of ambiguity that humans excel at
+3. High-complexity tasks are always faster for humans
+4. There is no reason; it is random allocation
+</div>
+
+??? success "Answer"
+    B) These tasks require judgment, expertise, and handling of ambiguity that humans excel at - Complex tasks often involve nuanced decision-making, ethical considerations, and handling exceptions that require human cognitive capabilities.
+
+<div class="upper-alpha" markdown>
+**Question 4: What is the main trade-off organizations face when allocating tasks between humans and AI?**
+
+1. Speed vs. color preferences
+2. Quality vs. cost vs. throughput
+3. Building size vs. employee count
+4. Marketing vs. sales
+</div>
+
+??? success "Answer"
+    B) Quality vs. cost vs. throughput - Organizations must balance achieving high quality outcomes, controlling costs, and processing tasks efficiently when designing human-AI workflows.
+
+<div class="upper-alpha" markdown>
+**Question 5: How does the simulation help organizations design better workflows?**
+
+1. By automatically firing employees
+2. By allowing experimentation with different allocation strategies to observe outcomes
+3. By eliminating all human work
+4. By making all decisions random
+</div>
+
+??? success "Answer"
+    B) By allowing experimentation with different allocation strategies to observe outcomes - The simulator enables safe experimentation to understand how different task rates, complexity levels, and allocation rules affect key metrics before implementing changes in real workflows.

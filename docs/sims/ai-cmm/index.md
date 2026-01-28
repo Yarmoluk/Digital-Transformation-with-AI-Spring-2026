@@ -482,3 +482,67 @@ By the conclusion of this session, the committee should have:
 - Created a framework for ongoing strategic monitoring and adjustment
 
 This lesson plan transforms the AI Capability Maturity Model from an informational tool into a practical framework for strategic decision-making and organizational development.
+
+## Self-Assessment Quiz
+
+Test your understanding of the AI Capability Maturity Model.
+
+<div class="upper-alpha" markdown>
+**Question 1: How many levels are in the AI Capability Maturity Model?**
+
+1. Three levels
+2. Four levels
+3. Five levels
+4. Seven levels
+</div>
+
+??? success "Answer"
+    C) Five levels - The AI CMM includes five levels: Ad Hoc (Level 1), Experimental (Level 2), Systematic (Level 3), Strategic (Level 4), and Transformative (Level 5).
+
+<div class="upper-alpha" markdown>
+**Question 2: At which maturity level does an organization typically establish a dedicated AI team or Center of Excellence?**
+
+1. Level 1 - Ad Hoc
+2. Level 2 - Experimental
+3. Level 3 - Systematic
+4. Level 5 - Transformative
+</div>
+
+??? success "Answer"
+    C) Level 3 - Systematic - At this level, organizations move from scattered experiments to coordinated AI strategy with dedicated teams, governance frameworks, and measurable business impact from AI initiatives.
+
+<div class="upper-alpha" markdown>
+**Question 3: What characterizes an organization at the "Transformative" (Level 5) maturity stage?**
+
+1. Basic chatbots handle simple customer inquiries
+2. AI is fundamental to the organization's business model and competitive advantage
+3. Small-scale pilots and growing AI awareness
+4. Scattered, experimental AI efforts with no formal strategy
+</div>
+
+??? success "Answer"
+    B) AI is fundamental to the organization's business model and competitive advantage - At Level 5, AI is core to organizational identity, drives entirely new revenue streams, and the organization is seen as an industry leader in AI innovation.
+
+<div class="upper-alpha" markdown>
+**Question 4: What is a key transition indicator from Level 2 (Experimental) to Level 3 (Systematic)?**
+
+1. First AI pilot project launched
+2. Formation of dedicated AI team and multiple AI projects in production
+3. AI enables new business models
+4. Products learn and improve automatically
+</div>
+
+??? success "Answer"
+    B) Formation of dedicated AI team and multiple AI projects in production - Moving from Experimental to Systematic requires centralizing AI expertise and demonstrating measurable business impact across multiple projects.
+
+<div class="upper-alpha" markdown>
+**Question 5: Why might organizations overestimate their AI maturity level during self-assessment?**
+
+1. The CMM framework is too simple to use
+2. They confuse future plans with current capabilities
+3. AI maturity is impossible to measure
+4. The five levels are not clearly defined
+</div>
+
+??? success "Answer"
+    B) They confuse future plans with current capabilities - A common challenge is distinguishing between aspirational goals and actual current state, leading organizations to rate themselves higher than warranted by objective evidence.

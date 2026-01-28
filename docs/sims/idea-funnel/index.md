@@ -264,5 +264,67 @@ Have participants work through each stage systematically:
 
 Teams should reconvene after initial exploration to discuss these questions and develop action plans for engagement with the GenAI CoE process. Consider scheduling follow-up sessions to review actual submissions and share early experiences with the process.
 
-## Review Quiz
+## Self-Assessment Quiz
+
+Test your understanding of the GenAI Center of Excellence Idea Funnel.
+
+<div class="upper-alpha" markdown>
+**Question 1: How many stages are in the GenAI CoE Idea Funnel process?**
+
+1. Three stages
+2. Five stages
+3. Seven stages
+4. Ten stages
+</div>
+
+??? success "Answer"
+    C) Seven stages - The funnel includes: AI Training, Idea Submission, Expert Review, Scoring & Categorization, Monthly Selection, Development, and Go Live.
+
+<div class="upper-alpha" markdown>
+**Question 2: Why does the funnel narrow from top to bottom?**
+
+1. Design aesthetics only
+2. Ideas are filtered for quality and feasibility at each stage
+3. There are fewer employees at lower levels
+4. The infographic had to fit on the page
+</div>
+
+??? success "Answer"
+    B) Ideas are filtered for quality and feasibility at each stage - The narrowing shape represents how many initial ideas are submitted, but only those passing quality and feasibility assessments move forward to development and deployment.
+
+<div class="upper-alpha" markdown>
+**Question 3: What is the purpose of requiring AI training before idea submission?**
+
+1. To reduce the total number of ideas
+2. To help employees generate more feasible and well-informed AI ideas
+3. To create busy work for employees
+4. To filter out senior employees
+</div>
+
+??? success "Answer"
+    B) To help employees generate more feasible and well-informed AI ideas - AI literacy training helps employees understand what AI can and cannot do, leading to higher quality idea submissions that are more likely to succeed.
+
+<div class="upper-alpha" markdown>
+**Question 4: Approximately how many ideas are typically selected for development each month?**
+
+1. All submitted ideas
+2. 2-5 ideas
+3. 50-100 ideas
+4. Only 1 idea per year
+</div>
+
+??? success "Answer"
+    B) 2-5 ideas - The monthly selection process chooses a small number of high-priority ideas for development based on strategic alignment, feasibility, and available resources.
+
+<div class="upper-alpha" markdown>
+**Question 5: What happens to a good idea that isn't selected for development in a given month?**
+
+1. It is permanently rejected
+2. It may remain in the pipeline for future consideration
+3. The submitter is penalized
+4. It is automatically implemented without review
+</div>
+
+??? success "Answer"
+    B) It may remain in the pipeline for future consideration - Good ideas that aren't selected immediately remain in the pipeline and may be selected in future months as priorities, resources, or strategic alignment change.
 

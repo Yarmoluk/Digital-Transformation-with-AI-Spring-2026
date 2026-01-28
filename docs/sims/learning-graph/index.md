@@ -111,3 +111,67 @@ The graph data is stored in `tracking-ai.json` and contains:
 - **16 concept categories** for organization
 
 This visualization was generated using the vis-network JavaScript library.
+
+## Self-Assessment Quiz
+
+Test your understanding of learning graphs and concept dependencies.
+
+<div class="upper-alpha" markdown>
+**Question 1: What do the nodes (circles) represent in the learning graph?**
+
+1. Individual students
+2. Course concepts that need to be learned
+3. Test questions
+4. Chapter numbers
+</div>
+
+??? success "Answer"
+    B) Course concepts that need to be learned - Each node represents a specific concept covered in the course, such as "Machine Learning," "Neural Networks," or "Transformers."
+
+<div class="upper-alpha" markdown>
+**Question 2: What do the arrows (edges) between nodes indicate?**
+
+1. The order in which concepts were invented
+2. Prerequisite relationships showing which concepts should be learned first
+3. Which concepts are most popular
+4. Random connections for visual appeal
+</div>
+
+??? success "Answer"
+    B) Prerequisite relationships showing which concepts should be learned first - An arrow from Concept A to Concept B means A should be understood before learning B, indicating a dependency relationship.
+
+<div class="upper-alpha" markdown>
+**Question 3: Why are nodes color-coded in the learning graph?**
+
+1. To make the graph more colorful
+2. To group concepts by category or taxonomy for easy identification
+3. To show which concepts are easiest
+4. Colors are assigned randomly
+</div>
+
+??? success "Answer"
+    B) To group concepts by category or taxonomy for easy identification - Color coding helps users quickly identify related concepts, such as foundational concepts (red), AI architectures (gold), or ethical considerations (black).
+
+<div class="upper-alpha" markdown>
+**Question 4: How can a learning graph help students plan their studies?**
+
+1. It tells them exactly how long to study each topic
+2. It shows logical learning paths by following prerequisite arrows
+3. It replaces the need to read textbooks
+4. It automatically grades their assignments
+</div>
+
+??? success "Answer"
+    B) It shows logical learning paths by following prerequisite arrows - By following the directed edges, students can identify which foundational concepts to learn first and trace paths to more advanced topics they want to master.
+
+<div class="upper-alpha" markdown>
+**Question 5: What does filtering by category allow users to do?**
+
+1. Delete concepts permanently
+2. Focus on specific areas of interest while hiding unrelated concepts
+3. Change the course curriculum
+4. Add new concepts to the course
+</div>
+
+??? success "Answer"
+    B) Focus on specific areas of interest while hiding unrelated concepts - Category filtering allows users to simplify the view by showing only relevant concept groups, making it easier to explore specific learning paths or topic areas.

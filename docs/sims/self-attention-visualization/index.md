@@ -104,3 +104,67 @@ After using this tool, students should be able to:
 1. Vaswani, A., et al. (2017). Attention Is All You Need. *NeurIPS*.
 2. Clark, K., et al. (2019). What Does BERT Look At? *ACL Workshop BlackboxNLP*.
 3. Vig, J. (2019). A Multiscale Visualization of Attention in the Transformer Model. *ACL Demo*.
+
+## Self-Assessment Quiz
+
+Test your understanding of the self-attention mechanism.
+
+<div class="upper-alpha" markdown>
+**Question 1: What is the primary purpose of self-attention in transformer models?**
+
+1. To reduce the size of the model
+2. To capture relationships and context between all tokens in a sequence
+3. To make the model run faster
+4. To save memory during training
+</div>
+
+??? success "Answer"
+    B) To capture relationships and context between all tokens in a sequence - Self-attention allows each token to "attend to" all other tokens, learning which words are most relevant for understanding each position in the text.
+
+<div class="upper-alpha" markdown>
+**Question 2: In the attention matrix visualization, what do the rows and columns represent?**
+
+1. Rows are inputs, columns are outputs
+2. Rows are the "from" tokens (doing the attending), columns are the "to" tokens (being attended)
+3. Rows are layers, columns are neurons
+4. Rows are words, columns are letters
+</div>
+
+??? success "Answer"
+    B) Rows are the "from" tokens (doing the attending), columns are the "to" tokens (being attended) - Each cell shows how much attention one token pays to another, with darker colors indicating stronger attention.
+
+<div class="upper-alpha" markdown>
+**Question 3: What are the three learned projections used in self-attention?**
+
+1. Input, Output, and Hidden
+2. Query (Q), Key (K), and Value (V)
+3. Forward, Backward, and Lateral
+4. Beginning, Middle, and End
+</div>
+
+??? success "Answer"
+    B) Query (Q), Key (K), and Value (V) - Each token is projected into Query ("what am I looking for?"), Key ("what do I contain?"), and Value ("what information do I provide?") representations.
+
+<div class="upper-alpha" markdown>
+**Question 4: Why does the pronoun "it" typically show high attention to its referent (like "cat" in "The cat sat because it was tired")?**
+
+1. Random chance
+2. The model needs to understand what "it" refers to in order to generate contextually appropriate text
+3. Pronouns always attend to the first noun
+4. Attention is alphabetical
+</div>
+
+??? success "Answer"
+    B) The model needs to understand what "it" refers to in order to generate contextually appropriate text - Self-attention learns to connect pronouns with their referents because this relationship is crucial for understanding and generating coherent language.
+
+<div class="upper-alpha" markdown>
+**Question 5: Why is self-attention considered a breakthrough for processing sequences?**
+
+1. It is cheaper than previous methods
+2. It allows direct connections between any positions, solving the long-range dependency problem
+3. It requires less training data
+4. It only works on English text
+</div>
+
+??? success "Answer"
+    B) It allows direct connections between any positions, solving the long-range dependency problem - Unlike recurrent networks that must pass information step-by-step, self-attention creates direct connections between all positions, enabling effective modeling of relationships across long sequences.

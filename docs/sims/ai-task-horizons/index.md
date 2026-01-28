@@ -190,3 +190,67 @@ This visualization is useful for:
 This MicroSim replicates the interactive chart from METR's research on AI task-completion capabilities. It demonstrates the exponential growth trend in AI systems' ability to handle longer, more complex tasks over time, with a doubling period of approximately 7 months.
 
 The visualization helps students and researchers understand both current AI capabilities and the rapid pace of improvement in this critical dimension of AI performance.
+
+## Self-Assessment Quiz
+
+Test your understanding of AI task completion time horizons.
+
+<div class="upper-alpha" markdown>
+**Question 1: What does "task horizon" measure in the context of AI performance?**
+
+1. How far into the future AI can see
+2. The length of tasks AI can complete autonomously with a specified success rate
+3. The maximum number of users AI can serve
+4. The geographical reach of AI systems
+</div>
+
+??? success "Answer"
+    B) The length of tasks AI can complete autonomously with a specified success rate - Task horizon indicates how long (in human work time) a task can be while still having a specified probability of successful AI completion.
+
+<div class="upper-alpha" markdown>
+**Question 2: What is the difference between "frontier" and "non-frontier" models in this visualization?**
+
+1. Frontier models are older; non-frontier are newer
+2. Frontier models represent state-of-the-art at their release; non-frontier are other capable models
+3. Frontier models work on simple tasks; non-frontier on complex tasks
+4. There is no difference; it's just random categorization
+</div>
+
+??? success "Answer"
+    B) Frontier models represent state-of-the-art at their release; non-frontier are other capable models - Frontier models (shown in green) were the most capable models available at their time of release, while non-frontier models (gray) are other capable but not leading-edge models.
+
+<div class="upper-alpha" markdown>
+**Question 3: Why is the logarithmic scale option useful for viewing this data?**
+
+1. It makes the chart more colorful
+2. It better visualizes exponential growth patterns across a wide range of values
+3. It is required by scientific standards
+4. It hides poor-performing models
+</div>
+
+??? success "Answer"
+    B) It better visualizes exponential growth patterns across a wide range of values - The log scale compresses the range to show the consistent doubling pattern and allows comparison of models that vary by orders of magnitude in capability.
+
+<div class="upper-alpha" markdown>
+**Question 4: What does the gap between 50% and 80% success metrics indicate about a model?**
+
+1. The model is broken
+2. The model's consistency and reliability across different task lengths
+3. The model's cost difference
+4. The model's age
+</div>
+
+??? success "Answer"
+    B) The model's consistency and reliability across different task lengths - A large gap indicates the model is less consistent, while a smaller gap suggests more reliable performance across the capability range.
+
+<div class="upper-alpha" markdown>
+**Question 5: Based on the trend data, what type of tasks might AI reliably handle by 2027-2028?**
+
+1. Only simple 5-minute tasks
+2. Complex multi-day to week-long tasks
+3. Tasks requiring physical labor
+4. Tasks that have not been invented yet
+</div>
+
+??? success "Answer"
+    B) Complex multi-day to week-long tasks - If the 7-month doubling trend continues, projections suggest AI could handle tasks equivalent to multiple days or even weeks of human work by 2027-2028.

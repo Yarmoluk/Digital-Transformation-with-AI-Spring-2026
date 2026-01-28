@@ -65,3 +65,67 @@ hide:
   article:
 
   [Autoregressive (AR) Language Modeling](https://tonyjesuthasan.medium.com/autoregressive-ar-language-modelling-c9fe5c20aa6e) on Medium.com by Tony Jesuthasan published on Jul 31, 2021
+
+## Self-Assessment Quiz
+
+Test your understanding of autoregressive language models.
+
+<div class="upper-alpha" markdown>
+**Question 1: What does "autoregressive" mean in the context of language models?**
+
+1. The model automatically registers new users
+2. The model predicts each token based on the previous tokens it has generated
+3. The model only processes text once
+4. The model corrects its own grammar
+</div>
+
+??? success "Answer"
+    B) The model predicts each token based on the previous tokens it has generated - Autoregressive models generate text one token at a time, using the previously generated tokens as context for predicting the next token.
+
+<div class="upper-alpha" markdown>
+**Question 2: What does the "context window" represent in the animation?**
+
+1. A graphical user interface window
+2. The set of previous tokens the model considers when predicting the next token
+3. The screen size of the display
+4. The time limit for generating text
+</div>
+
+??? success "Answer"
+    B) The set of previous tokens the model considers when predicting the next token - The context window (16 tokens in this animation) shows how many previous tokens influence the prediction of the next token.
+
+<div class="upper-alpha" markdown>
+**Question 3: Why does the animation show arrows converging from many inputs to fewer hidden layer nodes?**
+
+1. It saves computer memory
+2. Neural networks compress information as it flows through hidden layers
+3. The animation is broken
+4. Fewer nodes mean faster processing
+</div>
+
+??? success "Answer"
+    B) Neural networks compress information as it flows through hidden layers - The architecture shows how information from multiple input tokens is combined and compressed through successive hidden layers to produce a single output prediction.
+
+<div class="upper-alpha" markdown>
+**Question 4: What happens after a new token is generated in autoregressive generation?**
+
+1. The process stops
+2. The new token is added to the context and the process repeats
+3. All previous tokens are deleted
+4. The model retrains itself
+</div>
+
+??? success "Answer"
+    B) The new token is added to the context and the process repeats - The newly generated token becomes part of the input context for generating the next token, creating a sequential generation process.
+
+<div class="upper-alpha" markdown>
+**Question 5: Which modern AI systems use autoregressive generation?**
+
+1. Only simple calculators
+2. GPT, Claude, and other large language models (LLMs)
+3. Only image recognition systems
+4. Only speech-to-text systems
+</div>
+
+??? success "Answer"
+    B) GPT, Claude, and other large language models (LLMs) - Modern LLMs like GPT, Claude, Gemini, and others use autoregressive generation to produce text one token at a time.

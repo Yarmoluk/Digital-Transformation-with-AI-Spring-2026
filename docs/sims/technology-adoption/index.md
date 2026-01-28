@@ -475,3 +475,67 @@ Structured reflection on key insights:
 - Emerging technology evaluation and positioning
 
 This comprehensive lesson plan provides strategic decision makers with both theoretical understanding and practical tools for making informed decisions about their organization's position on the Technology Adoption Lifecycle, specifically in the context of AI strategy and implementation.
+
+## Self-Assessment Quiz
+
+Test your understanding of the Technology Adoption Lifecycle.
+
+<div class="upper-alpha" markdown>
+**Question 1: What are the five categories in the Technology Adoption Lifecycle in order?**
+
+1. Early, Middle, Late, Final, Complete
+2. Innovators, Early Adopters, Early Majority, Late Majority, Laggards
+3. Leaders, Followers, Skeptics, Avoiders, Resisters
+4. Fast, Medium, Slow, Delayed, Never
+</div>
+
+??? success "Answer"
+    B) Innovators, Early Adopters, Early Majority, Late Majority, Laggards - These five categories describe the different rates at which people and organizations adopt new technologies.
+
+<div class="upper-alpha" markdown>
+**Question 2: What percentage of the market do "Innovators" typically represent?**
+
+1. 34%
+2. 13.5%
+3. 2.5%
+4. 50%
+</div>
+
+??? success "Answer"
+    C) 2.5% - Innovators are the first to adopt new technologies and represent a small fraction of the market, willing to take risks on unproven solutions.
+
+<div class="upper-alpha" markdown>
+**Question 3: What is a key strategic advantage of being an "Early Adopter" for AI technologies?**
+
+1. Lower costs than waiting
+2. Opportunity to shape AI solutions and gain competitive advantage before widespread adoption
+3. No risk involved
+4. Guaranteed government support
+</div>
+
+??? success "Answer"
+    B) Opportunity to shape AI solutions and gain competitive advantage before widespread adoption - Early Adopters can influence vendor development, become reference customers, and build capabilities before competitors.
+
+<div class="upper-alpha" markdown>
+**Question 4: Why might an organization strategically choose to be in the "Late Majority" category?**
+
+1. They want to fail
+2. Regulatory constraints, low risk tolerance, or their competitive advantage comes from non-technology factors
+3. They do not understand technology
+4. Late adoption is always cheaper
+</div>
+
+??? success "Answer"
+    B) Regulatory constraints, low risk tolerance, or their competitive advantage comes from non-technology factors - Some organizations legitimately benefit from waiting for mature, proven solutions due to their specific context and constraints.
+
+<div class="upper-alpha" markdown>
+**Question 5: What risk do "Laggards" face in a rapidly evolving AI landscape?**
+
+1. Adopting too early
+2. Competitive obsolescence and potential disruption by AI-native competitors
+3. Having too much technology
+4. No risks exist for Laggards
+</div>
+
+??? success "Answer"
+    B) Competitive obsolescence and potential disruption by AI-native competitors - Organizations that resist AI adoption may find themselves unable to compete with rivals who have developed AI capabilities, potentially facing disruption.
