@@ -133,6 +133,7 @@ extra_css:
 plugins:
   - search
   - social
+  
 
 markdown_extensions:
   - admonition
@@ -160,6 +161,8 @@ markdown_extensions:
       toc_depth: 3
 
 extra:
+  # remove "Built with MkDocs" footer
+  generator: false
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Yarmoluk/Digital-Transformation-with-AI-Spring-2026
