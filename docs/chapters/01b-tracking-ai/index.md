@@ -11,10 +11,10 @@ Understanding the trajectory of AI development is critical for strategic plannin
 
 After completing this chapter, you will be able to:
 
-- **Understand** (Bloom's L2): Explain the key metrics used to measure AI progress
-- **Analyze** (Bloom's L4): Interpret benchmark data and growth trends in AI capabilities
-- **Evaluate** (Bloom's L5): Assess projections of future AI capabilities and their business implications
-- **Apply** (Bloom's L3): Use AI trend data to inform strategic planning decisions
+- **Understand**: Explain the key metrics used to measure AI progress
+- **Analyze**: Interpret benchmark data and growth trends in AI capabilities
+- **Evaluate**: Assess projections of future AI capabilities and their business implications
+- **Apply**: Use AI trend data to inform strategic planning decisions
 
 ## Why Tracking AI Progress Matters
 
@@ -30,13 +30,106 @@ For business leaders and strategists, understanding AI's trajectory is essential
 
 Before diving into specific metrics, consider the possible futures that AI development might bring. This framework helps contextualize why tracking AI progress matters for strategic planning.
 
-<iframe src="../../sims/four-futures/main.html" height="570px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/four-futures/main.html" height="390px" width="100%" scrolling="no"></iframe>
 
 [View Four Futures Fullscreen](../../sims/four-futures/main.html){ .md-button }
 
 The four futures framework presents four different scenarios based on two key dimensions: the pace of AI advancement and the distribution of AI benefits. Understanding where we might be heading helps organizations prepare appropriate strategies.
 
----
+## Four Possible AI Trajectories
+
+When discussing AI's future with skeptics and enthusiasts alike, four distinct trajectories emerge. Each has historical precedents and current advocates:
+
+### Trajectory 1: AI is Just a Fad
+
+**The Argument:** AI will follow the pattern of other hyped technologies that promised transformation but failed to deliver widespread impact. The Metaverse, blockchain, distributed ledger technology, Bitcoin as a currency replacement, and quantum computing have all experienced massive hype cycles followed by significant retreats from mainstream adoption.
+
+**Historical Precedents:**
+
+- **Metaverse (2021-2022):** Meta invested $36 billion, but consumer adoption stalled
+- **Blockchain/Crypto (2017-2022):** Promised to revolutionize finance, but largely remained speculative
+- **Quantum Computing:** Decades of "5 years away" predictions without commercial viability
+- **Previous AI Winters:** The field experienced major funding collapses in the 1970s and late 1980s
+
+**Counter-Evidence:** Unlike previous hype cycles, generative AI has achieved immediate, measurable productivity gains. ChatGPT reached 100 million users faster than any application in history. Enterprise adoption is accelerating, not retreating. The technology works demonstrably well for real tasks today, unlike the speculative promises of blockchain or quantum computing.
+
+### Trajectory 2: Flattening (The Power Wall Scenario)
+
+**The Argument:** AI capabilities will reach a plateau and stabilize, similar to how CPU clock speeds hit the "Power Wall" around 2004. Physical, algorithmic, or data constraints will impose hard limits on further improvement.
+
+**Potential Limiting Factors:**
+
+- **Data Exhaustion:** We may run out of high-quality training data
+- **Scaling Law Limits:** The relationship between compute and capability may flatten
+- **Fundamental Reasoning Barriers:** Current architectures may have inherent limitations
+- **Economic Constraints:** Training costs may become prohibitive
+- **Energy Limitations:** Power consumption for training may hit practical limits
+
+**Historical Precedent:** The Power Wall is instructive—clock speeds plateaued, but computing power continued growing through parallelization. Similarly, if one AI scaling approach plateaus, the industry may find alternative paths forward (new architectures, more efficient training, specialized hardware).
+
+**Counter-Evidence:** So far, no definitive plateau has been observed. Each predicted barrier (100B parameters, trillion-token training, reasoning capabilities) has been surpassed. However, this trajectory remains plausible if we encounter fundamental limits in the transformer architecture or training methodology.
+
+### Trajectory 3: Slow Linear Growth
+
+**The Argument:** AI will continue improving, but at a steady, predictable linear rate rather than exponentially. Incremental improvements will accumulate over decades, similar to how automobile fuel efficiency has improved slowly but steadily over 50 years.
+
+**What This Would Mean:**
+
+- Gradual capability improvements (5-10% per year)
+- Predictable planning horizons for businesses
+- Time for workforce adaptation and policy development
+- Reduced urgency for immediate strategic response
+
+**Counter-Evidence:** The observed data strongly contradicts this trajectory. METR's research shows consistent exponential improvement, not linear. The gap between GPT-2 (2019) and GPT-4 (2023) represents orders of magnitude improvement in just four years. Linear growth cannot explain the observed trajectory.
+
+### Trajectory 4: Continued Exponential Growth (7-Month Doubling)
+
+**The Argument:** AI capabilities will continue doubling approximately every seven months, as observed by METR's research from 2019-2025. This exponential trajectory will persist for the foreseeable future, driven by continued investment, algorithmic improvements, and hardware advances.
+
+**What This Would Mean:**
+
+| Timeframe | Implication |
+|-----------|-------------|
+| 2026 | AI handles 10-20 hour tasks autonomously |
+| 2027 | AI handles week-long projects |
+| 2028-2029 | AI handles month-long initiatives |
+| 2030+ | Potentially transformative capabilities |
+
+**Supporting Evidence:**
+
+- Six years of consistent exponential improvement (2019-2025)
+- $100+ billion annual investment continuing to accelerate
+- No observed plateau in scaling laws yet
+- Multiple independent research efforts all showing similar trajectories
+- Hardware improvements (GPUs, TPUs) continuing to accelerate training capabilities
+
+### Which Future is Most Likely?
+
+Based on the available evidence, **Trajectory 4 (Continued Exponential Growth)** appears most likely in the near term (2025-2028), with the following reasoning:
+
+**Evidence Supporting Continued Exponential Growth:**
+
+1. **Consistent Historical Pattern:** Six years of data showing remarkably consistent 7-month doubling across multiple model families (GPT, Claude, Gemini, open-source models). This isn't cherry-picked data from one company—it's an industry-wide pattern.
+
+2. **Massive Sustained Investment:** Unlike blockchain or metaverse, AI investment is *increasing* after initial hype. Microsoft, Google, Amazon, and others have committed hundreds of billions through 2030. This capital ensures continued research momentum.
+
+3. **Demonstrated Real-World Value:** Enterprises report measurable productivity gains (20-40% for coding tasks, significant improvements in customer service, content creation, and analysis). Unlike speculative technologies, the value proposition is proven.
+
+4. **No Visible Plateau:** Despite predictions of diminishing returns at various parameter counts and training scales, each barrier has been surpassed. GPT-4, Claude 3, and Gemini Ultra all exceeded what experts predicted was possible in 2022.
+
+5. **Multiple Improvement Vectors:** Progress comes from multiple sources—better architectures, more efficient training, improved data curation, chain-of-thought reasoning, tool use, and specialized fine-tuning. If one vector slows, others may compensate.
+
+**Important Caveats:**
+
+!!! warning "Exponential Trends Don't Continue Forever"
+    While the evidence supports continued exponential growth in the near term, all exponential trends eventually encounter limits. The question is *when*, not *if*. Prudent strategy involves:
+
+    - Planning for continued rapid advancement as the base case
+    - Monitoring for signs of plateauing (flattening benchmark curves, diminishing returns on compute)
+    - Maintaining flexibility to adapt if the trajectory changes
+    - Preparing for multiple scenarios rather than betting everything on one future
+
+**The Strategic Implication:** Organizations that assume AI is a fad (Trajectory 1) or will grow slowly (Trajectory 3) risk being caught unprepared if exponential growth continues. Conversely, organizations that plan only for exponential growth may over-invest if a plateau occurs. The most robust strategy acknowledges uncertainty while leaning toward the trajectory supported by current evidence.
 
 ## Measuring AI Capabilities
 
@@ -64,8 +157,6 @@ The following visualization shows how different AI models perform across tasks o
 - Current frontier models can complete multi-hour tasks autonomously
 - The progression shows consistent exponential improvement
 
----
-
 ## The Seven-Month Doubling Rate
 
 Perhaps the most striking finding from METR's research is that AI task completion capabilities have been **doubling approximately every seven months**. This is one of the fastest capability growth rates observed in any technology domain.
@@ -84,8 +175,6 @@ Perhaps the most striking finding from METR's research is that AI task completio
 | 5 hours | +28 months | 80 hours (2 weeks) |
 
 If this trend continues, AI systems may handle tasks lasting weeks or months within the next few years.
-
----
 
 ## AI Benchmark Evolution
 
@@ -120,7 +209,6 @@ The LM Arena (formerly LMSYS Chatbot Arena) uses human preferences to rank langu
 
 [View LM Arena Timeline Fullscreen](../../sims/lm-arena-timeline/main.html){ .md-button }
 
----
 
 ## The Pace of AI Acceleration
 
@@ -139,7 +227,6 @@ AI capabilities aren't just improving—they're accelerating. Understanding this
 3. **More Compute**: Exponentially increasing training compute budgets
 4. **Feedback Loops**: AI helping to develop better AI
 
----
 
 ## Historical Context: Computing Foundations
 
