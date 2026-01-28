@@ -45,14 +45,40 @@ nav:
   
   - MicroSims:
     - Overview: sims/index.md
-    - Digital Maturity Quadrant: sims/digital-maturity-quadrant/index.md
-    - Neural Network Visualization: sims/neural-network-visualization/index.md
-    - Tokenization Process: sims/tokenization-process/index.md
-    - Self-Attention Visualization: sims/self-attention-visualization/index.md
-    - Vector Similarity: sims/vector-similarity/index.md
-    - Human-AI Task Allocation: sims/human-ai-task-allocation/index.md
-    - AI Use Case Prioritization: sims/ai-use-case-prioritization/index.md
+    - AI Benchmarks Timeline: sims/ai-benchmarks-timeline/index.md
+    - AI Capability Maturity Model: sims/ai-cmm/index.md
+    - AI Causes: sims/ai-causes/index.md
+    - AI Doubling Rate: sims/ai-doubling-rate/index.md
+    - AI Flywheel: sims/ai-flywheel/index.md
+    - AI Pace Accelerating: sims/ai-pace-accelerating/index.md
     - AI Strategy Assessment: sims/ai-strategy-assessment/index.md
+    - AI Task Horizons: sims/ai-task-horizons/index.md
+    - AI Use Case Prioritization: sims/ai-use-case-prioritization/index.md
+    - Autoregressive Model: sims/autoregressive/index.md
+    - Bloom's Taxonomy: sims/blooms-taxonomy/index.md
+    - Book Generation Workflow: sims/book-gen-workflow/index.md
+    - Book Levels: sims/book-levels/index.md
+    - Deep Learning Timeline: sims/timeline/index.md
+    - Digital Maturity Quadrant: sims/digital-maturity-quadrant/index.md
+    - Four AI Futures: sims/four-futures/index.md
+    - Human-AI Task Allocation: sims/human-ai-task-allocation/index.md
+    - Hype Cycle: sims/hype-cycle/index.md
+    - Idea Funnel: sims/idea-funnel/index.md
+    - Learning Graph: sims/learning-graph/index.md
+    - LM Arena Timeline: sims/lm-arena-timeline/index.md
+    - MMLU Timeline: sims/mmlu-timeline/index.md
+    - Moore's Law: sims/moores-law/index.md
+    - Neural Network Visualization: sims/neural-network-visualization/index.md
+    - Porter's Five Forces: sims/porters-five-forces/index.md
+    - Power Wall: sims/power-wall/index.md
+    - Projecting AI to 2030: sims/projecting-ai/index.md
+    - Self-Attention Visualization: sims/self-attention-visualization/index.md
+    - SWOT Analysis: sims/swot/index.md
+    - Technology Adoption Curve: sims/technology-adoption/index.md
+    - Tokenization Process: sims/tokenization-process/index.md
+    - Tokenizer: sims/tokenizer/index.md
+    - Vector Similarity: sims/vector-similarity/index.md
+  
   - Learning Graph:
     - Overview: learning-graph/index.md
     - Course Description Assessment: learning-graph/course-description-assessment.md
@@ -62,6 +88,9 @@ nav:
     - Taxonomy Distribution: learning-graph/taxonomy-distribution-report.md
     - Mermaid Diagrams: learning-graph/learning-graph-mermaid.md
     - Book Metrics: learning-graph/book-metrics.md
+    - Chapter Metrics: learning-graph/chapter-metrics.md
+    - learning-graph/diagram-details.md
+    - learning-graph/diagram-table.md
 
   - Glossary: glossary.md
   - FAQ: faq.md
