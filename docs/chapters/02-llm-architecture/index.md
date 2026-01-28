@@ -61,7 +61,17 @@ This chapter demystifies the technical machinery underlying LLMs. While business
 
 ### What Are Large Language Models?
 
-**Large Language Models (LLMs)** are neural networks trained on massive text corpora to understand and generate human language. The term "large" refers to the number of parameters—the learnable weights that the model adjusts during training. Modern LLMs range from billions to trillions of parameters:
+**Large Language Models (LLMs)** are neural networks trained on massive text corpora to understand and generate human language. The term "large" refers to the number of parameters—the learnable weights that the model adjusts during training.
+
+#### Neural Network Foundation
+
+Before diving into LLM specifics, the following visualization shows how data flows through a basic neural network. Understanding this forward propagation process is essential for grasping how LLMs process tokens through their many layers.
+
+<iframe src="../../sims/neural-network-visualization/main.html" height="652px" width="100%" scrolling="no" style="overflow: hidden;"></iframe>
+
+[Explore the Neural Network MicroSim →](../../sims/neural-network-visualization/index.md){ .md-button }
+
+Modern LLMs range from billions to trillions of parameters:
 
 | Model | Organization | Parameters | Release Year |
 |-------|--------------|------------|--------------|
@@ -89,6 +99,14 @@ Consider how an LLM generates a response to "The capital of France is":
 
 This autoregressive process continues until the model generates a stop token or reaches a maximum length. Each generation step considers all previous context, enabling coherent multi-paragraph outputs.
 
+#### Autoregressive Generation Visualization
+
+The following interactive simulation demonstrates how tokens flow through neural network layers during autoregressive generation. Watch as information is compressed through hidden layers to predict the next token, which then becomes part of the input for the next prediction cycle.
+
+<iframe src="../../sims/autoregressive/main.html" height="600px" width="100%" scrolling="no" style="overflow: hidden;"></iframe>
+
+[Explore the Autoregressive MicroSim →](../../sims/autoregressive/index.md){ .md-button }
+
 !!! note "Temperature and Sampling"
     The selection of the next token need not be deterministic. The **temperature** parameter controls randomness: temperature=0 always selects the highest-probability token, while higher temperatures introduce diversity by making the selection more random. This is why the same prompt can yield different responses.
 
@@ -112,6 +130,14 @@ Examples of tokenization (GPT-style):
 - **Byte Pair Encoding (BPE)**: Used by GPT models. Iteratively merges frequent character pairs to build vocabulary.
 - **WordPiece**: Used by BERT. Similar to BPE but uses likelihood-based merging.
 - **SentencePiece**: Used by Llama and others. Language-agnostic tokenization that works directly on raw text.
+
+#### Interactive Tokenizer
+
+Try the interactive tokenizer below to see how different text inputs are broken into tokens. Notice how common words typically become single tokens while rare or compound words are split into multiple subword pieces.
+
+<iframe src="../../sims/tokenizer/main.html" height="470px" width="100%" scrolling="no" style="overflow: hidden;"></iframe>
+
+[Explore the Tokenizer MicroSim →](../../sims/tokenizer/index.md){ .md-button }
 
 #### Diagram: Tokenization Process Visualization
 
@@ -300,6 +326,14 @@ When processing "it," self-attention allows the model to:
 
 This mechanism enables sophisticated contextual understanding without explicit programming of linguistic rules.
 
+#### Interactive Self-Attention Visualization
+
+Explore the self-attention mechanism with this interactive visualization. Select different sentences and click on tokens to see how they attend to other tokens in the sequence. Notice how pronouns strongly attend to their referents and how verbs connect to their subjects.
+
+<iframe src="../../sims/self-attention-visualization/main.html" height="652px" width="100%" scrolling="no" style="overflow: hidden;"></iframe>
+
+[Explore the Self-Attention MicroSim →](../../sims/self-attention-visualization/index.md){ .md-button }
+
 #### Diagram: Self-Attention Visualization
 
 <details markdown="1">
@@ -375,6 +409,64 @@ Different heads learn to focus on different types of relationships:
 | Semantic heads | Related concepts | "doctor" ↔ "patient" |
 | Coreference heads | Pronoun resolution | "she" ↔ "Maria" |
 
+#### Diagram: Multi-Head Attention Comparison
+
+<details markdown="1">
+<summary>Multi-Head Attention Comparison Visualization</summary>
+
+**Type:** microsim
+
+**Purpose:** Interactive visualization showing how different attention heads within a transformer focus on different aspects of the input simultaneously
+
+**Bloom Taxonomy:** Analyze (L4) - Compare and contrast what different attention heads learn to focus on
+
+**Learning Objective:** Students should be able to explain why multi-head attention is more powerful than single-head attention and identify what different head types capture
+
+**Canvas layout (responsive, minimum 900x600px):**
+
+- Top: Input sentence with selectable tokens
+- Middle: Grid of 8 attention head visualizations (2x4 layout)
+- Bottom: Legend and explanation panel
+
+**Visual elements:**
+
+- Input sentence displayed as horizontal token sequence
+- Each attention head shown as a mini attention matrix or connection diagram
+- Color-coded attention weights (heat map from light to dark)
+- Head labels indicating learned focus type (e.g., "Positional", "Syntactic", "Semantic")
+- Aggregate attention view combining all heads
+
+**Interactive controls:**
+
+- Text input field for custom sentences
+- Number of heads selector (4, 8, 12)
+- Layer selector slider (1-12)
+- Toggle: Individual heads / Aggregated view
+- Button: "Show Head Specialization"
+
+**Behavior:**
+
+- Click on any attention head to expand it to full view
+- Hover over attention matrix cells to see exact weight values
+- Side panel explains what linguistic phenomenon each head appears to capture
+- Animation mode: step through heads showing different perspectives
+
+**Sample sentences:**
+
+- "The cat sat on the mat because it was tired."
+- "The programmer fixed the bug that was causing crashes."
+- "She told him that he should go to the bank."
+
+**Annotations:**
+
+- Identify head patterns: local attention, global attention, syntactic structure
+- Show how heads specialize for different tasks
+- Highlight complementary information captured by different heads
+
+**Implementation:** p5.js with grid layout for multiple attention visualizations
+
+</details>
+
 ## Embeddings: Representing Meaning as Numbers
 
 ### What Are Embeddings?
@@ -394,6 +486,14 @@ $$\vec{king} - \vec{man} + \vec{woman} \approx \vec{queen}$$
 
 This suggests embeddings capture semantic relationships that support analogical reasoning.
 
+#### Vector Similarity Visualization
+
+The following interactive visualization demonstrates how word embeddings cluster semantically related words together. Click on different words to compare their cosine similarity scores and observe how the geometric distance reflects semantic relatedness.
+
+<iframe src="../../sims/vector-similarity/main.html" height="652px" width="100%" scrolling="no" style="overflow: hidden;"></iframe>
+
+[Explore the Vector Similarity MicroSim →](../../sims/vector-similarity/index.md){ .md-button }
+
 ### Types of Embeddings in LLMs
 
 | Embedding Type | Purpose | When Used |
@@ -405,6 +505,73 @@ This suggests embeddings capture semantic relationships that support analogical 
 
 !!! tip "Business Applications of Embeddings"
     Embeddings enable powerful applications beyond text generation: semantic search (finding similar documents), clustering (grouping related items), classification (categorizing content), and recommendation systems (suggesting related content). Many organizations extract embeddings from LLMs for these downstream applications.
+
+#### Diagram: Embedding Dimensions Explorer
+
+<details markdown="1">
+<summary>Embedding Dimensions Explorer</summary>
+
+**Type:** microsim
+
+**Purpose:** Interactive visualization showing how embedding dimensions capture different semantic features and how dimensionality affects representation quality
+
+**Bloom Taxonomy:** Understand (L2) - Explain how embedding dimensions encode meaning
+
+**Learning Objective:** Students should be able to describe how embedding dimensions capture semantic features and understand the tradeoffs between different embedding sizes
+
+**Canvas layout (responsive, minimum 800x500px):**
+
+- Left panel: Word input and embedding vector display
+- Center: 3D projection of embedding space (reducible to 2D)
+- Right panel: Dimension feature analysis
+
+**Visual elements:**
+
+- 3D scatter plot of word embeddings (PCA/t-SNE reduced)
+- Color-coded clusters by semantic category
+- Selected word's raw embedding vector as bar chart
+- "Feature activation" view showing which dimensions activate for concepts
+- Dimension labels showing learned features (gender, size, animate, etc.)
+
+**Interactive controls:**
+
+- Text input: Enter word to visualize
+- Slider: Embedding dimensions (50, 100, 300, 768, 1536)
+- Toggle: 2D / 3D projection view
+- Dropdown: Projection method (PCA, t-SNE, UMAP)
+- Button: "Show Similar Words"
+- Button: "Analyze Dimension Features"
+
+**Display metrics:**
+
+- Embedding dimension count
+- Sparsity percentage
+- Nearest neighbors in embedding space
+- Dimension-by-dimension breakdown
+
+**Behavior:**
+
+- Entering a word shows its position in projected space
+- Hover over dimensions to see what feature they might represent
+- Click two words to see vector difference (analogies)
+- Animation: word "morphing" through embedding space
+
+**Educational demonstrations:**
+
+- Show how "king - man + woman ≈ queen" works geometrically
+- Display how synonyms cluster together
+- Illustrate how adding dimensions improves discrimination
+
+**Sample word sets:**
+
+- Animals: cat, dog, lion, fish, bird
+- Professions: doctor, nurse, teacher, engineer
+- Actions: run, walk, sprint, jog
+- Concepts: love, hate, fear, joy
+
+**Implementation:** p5.js with 3D rendering or three.js
+
+</details>
 
 ## Training Large Language Models
 
@@ -521,6 +688,69 @@ Parameter count correlates roughly with model capability, but the relationship i
 
 The scaling laws observed in LLM research suggest that performance improves predictably with increases in parameters, training data, and compute, though with diminishing returns at the frontier.
 
+#### Diagram: LLM Scaling Laws Visualization
+
+<details markdown="1">
+<summary>LLM Scaling Laws Visualization</summary>
+
+**Type:** microsim
+
+**Purpose:** Interactive demonstration of how model performance scales with parameters, training data, and compute according to Chinchilla and other scaling law research
+
+**Bloom Taxonomy:** Apply (L3) - Use scaling laws to predict model performance tradeoffs
+
+**Learning Objective:** Students should be able to interpret scaling law curves and understand the relationship between model size, training data, and expected performance
+
+**Canvas layout (responsive, minimum 800x500px):**
+
+- Main area: Log-log plot showing scaling curves
+- Right panel: Model configuration inputs
+- Bottom: Results summary and cost estimates
+
+**Visual elements:**
+
+- X-axis: Training compute (FLOPs) or model parameters (log scale)
+- Y-axis: Loss or benchmark score (log scale)
+- Multiple curves showing: Parameters only, Data only, Compute-optimal allocation
+- Reference points for known models (GPT-3, GPT-4, Claude, Llama)
+- Chinchilla optimal frontier line
+- Isocompute curves showing different parameter/data tradeoffs
+
+**Interactive controls:**
+
+- Slider: Model parameters (1B - 1T, log scale)
+- Slider: Training tokens (10B - 10T, log scale)
+- Dropdown: Benchmark metric (Loss, MMLU, HumanEval)
+- Toggle: Show/hide Chinchilla optimal line
+- Toggle: Show/hide real model markers
+- Button: "Calculate Optimal Allocation"
+
+**Display metrics:**
+
+- Predicted loss/performance
+- Training FLOPs required
+- Estimated training cost ($)
+- Compute-optimal ratio (tokens per parameter)
+- Distance from Chinchilla optimal
+
+**Behavior:**
+
+- Dragging model parameter slider updates predicted performance
+- Show "undertrained" or "overtrained" region shading
+- Highlight when configuration deviates significantly from optimal
+- Click model markers to see actual vs predicted performance
+- Animation: trace training progress over time
+
+**Scaling law equations displayed:**
+
+- Loss ≈ C / N^α (parameter scaling)
+- Loss ≈ D / T^β (data scaling)
+- Chinchilla: N_opt ∝ C^0.5, T_opt ∝ C^0.5
+
+**Implementation:** Chart.js or p5.js with logarithmic axes
+
+</details>
+
 ### Inference: Running the Model
 
 **Inference** is the process of using a trained model to generate outputs for new inputs. Unlike training (which updates parameters), inference uses fixed parameters to transform inputs through the network.
@@ -556,6 +786,76 @@ The autoregressive nature of LLM inference means each output token requires a fu
 - **KV-caching**: Storing key-value computations to avoid recomputation
 - **Speculative decoding**: Generating multiple tokens in parallel with verification
 - **Model parallelism**: Distributing the model across multiple GPUs
+
+#### Diagram: Inference Performance Tradeoffs
+
+<details markdown="1">
+<summary>Inference Latency and Throughput Visualization</summary>
+
+**Type:** microsim
+
+**Purpose:** Interactive exploration of how model size, batch size, context length, and optimization techniques affect inference latency and throughput
+
+**Bloom Taxonomy:** Apply (L3) - Calculate and compare inference metrics for different configurations
+
+**Learning Objective:** Students should be able to estimate latency and throughput for different LLM deployment configurations and understand key tradeoffs
+
+**Canvas layout (responsive, minimum 800x500px):**
+
+- Top: Configuration panel with sliders
+- Middle: Dual-axis chart (latency + throughput)
+- Bottom: Cost and capacity estimates
+
+**Visual elements:**
+
+- Bar/line chart showing Time to First Token (TTFT) and Inter-Token Latency
+- Throughput gauge (tokens/second)
+- GPU memory utilization bar
+- Cost-per-token indicator
+- Visual timeline of a sample request lifecycle
+
+**Interactive controls:**
+
+- Dropdown: Model size (7B, 13B, 70B, 405B)
+- Slider: Batch size (1-64)
+- Slider: Input context length (256 - 128K tokens)
+- Slider: Output length (100 - 4K tokens)
+- Dropdown: Quantization (FP16, INT8, INT4)
+- Toggle: KV-Cache enabled
+- Toggle: Speculative decoding
+
+**Display metrics:**
+
+- Time to First Token (TTFT) in milliseconds
+- Inter-Token Latency (ITL) in milliseconds
+- Total response time
+- Throughput (tokens/second/GPU)
+- GPU memory usage (GB)
+- Cost per 1K tokens ($)
+
+**Behavior:**
+
+- Real-time updates as sliders change
+- Show "bottleneck" indicator (memory-bound vs compute-bound)
+- Warning when configuration exceeds typical GPU memory
+- Comparison mode: side-by-side configs
+- Animation: visualize token generation timeline
+
+**Reference configurations:**
+
+- "Interactive chat" (low latency, small batch)
+- "Batch processing" (high throughput, large batch)
+- "Long document" (large context, optimized caching)
+
+**Educational annotations:**
+
+- Explain why larger batch sizes improve throughput but increase latency
+- Show KV-cache memory scaling with context length
+- Demonstrate quantization speedup vs quality tradeoff
+
+**Implementation:** Chart.js with dynamic updates, or p5.js with custom visualization
+
+</details>
 
 ## The Context Window
 

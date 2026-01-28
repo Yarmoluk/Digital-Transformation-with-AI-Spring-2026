@@ -30,7 +30,7 @@ Whether you're a graduate student exploring AI-driven business transformation or
 | Concepts in Learning Graph | 200 |
 | Chapters | 11 |
 | Markdown Files | 80 |
-| Total Words | 106,970 |
+| Total Words | 108,432 |
 | MicroSims | 33 |
 | Glossary Terms | 223 |
 | FAQ Questions | 59 |
