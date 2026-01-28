@@ -1,7 +1,7 @@
 ---
 title: Learning Graph for Tracking AI Course
 description: Interactive visualization of concept dependencies in the Tracking AI curriculum
-image: /sims/learning-graph/learning-graph.png
+image: sims/learning-graph/learning-graph.png
 og:image: /sims/learning-graph/learning-graph.png
 ---
 

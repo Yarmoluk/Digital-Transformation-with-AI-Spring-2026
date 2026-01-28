@@ -1,6 +1,7 @@
 ---
 title: Generative AI Idea Funnel
 description: An interactive infographic showing the steps in managing a GenAI Center of Excellence
+image: sims/idea-funnel/thumbnail.png
 quality_score: 80
 social:
    cards: false

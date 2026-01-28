@@ -2,7 +2,7 @@
 title: Moore's Law Timeline
 description: Interactive infographic showing transistor growth with linear and log scale views
 quality_score: 70
-image: /sims/moores-law/moores-law.png
+image: sims/moores-law/moores-law.png
 og:image: /sims/moores-law/moores-law.png
 twitter:image: /sims/moores-law/moores-law.png
 social:

@@ -1,7 +1,7 @@
 ---
 title: AI Doubling Rate
 description: Analysis of AI task completion doubling rate based on METR research
-image: /sims/ai-doubling-rate/ai-doubling-rate.png
+image: sims/ai-doubling-rate/ai-doubling-rate.png
 og:image: /sims/ai-doubling-rate/ai-doubling-rate.png
 twitter:image: /sims/ai-doubling-rate/ai-doubling-rate.png
 social:

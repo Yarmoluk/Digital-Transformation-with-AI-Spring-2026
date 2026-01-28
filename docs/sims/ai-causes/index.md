@@ -2,7 +2,7 @@
 title: Causes of AI Acceleration
 description: A causal loop diagram showing how AI feedback is accelerating AI progress.
 quality_score: 85
-image: /sims/ai-causes/ai-causes.png
+image: sims/ai-causes/ai-causes.png
 og:image: /sims/ai-causes/ai-causes.png
 twitter:image: /sims/ai-causes/ai-causes.png
 social:

@@ -2,7 +2,7 @@
 title: Technology Hype Cycle Infographic
 description: Interactive visualization of the Gartner Technology Hype Cycle phases
 quality_score: 70
-image: /sims/hype-cycle/hype-cycle.png
+image: sims/hype-cycle/hype-cycle.png
 og:image: /sims/hype-cycle/hype-cycle.png
 twitter:image: /sims/hype-cycle/hype-cycle.png
 social:

@@ -1,7 +1,7 @@
 ---
 title: AI Strategy Completeness Assessment
 description: Interactive radar chart tool for assessing AI strategy document completeness and quality across ten key dimensions
-image: /sims/ai-strategy-assessment/ai-strategy-assessment.png
+image: sims/ai-strategy-assessment/ai-strategy-assessment.png
 og:image: /sims/ai-strategy-assessment/ai-strategy-assessment.png
 twitter:image: /sims/ai-strategy-assessment/ai-strategy-assessment.png
 quality_score: 87

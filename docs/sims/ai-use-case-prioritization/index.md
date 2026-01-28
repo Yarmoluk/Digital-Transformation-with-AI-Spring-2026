@@ -1,7 +1,7 @@
 ---
 title: AI Use Case Prioritization Tool
 description: Interactive 2x2 matrix for prioritizing AI initiatives based on business value and implementation complexity
-image: /sims/ai-use-case-prioritization/ai-use-case-prioritization.png
+image: sims/ai-use-case-prioritization/ai-use-case-prioritization.png
 og:image: /sims/ai-use-case-prioritization/ai-use-case-prioritization.png
 twitter:image: /sims/ai-use-case-prioritization/ai-use-case-prioritization.png
 quality_score: 88

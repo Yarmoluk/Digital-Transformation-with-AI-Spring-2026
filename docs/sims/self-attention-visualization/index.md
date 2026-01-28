@@ -1,7 +1,7 @@
 ---
 title: Self-Attention Visualization
 description: Interactive visualization of how tokens attend to other tokens in transformer self-attention mechanisms
-image: /sims/self-attention-visualization/self-attention.png
+image: sims/self-attention-visualization/self-attention.png
 og:image: /sims/self-attention-visualization/self-attention.png
 twitter:image: /sims/self-attention-visualization/self-attention.png
 quality_score: 87

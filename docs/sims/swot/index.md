@@ -1,6 +1,7 @@
 ---
 title: AI SWOT Analysis
 description: Interactive SWOT analysis diagram for AI strategy development with hover descriptions
+image: sims/swot/thumbnail.png
 quality_score: 80
 social:
    cards: false

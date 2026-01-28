@@ -1,6 +1,7 @@
 ---
 title: Book Levels MicroSim
 description: Interactive visualization of five levels of intelligent textbooks from static to AI-driven
+image: sims/book-levels/thumbnail.png
 quality_score: 67
 hide:
   - toc

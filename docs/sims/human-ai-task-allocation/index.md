@@ -1,7 +1,7 @@
 ---
 title: Human-AI Task Allocation Simulator
 description: Interactive simulation for experimenting with different human-AI task allocation strategies and observing productivity outcomes
-image: /sims/human-ai-task-allocation/human-ai-task-allocation.png
+image: sims/human-ai-task-allocation/human-ai-task-allocation.png
 og:image: /sims/human-ai-task-allocation/human-ai-task-allocation.png
 twitter:image: /sims/human-ai-task-allocation/human-ai-task-allocation.png
 quality_score: 85

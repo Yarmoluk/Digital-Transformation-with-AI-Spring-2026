@@ -1,6 +1,7 @@
 ---
 title: AI Benchmarks Timeline
 description: Interactive timeline showing key AI benchmarks and when they were introduced
+image: sims/ai-benchmarks-timeline/thumbnail.png
 quality_score: 67
 hide:
   - toc

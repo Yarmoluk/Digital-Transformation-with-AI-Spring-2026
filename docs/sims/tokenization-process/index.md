@@ -1,7 +1,7 @@
 ---
 title: Tokenization Process Visualization
 description: Interactive demonstration of how text is converted to tokens and the implications for context window usage
-image: /sims/tokenization-process/tokenization-process.png
+image: sims/tokenization-process/tokenization-process.png
 og:image: /sims/tokenization-process/tokenization-process.png
 twitter:image: /sims/tokenization-process/tokenization-process.png
 quality_score: 85

@@ -2,7 +2,7 @@
 title: AI Capability Maturity Model Infographic
 description: Interactive visualization of five AI maturity levels from Ad Hoc to Transformative
 quality_score: 85
-image: /sims/ai-cmm/ai-cmm.png
+image: sims/ai-cmm/ai-cmm.png
 og:image: /sims/ai-cmm/ai-cmm.png
 twitter:image: /sims/ai-cmm/ai-cmm.png
 social:

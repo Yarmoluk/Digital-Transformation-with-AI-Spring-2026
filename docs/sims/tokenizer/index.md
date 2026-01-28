@@ -1,6 +1,7 @@
 ---
 title: Tokenizer MicroSim
 description: Interactive visualization demonstrating how text is tokenized for language model processing
+image: sims/tokenizer/thumbnail.png
 quality_score: 67
 hide:
   - toc

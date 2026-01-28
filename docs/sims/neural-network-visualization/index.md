@@ -1,7 +1,7 @@
 ---
 title: Neural Network Architecture Visualization
 description: Interactive visualization of how neural networks process information through layers with configurable architecture
-image: /sims/neural-network-visualization/neural-network.png
+image: sims/neural-network-visualization/neural-network.png
 og:image: /sims/neural-network-visualization/neural-network.png
 twitter:image: /sims/neural-network-visualization/neural-network.png
 quality_score: 89

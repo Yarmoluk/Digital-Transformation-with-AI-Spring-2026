@@ -1,6 +1,7 @@
 ---
 title: Power Wall MicroSim
 description: Interactive visualization showing CPU clock speed evolution and the Power Wall phenomenon
+image: sims/power-wall/thumbnail.png
 quality_score: 67
 hide:
   - toc

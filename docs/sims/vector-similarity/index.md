@@ -1,7 +1,7 @@
 ---
 title: Vector Similarity Visualization
 description: Interactive visualization of how semantic similarity works with word embeddings in 2D projection space
-image: /sims/vector-similarity/vector-similarity.png
+image: sims/vector-similarity/vector-similarity.png
 og:image: /sims/vector-similarity/vector-similarity.png
 twitter:image: /sims/vector-similarity/vector-similarity.png
 quality_score: 86

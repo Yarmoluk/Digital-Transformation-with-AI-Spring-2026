@@ -1,7 +1,7 @@
 ---
 title: Digital Maturity Quadrant Model
 description: Interactive exploration of the four digital maturity archetypes with organizational placement exercise
-image: /sims/digital-maturity-quadrant/digital-maturity.png
+image: sims/digital-maturity-quadrant/digital-maturity.png
 og:image: /sims/digital-maturity-quadrant/digital-maturity.png
 twitter:image: /sims/digital-maturity-quadrant/digital-maturity.png
 quality_score: 88
