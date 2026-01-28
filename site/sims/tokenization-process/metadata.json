@@ -1,0 +1,60 @@
+{
+  "title": "Tokenization Process Visualization",
+  "description": "Interactive demonstration of how text is converted to tokens and the implications for context window usage and API costs",
+  "creator": "Claude Code",
+  "subject": ["Tokenization", "LLM Architecture", "NLP", "BPE"],
+  "date": "2026-01-14",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "gradeLevel": "Graduate",
+  "subjectArea": "Computer Science/AI",
+  "topic": "LLM Tokenization",
+  "learningObjectives": [
+    "Explain how tokenization converts text to tokens",
+    "Estimate token counts for different text inputs",
+    "Understand implications for context windows and costs"
+  ],
+  "bloomsTaxonomy": ["Understand", "Apply", "Analyze"],
+  "duration": "10-15 minutes",
+  "prerequisites": ["Basic understanding of LLMs", "Familiarity with text processing"],
+  "framework": "p5.js",
+  "canvasDimensions": "1000x600",
+  "responsive": "Width-responsive",
+  "dependencies": ["p5.js CDN"],
+  "accessibility": {
+    "screenReader": true,
+    "keyboardNav": true
+  },
+  "controls": [
+    {
+      "type": "textarea",
+      "name": "Text Input",
+      "description": "Enter text to tokenize"
+    },
+    {
+      "type": "button",
+      "name": "Analyze",
+      "description": "Process input text into tokens"
+    },
+    {
+      "type": "button",
+      "name": "Example Buttons",
+      "description": "Load pre-defined example texts",
+      "count": 5
+    }
+  ],
+  "modelType": "Text tokenization simulation",
+  "variables": ["Input text", "Token count", "Character count", "Word count", "Cost estimate"],
+  "assumptions": [
+    "Uses simplified BPE-like tokenization rules",
+    "Actual tokenization may vary by model",
+    "Cost estimates based on typical API pricing"
+  ],
+  "limitations": [
+    "Simplified tokenization (not actual BPE)",
+    "Does not handle all edge cases",
+    "Token IDs are simulated, not actual vocabulary lookups"
+  ]
+}

@@ -1,7 +1,7 @@
 site_name: SEIS 666
 site_description: A graduate-level intelligent textbook for SEIS 666 exploring how generative AI technologies are reshaping digital transformation, business models, and workforce dynamics.
 site_author: Daniel Yarmoluk
-repo_name: Digital-Transformation-with-AI-Spring-2026
+repo_name: Link to GitHub
 site_url: https://yarmoluk.github.io/Digital-Transformation-with-AI-Spring-2026/
 repo_url: https://github.com/Yarmoluk/Digital-Transformation-with-AI-Spring-2026
 edit_uri: edit/main/docs/
@@ -12,25 +12,37 @@ nav:
   - Course Description: course-description.md
   - Chapters:
     - Overview: chapters/index.md
-    - 1. Digital Transformation and AI Foundations: chapters/01-digital-transformation-ai-foundations/index.md
-    - 2. Large Language Model Architecture: chapters/02-llm-architecture/index.md
-    - 3. AI Platform Landscape: chapters/03-ai-platform-landscape/index.md
-    - 4. Prompt Engineering Fundamentals: chapters/04-prompt-engineering/index.md
-    - 5. Custom GPTs, Agents, and RAG Systems: chapters/05-custom-gpts-agents-rag/index.md
-    - 6. LLM API Integration: chapters/06-llm-api-integration/index.md
-    - 7. Multimodal AI: chapters/07-multimodal-ai/index.md
-    - 8. AI Governance, Ethics, and Responsible AI: chapters/08-governance-ethics-responsible-ai/index.md
-    - 9. Future of Work and Workforce Transformation: chapters/09-future-of-work/index.md
-    - 10. Business Applications and AI Transformation: chapters/10-business-applications-transformation/index.md
-  - Learning Graph:
-    - Overview: learning-graph/index.md
-    - Course Description Assessment: learning-graph/course-description-assessment.md
-    - Concept Enumeration: learning-graph/concept-list.md
-    - Graph Quality Analysis: learning-graph/quality-metrics.md
-    - Concept Taxonomy: learning-graph/concept-taxonomy.md
-    - Taxonomy Distribution: learning-graph/taxonomy-distribution-report.md
-    - Mermaid Diagrams: learning-graph/learning-graph-mermaid.md
-    - Book Metrics: learning-graph/book-metrics.md
+    - 1. Digital Transformation and AI Foundations:
+      - Content: chapters/01-digital-transformation-ai-foundations/index.md
+      - Quiz: quizzes/quiz-01.md
+    - 2. Large Language Model Architecture:
+      - Content: chapters/02-llm-architecture/index.md
+      - Quiz: quizzes/quiz-02.md
+    - 3. AI Platform Landscape:
+      - Content: chapters/03-ai-platform-landscape/index.md
+      - Quiz: quizzes/quiz-03.md
+    - 4. Prompt Engineering Fundamentals:
+      - Content: chapters/04-prompt-engineering/index.md
+      - Quiz: quizzes/quiz-04.md
+    - 5. Custom GPTs, Agents, and RAG Systems:
+      - Content: chapters/05-custom-gpts-agents-rag/index.md
+      - Quiz: quizzes/quiz-05.md
+    - 6. LLM API Integration:
+      - Content: chapters/06-llm-api-integration/index.md
+      - Quiz: quizzes/quiz-06.md
+    - 7. Multimodal AI:
+      - Content: chapters/07-multimodal-ai/index.md
+      - Quiz: quizzes/quiz-07.md
+    - 8. AI Governance, Ethics, and Responsible AI:
+      - Content: chapters/08-governance-ethics-responsible-ai/index.md
+      - Quiz: quizzes/quiz-08.md
+    - 9. Future of Work and Workforce Transformation:
+      - Content: chapters/09-future-of-work/index.md
+      - Quiz: quizzes/quiz-09.md
+    - 10. Business Applications and AI Transformation:
+      - Content: chapters/10-business-applications-transformation/index.md
+      - Quiz: quizzes/quiz-10.md
+  
   - MicroSims:
     - Overview: sims/index.md
     - Digital Maturity Quadrant: sims/digital-maturity-quadrant/index.md
@@ -41,18 +53,16 @@ nav:
     - Human-AI Task Allocation: sims/human-ai-task-allocation/index.md
     - AI Use Case Prioritization: sims/ai-use-case-prioritization/index.md
     - AI Strategy Assessment: sims/ai-strategy-assessment/index.md
-  - Quizzes:
-    - Overview: quizzes/index.md
-    - "Quiz 1: DT & AI Foundations": quizzes/quiz-01.md
-    - "Quiz 2: LLM Architecture": quizzes/quiz-02.md
-    - "Quiz 3: AI Platforms": quizzes/quiz-03.md
-    - "Quiz 4: Prompt Engineering": quizzes/quiz-04.md
-    - "Quiz 5: Custom GPTs & RAG": quizzes/quiz-05.md
-    - "Quiz 6: API Integration": quizzes/quiz-06.md
-    - "Quiz 7: Multimodal AI": quizzes/quiz-07.md
-    - "Quiz 8: Governance & Ethics": quizzes/quiz-08.md
-    - "Quiz 9: Future of Work": quizzes/quiz-09.md
-    - "Quiz 10: Business Applications": quizzes/quiz-10.md
+  - Learning Graph:
+    - Overview: learning-graph/index.md
+    - Course Description Assessment: learning-graph/course-description-assessment.md
+    - Concept Enumeration: learning-graph/concept-list.md
+    - Graph Quality Analysis: learning-graph/quality-metrics.md
+    - Concept Taxonomy: learning-graph/concept-taxonomy.md
+    - Taxonomy Distribution: learning-graph/taxonomy-distribution-report.md
+    - Mermaid Diagrams: learning-graph/learning-graph-mermaid.md
+    - Book Metrics: learning-graph/book-metrics.md
+
   - Glossary: glossary.md
   - FAQ: faq.md
   - References: references.md
@@ -66,21 +76,14 @@ theme:
   search_index_only: false
   features:
     - content.code.copy
-    - content.action.edit
-    - navigation.sections
     - navigation.expand
     - navigation.path
     - navigation.prune
     - navigation.indexes
+    - toc.follow
     - navigation.top
     - navigation.footer
-    - navigation.instant
-    - navigation.instant.progress
-    - toc.follow
-    - search.suggest
-    - search.highlight
-    - announce.dismiss
-    - header.autohide
+    - content.action.edit
   palette:
     - scheme: default
       primary: custom
