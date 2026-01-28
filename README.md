@@ -7,6 +7,8 @@
 [![Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-DA7857?logo=anthropic)](https://claude.ai/code)
 [![Claude Skills](https://img.shields.io/badge/Uses-Claude%20Skills-DA7857?logo=anthropic)](https://github.com/dmccreary/claude-skills)
 [![p5.js](https://img.shields.io/badge/p5.js-ED225D?logo=p5.js&logoColor=white)](https://p5js.org/)
+[![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?logo=chartdotjs&logoColor=white)](https://www.chartjs.org/)
+[![vis-network](https://img.shields.io/badge/vis--network-1976D2?logo=javascript&logoColor=white)](https://visjs.github.io/vis-network/docs/network/)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ## View the Live Site
@@ -17,7 +19,7 @@ Visit the interactive textbook at: [https://yarmoluk.github.io/Digital-Transform
 
 This is an interactive, AI-generated intelligent textbook for **SEIS 666: Digital Transformation 2.0 with Generative AI** at the University of St. Thomas. The course explores how generative AI technologies are reshaping digital transformation, business models, and workforce dynamics.
 
-Built using MkDocs with the Material theme, this textbook incorporates learning graphs, concept dependencies, interactive MicroSims (p5.js simulations), and AI-assisted content generation. It follows Bloom's Taxonomy (2001 revision) for learning outcomes and uses a 200-concept dependency graph to ensure proper prerequisite sequencing.
+Built using MkDocs with the Material theme, this textbook incorporates learning graphs, concept dependencies, interactive MicroSims (p5.js and Chart.js simulations), and AI-assisted content generation. It follows Bloom's Taxonomy (2001 revision) for learning outcomes and uses a 200-concept dependency graph to ensure proper prerequisite sequencing.
 
 Whether you're a graduate student exploring AI-driven business transformation or a professional seeking to understand how generative AI is changing the enterprise landscape, this textbook provides comprehensive coverage with hands-on interactive elements that make complex concepts accessible and engaging.
 
@@ -27,15 +29,16 @@ Whether you're a graduate student exploring AI-driven business transformation or
 |--------|-------|
 | Concepts in Learning Graph | 200 |
 | Chapters | 10 |
-| Markdown Files | 45 |
-| Total Words | 70,174 |
-| MicroSims | 8 |
-| Glossary Terms | 198 |
-| FAQ Questions | 47 |
-| Quiz Questions | 400 |
-| Quizzes | 10 |
+| Markdown Files | 78 |
+| Total Words | 102,715 |
+| MicroSims | 33 |
+| Glossary Terms | 223 |
+| FAQ Questions | 59 |
+| Chapter Quiz Questions | 112 |
+| MicroSim Quiz Questions | 182 |
+| Images | 41 |
 
-**Completion Status:** Content generation complete with full chapter coverage, interactive simulations, and comprehensive assessments.
+**Completion Status:** Content generation complete with full chapter coverage, 33 interactive simulations, and comprehensive assessments including quizzes for all chapters and MicroSims.
 
 ## Getting Started
 
@@ -87,10 +90,11 @@ This will build the site and push it to the `gh-pages` branch.
 - Each chapter includes quizzes and practice exercises
 
 **Interactive MicroSims:**
-- Found in the "MicroSims" section
+- Found in the "MicroSims" section with 33 interactive visualizations
+- Categories include: AI Capability Assessment, LLM Architecture, Strategic Frameworks, Technology Trends
 - Each simulation runs standalone in your browser
 - Adjust parameters with sliders and controls
-- Includes: Digital Maturity Quadrant, Neural Network Visualization, Tokenization Process, Self-Attention Visualization, and more
+- All MicroSims include 5-question self-assessment quizzes
 
 **Customization:**
 - Edit markdown files in `docs/` to modify content
@@ -107,19 +111,25 @@ Digital-Transformation-with-AI-Spring-2026/
 │   │   ├── 01-digital-transformation-ai-foundations/
 │   │   ├── 02-llm-architecture/
 │   │   └── ...
-│   ├── sims/                          # Interactive p5.js MicroSims
-│   │   ├── digital-maturity-quadrant/
+│   ├── sims/                          # 33 interactive MicroSims
+│   │   ├── ai-benchmarks-timeline/    # AI benchmark evolution
+│   │   ├── ai-cmm/                    # AI Capability Maturity Model
 │   │   ├── neural-network-visualization/
+│   │   ├── self-attention-visualization/
 │   │   ├── tokenization-process/
+│   │   ├── vector-similarity/
 │   │   └── ...
 │   ├── quizzes/                       # Chapter quizzes (10 total)
 │   ├── learning-graph/                # 200-concept dependency graph
 │   │   ├── learning-graph.csv         # Editable concept data
 │   │   ├── learning-graph.json        # vis-network format
 │   │   └── quality-metrics.md
-│   ├── glossary.md                    # 198 ISO 11179-compliant terms
-│   ├── faq.md                         # 47 frequently asked questions
+│   ├── overrides/                     # MkDocs theme overrides
+│   ├── glossary.md                    # 223 ISO 11179-compliant terms
+│   ├── faq.md                         # 59 frequently asked questions
 │   └── references.md                  # Curated references
+├── plugins/                           # Custom MkDocs plugins
+│   └── social_override.py             # Custom social media images
 ├── mkdocs.yml                         # MkDocs configuration
 ├── CLAUDE.md                          # Claude Code guidance
 └── README.md                          # This file
@@ -137,6 +147,40 @@ Digital-Transformation-with-AI-Spring-2026/
 8. **AI Governance, Ethics, and Responsible AI** - Policy, regulation, and ethical frameworks
 9. **Future of Work and Workforce Transformation** - AI's impact on jobs and skills
 10. **Business Applications and AI Transformation** - Enterprise AI use cases and strategy
+
+## MicroSims Highlights
+
+The textbook includes 33 interactive MicroSims covering:
+
+**AI Capability & Strategy:**
+- AI Capability Maturity Model
+- AI Strategy Assessment
+- AI Use Case Prioritization
+- Digital Maturity Quadrant
+- SWOT Analysis
+- Porter's Five Forces
+
+**LLM Architecture & Concepts:**
+- Neural Network Visualization
+- Self-Attention Visualization
+- Tokenization Process
+- Tokenizer Comparison
+- Vector Similarity
+- Autoregressive Model
+
+**Technology Trends:**
+- AI Benchmarks Timeline
+- AI Doubling Rate
+- Moore's Law
+- Power Wall
+- Projecting AI to 2030
+- Deep Learning Timeline
+
+**Business Frameworks:**
+- Technology Adoption Curve
+- Hype Cycle
+- Human-AI Task Allocation
+- Four AI Futures
 
 ## Reporting Issues
 
@@ -174,6 +218,7 @@ This project is built on the shoulders of giants in the open source community:
 - **[MkDocs](https://www.mkdocs.org/)** - Static site generator optimized for project documentation
 - **[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)** - Beautiful, responsive theme
 - **[p5.js](https://p5js.org/)** - Creative coding library from NYU ITP
+- **[Chart.js](https://www.chartjs.org/)** - Flexible JavaScript charting library
 - **[vis-network](https://visjs.org/)** - Network visualization library for learning graphs
 - **[Claude AI](https://claude.ai)** by Anthropic - AI-assisted content generation
 - **[Claude Skills](https://github.com/dmccreary/claude-skills)** by Dan McCreary - Intelligent textbook generation framework
@@ -188,3 +233,7 @@ Special thanks to the University of St. Thomas and the educators who contribute 
 - GitHub: [@Yarmoluk](https://github.com/Yarmoluk)
 
 Questions, suggestions, or collaboration opportunities? Feel free to open an issue on GitHub.
+
+---
+
+*Last updated: January 2026*

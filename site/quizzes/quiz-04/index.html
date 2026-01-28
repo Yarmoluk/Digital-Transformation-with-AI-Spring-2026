@@ -1571,12 +1571,14 @@
 <h2 id="questions">Questions<a class="headerlink" href="#questions" title="Permanent link">&para;</a></h2>
 <h3 id="question-1-remember">Question 1 (Remember)<a class="headerlink" href="#question-1-remember" title="Permanent link">&para;</a></h3>
 <p><strong>What is zero-shot prompting?</strong></p>
-<ul>
-<li>[x] A) Asking the model to perform a task without providing examples</li>
-<li>[ ] B) Using no system prompt</li>
-<li>[ ] C) Generating zero tokens</li>
-<li>[ ] D) A technique that always fails</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Asking the model to perform a task without providing examples</li>
+<li>Using no system prompt</li>
+<li>Generating zero tokens</li>
+<li>A technique that always fails</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>A) Asking the model to perform a task without providing examples</strong> - Zero-shot prompting relies on the model's pre-trained knowledge without task-specific examples. The model must understand the task from instructions alone.</p>
@@ -1584,12 +1586,14 @@
 <hr />
 <h3 id="question-2-remember">Question 2 (Remember)<a class="headerlink" href="#question-2-remember" title="Permanent link">&para;</a></h3>
 <p><strong>What is chain-of-thought prompting?</strong></p>
-<ul>
-<li>[ ] A) Linking multiple prompts together</li>
-<li>[x] B) Encouraging the model to show step-by-step reasoning</li>
-<li>[ ] C) Using multiple models in sequence</li>
-<li>[ ] D) A type of system prompt</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Linking multiple prompts together</li>
+<li>Encouraging the model to show step-by-step reasoning</li>
+<li>Using multiple models in sequence</li>
+<li>A type of system prompt</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>B) Encouraging the model to show step-by-step reasoning</strong> - Chain-of-thought prompting asks the model to "think step by step," which improves accuracy on complex reasoning tasks by making intermediate steps explicit.</p>
@@ -1597,12 +1601,14 @@
 <hr />
 <h3 id="question-3-understand">Question 3 (Understand)<a class="headerlink" href="#question-3-understand" title="Permanent link">&para;</a></h3>
 <p><strong>Why does few-shot prompting often outperform zero-shot for specialized tasks?</strong></p>
-<ul>
-<li>[ ] A) It uses more tokens</li>
-<li>[ ] B) It costs more</li>
-<li>[x] C) Examples demonstrate the desired pattern and format</li>
-<li>[ ] D) It always produces longer outputs</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>It uses more tokens</li>
+<li>It costs more</li>
+<li>Examples demonstrate the desired pattern and format</li>
+<li>It always produces longer outputs</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>C) Examples demonstrate the desired pattern and format</strong> - Few-shot examples show the model exactly what input/output patterns you expect, reducing ambiguity and improving consistency for specialized tasks.</p>
@@ -1610,12 +1616,14 @@
 <hr />
 <h3 id="question-4-understand">Question 4 (Understand)<a class="headerlink" href="#question-4-understand" title="Permanent link">&para;</a></h3>
 <p><strong>What is the purpose of a system prompt?</strong></p>
-<ul>
-<li>[ ] A) To increase token count</li>
-<li>[x] B) To define the AI's behavior, persona, and constraints</li>
-<li>[ ] C) To bypass safety features</li>
-<li>[ ] D) To reduce costs</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>To increase token count</li>
+<li>To define the AI's behavior, persona, and constraints</li>
+<li>To bypass safety features</li>
+<li>To reduce costs</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>B) To define the AI's behavior, persona, and constraints</strong> - System prompts establish context, role, communication style, and boundaries that persist throughout the conversation.</p>
@@ -1623,12 +1631,14 @@
 <hr />
 <h3 id="question-5-apply">Question 5 (Apply)<a class="headerlink" href="#question-5-apply" title="Permanent link">&para;</a></h3>
 <p><strong>You need consistent JSON output from an LLM. Which technique is most effective?</strong></p>
-<ul>
-<li>[ ] A) Ask politely for JSON</li>
-<li>[x] B) Provide JSON schema and examples, specify "respond only with valid JSON"</li>
-<li>[ ] C) Use maximum temperature</li>
-<li>[ ] D) Avoid all instructions</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Ask politely for JSON</li>
+<li>Provide JSON schema and examples, specify "respond only with valid JSON"</li>
+<li>Use maximum temperature</li>
+<li>Avoid all instructions</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>B) Provide JSON schema and examples, specify "respond only with valid JSON"</strong> - Structured output requires clear format specification, examples of the expected structure, and explicit instructions to output only the specified format.</p>
@@ -1637,11 +1647,15 @@
 <h3 id="question-6-apply">Question 6 (Apply)<a class="headerlink" href="#question-6-apply" title="Permanent link">&para;</a></h3>
 <p><strong>A user complains that AI responses are too verbose. What prompt modification would help?</strong></p>
 <ul>
-<li>[ ] A) "Give me more details"</li>
-<li>[x] B) "Respond in 2-3 sentences maximum"</li>
-<li>[ ] C) Remove the system prompt</li>
-<li>[ ] D) Increase temperature</li>
+<li>"Give me more details"</li>
+<li>"Respond in 2-3 sentences maximum"</li>
 </ul>
+<div class="upper-alpha">
+<ol>
+<li>Remove the system prompt</li>
+<li>Increase temperature</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>B) "Respond in 2-3 sentences maximum"</strong> - Explicit length constraints in the prompt directly address verbosity. Being specific about desired output length helps control response size.</p>
@@ -1649,12 +1663,14 @@
 <hr />
 <h3 id="question-7-analyze">Question 7 (Analyze)<a class="headerlink" href="#question-7-analyze" title="Permanent link">&para;</a></h3>
 <p><strong>Compare tree-of-thought with chain-of-thought prompting:</strong></p>
-<ul>
-<li>[ ] A) They are identical techniques</li>
-<li>[ ] B) Tree-of-thought is simpler</li>
-<li>[x] C) Tree-of-thought explores multiple reasoning branches before selecting</li>
-<li>[ ] D) Chain-of-thought explores more options</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>They are identical techniques</li>
+<li>Tree-of-thought is simpler</li>
+<li>Tree-of-thought explores multiple reasoning branches before selecting</li>
+<li>Chain-of-thought explores more options</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>C) Tree-of-thought explores multiple reasoning branches before selecting</strong> - Chain-of-thought follows a single reasoning path, while tree-of-thought explores multiple branches and evaluates alternatives before choosing the best approach.</p>
@@ -1662,12 +1678,14 @@
 <hr />
 <h3 id="question-8-analyze">Question 8 (Analyze)<a class="headerlink" href="#question-8-analyze" title="Permanent link">&para;</a></h3>
 <p><strong>Why might a prompt template with placeholders be preferable to writing prompts from scratch?</strong></p>
-<ul>
-<li>[ ] A) Templates are always cheaper</li>
-<li>[ ] B) Templates require no customization</li>
-<li>[x] C) Templates ensure consistency and encode best practices</li>
-<li>[ ] D) Templates eliminate the need for prompt engineering</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Templates are always cheaper</li>
+<li>Templates require no customization</li>
+<li>Templates ensure consistency and encode best practices</li>
+<li>Templates eliminate the need for prompt engineering</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>C) Templates ensure consistency and encode best practices</strong> - Templates standardize effective prompt patterns, making them reusable, consistent, and incorporating lessons learned from iteration.</p>
@@ -1675,12 +1693,14 @@
 <hr />
 <h3 id="question-9-evaluate">Question 9 (Evaluate)<a class="headerlink" href="#question-9-evaluate" title="Permanent link">&para;</a></h3>
 <p><strong>Which scenario would benefit MOST from self-consistency prompting?</strong></p>
-<ul>
-<li>[ ] A) Simple factual questions</li>
-<li>[ ] B) Creative writing</li>
-<li>[x] C) Complex reasoning with multiple valid approaches</li>
-<li>[ ] D) Generating random content</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Simple factual questions</li>
+<li>Creative writing</li>
+<li>Complex reasoning with multiple valid approaches</li>
+<li>Generating random content</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>C) Complex reasoning with multiple valid approaches</strong> - Self-consistency generates multiple reasoning paths and selects the most common answer, which is most valuable when problems have multiple solution approaches.</p>
@@ -1688,12 +1708,14 @@
 <hr />
 <h3 id="question-10-create">Question 10 (Create)<a class="headerlink" href="#question-10-create" title="Permanent link">&para;</a></h3>
 <p><strong>Design a prompt strategy for a customer service bot that must: (1) maintain a friendly tone, (2) provide accurate product information, (3) escalate complex issues.</strong></p>
-<ul>
-<li>[ ] A) Just use zero-shot with "be helpful"</li>
-<li>[ ] B) Maximum temperature for creativity</li>
-<li>[x] C) System prompt defining persona and escalation rules, few-shot examples of good responses, structured output for escalation flags</li>
-<li>[ ] D) No prompt engineering needed</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Just use zero-shot with "be helpful"</li>
+<li>Maximum temperature for creativity</li>
+<li>System prompt defining persona and escalation rules, few-shot examples of good responses, structured output for escalation flags</li>
+<li>No prompt engineering needed</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>C) System prompt defining persona and escalation rules, few-shot examples of good responses, structured output for escalation flags</strong> - This combines multiple techniques: system prompt for behavior, few-shot for quality patterns, and structured output for actionable escalation.</p>

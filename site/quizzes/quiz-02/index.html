@@ -1571,12 +1571,14 @@
 <h2 id="questions">Questions<a class="headerlink" href="#questions" title="Permanent link">&para;</a></h2>
 <h3 id="question-1-remember">Question 1 (Remember)<a class="headerlink" href="#question-1-remember" title="Permanent link">&para;</a></h3>
 <p><strong>What is a token in the context of large language models?</strong></p>
-<ul>
-<li>[ ] A) A security credential</li>
-<li>[x] B) The basic unit of text processed by the model</li>
-<li>[ ] C) A type of neural network</li>
-<li>[ ] D) An API parameter</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>A security credential</li>
+<li>The basic unit of text processed by the model</li>
+<li>A type of neural network</li>
+<li>An API parameter</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>B) The basic unit of text processed by the model</strong> - Tokens are typically words or subwords that LLMs process. The model predicts the next most likely token based on the input sequence.</p>
@@ -1584,12 +1586,14 @@
 <hr />
 <h3 id="question-2-remember">Question 2 (Remember)<a class="headerlink" href="#question-2-remember" title="Permanent link">&para;</a></h3>
 <p><strong>What neural network architecture underlies most modern LLMs?</strong></p>
-<ul>
-<li>[ ] A) Convolutional Neural Network (CNN)</li>
-<li>[ ] B) Recurrent Neural Network (RNN)</li>
-<li>[x] C) Transformer</li>
-<li>[ ] D) Perceptron</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Convolutional Neural Network (CNN)</li>
+<li>Recurrent Neural Network (RNN)</li>
+<li>Transformer</li>
+<li>Perceptron</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>C) Transformer</strong> - The transformer architecture, introduced in 2017's "Attention is All You Need" paper, is the foundation of GPT, Claude, Gemini, and other modern LLMs.</p>
@@ -1597,12 +1601,14 @@
 <hr />
 <h3 id="question-3-understand">Question 3 (Understand)<a class="headerlink" href="#question-3-understand" title="Permanent link">&para;</a></h3>
 <p><strong>What is the primary function of the attention mechanism in transformers?</strong></p>
-<ul>
-<li>[ ] A) To reduce model size</li>
-<li>[x] B) To allow the model to focus on relevant parts of input</li>
-<li>[ ] C) To speed up training</li>
-<li>[ ] D) To encrypt data</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>To reduce model size</li>
+<li>To allow the model to focus on relevant parts of input</li>
+<li>To speed up training</li>
+<li>To encrypt data</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>B) To allow the model to focus on relevant parts of input</strong> - Attention mechanisms enable the model to weigh the importance of different input tokens when generating each output token, capturing relationships regardless of distance.</p>
@@ -1610,12 +1616,14 @@
 <hr />
 <h3 id="question-4-understand">Question 4 (Understand)<a class="headerlink" href="#question-4-understand" title="Permanent link">&para;</a></h3>
 <p><strong>What does RLHF stand for and why is it important?</strong></p>
-<ul>
-<li>[ ] A) Rapid Learning from Historical Files - speeds up training</li>
-<li>[x] B) Reinforcement Learning from Human Feedback - aligns outputs with human preferences</li>
-<li>[ ] C) Recursive Language Handling Framework - improves grammar</li>
-<li>[ ] D) Real-time Learning for Higher Fidelity - improves accuracy</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Rapid Learning from Historical Files - speeds up training</li>
+<li>Reinforcement Learning from Human Feedback - aligns outputs with human preferences</li>
+<li>Recursive Language Handling Framework - improves grammar</li>
+<li>Real-time Learning for Higher Fidelity - improves accuracy</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>B) Reinforcement Learning from Human Feedback - aligns outputs with human preferences</strong> - RLHF is a training method where human evaluators rate model outputs, and the model learns to produce responses that align with human preferences.</p>
@@ -1623,12 +1631,14 @@
 <hr />
 <h3 id="question-5-apply">Question 5 (Apply)<a class="headerlink" href="#question-5-apply" title="Permanent link">&para;</a></h3>
 <p><strong>If a model has a 128K token context window and you want to process a 200-page document (~100K tokens), what approach should you use?</strong></p>
-<ul>
-<li>[x] A) Process the document directly—it fits within the context window</li>
-<li>[ ] B) Use a model with a larger context window</li>
-<li>[ ] C) Split the document and process separately</li>
-<li>[ ] D) Convert to images first</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Process the document directly—it fits within the context window</li>
+<li>Use a model with a larger context window</li>
+<li>Split the document and process separately</li>
+<li>Convert to images first</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>A) Process the document directly—it fits within the context window</strong> - A 100K token document fits within a 128K token context window. Models like GPT-4 Turbo (128K) and Claude 3 (200K) can handle long documents directly.</p>
@@ -1636,12 +1646,14 @@
 <hr />
 <h3 id="question-6-apply">Question 6 (Apply)<a class="headerlink" href="#question-6-apply" title="Permanent link">&para;</a></h3>
 <p><strong>You notice that LLM responses are too predictable and lack creativity. Which parameter should you adjust?</strong></p>
-<ul>
-<li>[ ] A) Increase max tokens</li>
-<li>[x] B) Increase temperature</li>
-<li>[ ] C) Decrease context window</li>
-<li>[ ] D) Add more system prompts</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Increase max tokens</li>
+<li>Increase temperature</li>
+<li>Decrease context window</li>
+<li>Add more system prompts</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>B) Increase temperature</strong> - Temperature controls randomness. Higher values (0.7-1.0) produce more creative, varied outputs. Lower values (0-0.3) produce more consistent, predictable responses.</p>
@@ -1649,12 +1661,14 @@
 <hr />
 <h3 id="question-7-analyze">Question 7 (Analyze)<a class="headerlink" href="#question-7-analyze" title="Permanent link">&para;</a></h3>
 <p><strong>Compare pre-training and fine-tuning in terms of data requirements and purpose:</strong></p>
-<ul>
-<li>[ ] A) Both require the same amount of data</li>
-<li>[ ] B) Fine-tuning requires more data than pre-training</li>
-<li>[x] C) Pre-training uses massive general data; fine-tuning uses smaller task-specific data</li>
-<li>[ ] D) Pre-training is optional; fine-tuning is required</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Both require the same amount of data</li>
+<li>Fine-tuning requires more data than pre-training</li>
+<li>Pre-training uses massive general data; fine-tuning uses smaller task-specific data</li>
+<li>Pre-training is optional; fine-tuning is required</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>C) Pre-training uses massive general data; fine-tuning uses smaller task-specific data</strong> - Pre-training on billions of tokens teaches general language understanding. Fine-tuning with smaller datasets adapts the model to specific tasks or domains.</p>
@@ -1662,12 +1676,14 @@
 <hr />
 <h3 id="question-8-analyze">Question 8 (Analyze)<a class="headerlink" href="#question-8-analyze" title="Permanent link">&para;</a></h3>
 <p><strong>Why does multi-head attention provide advantages over single-head attention?</strong></p>
-<ul>
-<li>[ ] A) It requires less computation</li>
-<li>[ ] B) It uses fewer parameters</li>
-<li>[x] C) It captures different types of relationships simultaneously</li>
-<li>[ ] D) It eliminates the need for training</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>It requires less computation</li>
+<li>It uses fewer parameters</li>
+<li>It captures different types of relationships simultaneously</li>
+<li>It eliminates the need for training</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>C) It captures different types of relationships simultaneously</strong> - Multiple attention heads can learn different aspects of relationships (syntax, semantics, coreference) in parallel, providing richer representations.</p>
@@ -1675,12 +1691,14 @@
 <hr />
 <h3 id="question-9-evaluate">Question 9 (Evaluate)<a class="headerlink" href="#question-9-evaluate" title="Permanent link">&para;</a></h3>
 <p><strong>A company wants to process sensitive legal documents. They're comparing a 7B parameter open-source model versus GPT-4. What is the most important consideration?</strong></p>
-<ul>
-<li>[ ] A) The open-source model is always better for privacy</li>
-<li>[ ] B) GPT-4 is always more accurate</li>
-<li>[x] C) Privacy requirements, accuracy needs, and deployment options must be balanced</li>
-<li>[ ] D) Parameter count is the only factor that matters</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>The open-source model is always better for privacy</li>
+<li>GPT-4 is always more accurate</li>
+<li>Privacy requirements, accuracy needs, and deployment options must be balanced</li>
+<li>Parameter count is the only factor that matters</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>C) Privacy requirements, accuracy needs, and deployment options must be balanced</strong> - The decision involves trade-offs: open-source allows on-premise deployment for privacy, but may have lower accuracy. GPT-4 offers better performance but sends data to external servers.</p>
@@ -1688,12 +1706,14 @@
 <hr />
 <h3 id="question-10-create">Question 10 (Create)<a class="headerlink" href="#question-10-create" title="Permanent link">&para;</a></h3>
 <p><strong>You need to design a system that generates consistent customer support responses. Which combination of architecture decisions is most appropriate?</strong></p>
-<ul>
-<li>[ ] A) High temperature, no system prompt, minimal context</li>
-<li>[ ] B) Random temperature, long context, no fine-tuning</li>
-<li>[x] C) Low temperature, structured system prompt, relevant context, possibly fine-tuned</li>
-<li>[ ] D) Maximum tokens, no constraints, creative mode</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>High temperature, no system prompt, minimal context</li>
+<li>Random temperature, long context, no fine-tuning</li>
+<li>Low temperature, structured system prompt, relevant context, possibly fine-tuned</li>
+<li>Maximum tokens, no constraints, creative mode</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>C) Low temperature, structured system prompt, relevant context, possibly fine-tuned</strong> - Consistent responses require low temperature (predictability), clear system prompts (behavior guidance), relevant context (accuracy), and potentially fine-tuning on support examples.</p>
