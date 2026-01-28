@@ -67,8 +67,6 @@ theme:
   features:
     - content.code.copy
     - content.action.edit
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.path
@@ -138,6 +136,7 @@ extra:
   generator: false
   analytics:
     provider: google
+    property: G-H5EG7E1BQG
     feedback:
       title: Was this page helpful?
       ratings:
@@ -150,4 +149,5 @@ extra:
           data: 0
           note: Thanks for your feedback!
 
-copyright: Copyright &copy; 2026 Daniel Yarmoluk - University of St. Thomas
+copyright: Copyright &copy; 2026 Daniel Yarmoluk | All rights reserved.
+

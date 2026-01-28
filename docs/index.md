@@ -1,13 +1,19 @@
 ---
-title: Intelligent Textbook - Digital Transformation 2.0 with Generative AI by Daniel R. Yarmoluk
+title: Digital Transformation 2.0 with Generative AI
 description: An intelligent textbook for SEIS 666 at University of St. Thomas exploring generative AI in business transformation
+image: img/social-card.png
+hide:
+  - toc
 ---
+<style>
+.md-content__inner h1 {display: none !important;}
+</style>
 
 # Digital Transformation 2.0 with Generative AI
 
-**SEIS 666** | University of St. Thomas | Spring 2026 | Instructor: Daniel Yarmoluk
-
----
+<figure markdown>
+  ![Digital Transformation 2.0 with Generative AI](./img/social-card.png){ width="100%" }
+</figure>
 
 *Master the technologies reshaping business, from LLMs to AI agents*
 
