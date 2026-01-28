@@ -46,6 +46,10 @@ nav:
       - Content: chapters/10-business-applications-transformation/index.md
       - Quiz: quizzes/quiz-10.md
   
+  - Slides:
+    - List of Slides: slides/index.md
+    - Tracking AI: slides/tracking-ai/index.md
+
   - MicroSims:
     - Overview: sims/index.md
     - AI Benchmarks Timeline: sims/ai-benchmarks-timeline/index.md
