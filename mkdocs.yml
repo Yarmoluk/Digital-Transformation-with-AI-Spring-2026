@@ -15,6 +15,9 @@ nav:
     - 1. Digital Transformation and AI Foundations:
       - Content: chapters/01-digital-transformation-ai-foundations/index.md
       - Quiz: quizzes/quiz-01.md
+    - 1b. Tracking AI Progress and Trends:
+      - Content: chapters/01b-tracking-ai/index.md
+      - Quiz: quizzes/quiz-01b.md
     - 2. Large Language Model Architecture:
       - Content: chapters/02-llm-architecture/index.md
       - Quiz: quizzes/quiz-02.md

@@ -28,13 +28,13 @@ Whether you're a graduate student exploring AI-driven business transformation or
 | Metric | Count |
 |--------|-------|
 | Concepts in Learning Graph | 200 |
-| Chapters | 10 |
-| Markdown Files | 78 |
-| Total Words | 102,715 |
+| Chapters | 11 |
+| Markdown Files | 80 |
+| Total Words | 106,053 |
 | MicroSims | 33 |
 | Glossary Terms | 223 |
 | FAQ Questions | 59 |
-| Chapter Quiz Questions | 112 |
+| Chapter Quiz Questions | 127 |
 | MicroSim Quiz Questions | 182 |
 | Images | 41 |
 
@@ -107,8 +107,9 @@ This will build the site and push it to the `gh-pages` branch.
 ```
 Digital-Transformation-with-AI-Spring-2026/
 ├── docs/                              # MkDocs documentation source
-│   ├── chapters/                      # 10 course chapters
+│   ├── chapters/                      # 11 course chapters
 │   │   ├── 01-digital-transformation-ai-foundations/
+│   │   ├── 01b-tracking-ai/           # AI progress tracking & trends
 │   │   ├── 02-llm-architecture/
 │   │   └── ...
 │   ├── sims/                          # 33 interactive MicroSims
@@ -119,7 +120,7 @@ Digital-Transformation-with-AI-Spring-2026/
 │   │   ├── tokenization-process/
 │   │   ├── vector-similarity/
 │   │   └── ...
-│   ├── quizzes/                       # Chapter quizzes (10 total)
+│   ├── quizzes/                       # Chapter quizzes (11 total)
 │   ├── learning-graph/                # 200-concept dependency graph
 │   │   ├── learning-graph.csv         # Editable concept data
 │   │   ├── learning-graph.json        # vis-network format
@@ -138,6 +139,7 @@ Digital-Transformation-with-AI-Spring-2026/
 ## Chapters
 
 1. **Digital Transformation and AI Foundations** - Core concepts of digital transformation and AI
+1b. **Tracking AI Progress and Trends** - Measuring, benchmarking, and projecting AI capabilities (METR research, Moore's Law, AI benchmarks)
 2. **Large Language Model Architecture** - How LLMs work (transformers, attention, embeddings)
 3. **AI Platform Landscape** - Overview of major AI platforms and providers
 4. **Prompt Engineering Fundamentals** - Techniques for effective AI interaction

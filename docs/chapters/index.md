@@ -1,10 +1,12 @@
 # Chapters
 
-This textbook is organized into **10 chapters** covering **200 concepts** on Digital Transformation 2.0 with Generative AI.
+This textbook is organized into **11 chapters** covering **200 concepts** on Digital Transformation 2.0 with Generative AI.
 
 ## Chapter Overview
 
 1. [Digital Transformation and AI Foundations](01-digital-transformation-ai-foundations/index.md) - Core digital transformation concepts and introduction to AI, ML, and generative AI fundamentals.
+
+1b. [Tracking AI Progress and Trends](01b-tracking-ai/index.md) - Understanding how to measure, benchmark, and project AI capabilities through data-driven analysis and interactive visualizations including the METR research, Moore's Law, and AI benchmarking.
 
 2. [Large Language Model Architecture](02-llm-architecture/index.md) - How LLMs work including transformer architecture, attention mechanisms, training methods, and model parameters.
 

@@ -26,7 +26,7 @@ python3 docs/learning-graph/analyze-graph.py                             # Analy
 ## Architecture
 
 ### Content Structure
-- `/docs/chapters/` - 10 course chapters, each in its own directory with `index.md`
+- `/docs/chapters/` - 11 course chapters, each in its own directory with `index.md`
 - `/docs/quizzes/` - Self-assessment quizzes (one per chapter) with collapsible answers
 - `/docs/sims/` - 33 interactive MicroSims using p5.js, Chart.js, and vis-network.js (each has `index.md`, `main.html`, `*.js`)
 - `/docs/learning-graph/` - 200-concept dependency graph with vis-network.js viewer
