@@ -2,6 +2,8 @@
 title: Language Model Arena Timeline
 description: Interactive visualization of LMArena benchmark rankings for AI models
 image: sims/lm-arena-timeline/thumbnail.png
+social:
+   cards: false
 quality_score: 67
 hide:
   - toc

@@ -3,6 +3,8 @@ title: Four AI Futures MicroSim
 description: Interactive chart showing four possible scenarios for AI development growth patterns
 quality_score: 67
 image: sims/four-futures/four-futures.png
+social:
+   cards: false
 og:image: /sims/four-futures/four-futures.png
 ---
 # Four AI Futures MicroSim

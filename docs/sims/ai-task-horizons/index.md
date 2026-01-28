@@ -2,6 +2,8 @@
 title: AI Task Completion Time Horizons
 description: Interactive visualization showing how long AI models can work on tasks based on METR research
 image: sims/ai-task-horizons/thumbnail.png
+social:
+   cards: false
 quality_score: 72
 ---
 # AI Task Completion Time Horizons

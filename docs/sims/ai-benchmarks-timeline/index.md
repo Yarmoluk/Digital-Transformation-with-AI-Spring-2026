@@ -2,6 +2,8 @@
 title: AI Benchmarks Timeline
 description: Interactive timeline showing key AI benchmarks and when they were introduced
 image: sims/ai-benchmarks-timeline/thumbnail.png
+social:
+   cards: false
 quality_score: 67
 hide:
   - toc
@@ -19,7 +21,6 @@ hide:
 [Run the MicroSim](./main.html){ .md-button .md-button--primary }
 
 [Edit the MicroSim](https://editor.p5js.org/dmccreary/sketches/0fxIbT1A4)
-
 
 
 !!! prompt

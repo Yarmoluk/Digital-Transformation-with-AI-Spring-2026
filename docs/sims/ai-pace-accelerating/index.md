@@ -2,6 +2,8 @@
 title: The Accelerating Pace of AI
 description: Interactive visualization demonstrating how AI capabilities are accelerating
 image: sims/ai-pace-accelerating/thumbnail.png
+social:
+   cards: false
 quality_score: 67
 hide:
   - toc

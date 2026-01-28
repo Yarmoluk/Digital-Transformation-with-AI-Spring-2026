@@ -2,6 +2,8 @@
 title: Porter's Five Forces Model
 description: Interactive visualization of Porter's Five Forces competitive analysis framework
 image: sims/porters-five-forces/thumbnail.png
+social:
+   cards: false
 quality_score: 62
 hide:
   - toc

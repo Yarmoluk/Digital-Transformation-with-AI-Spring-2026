@@ -2,6 +2,8 @@
 title: MMLU Timeline MicroSim
 description: Interactive visualization showing AI model progress on the MMLU benchmark
 image: sims/mmlu-timeline/thumbnail.png
+social:
+   cards: false
 quality_score: 72
 hide:
   - toc
