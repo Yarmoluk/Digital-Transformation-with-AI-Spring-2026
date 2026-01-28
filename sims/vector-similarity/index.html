@@ -1460,6 +1460,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#self-assessment-quiz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-Assessment Quiz
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1765,6 +1774,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#self-assessment-quiz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-Assessment Quiz
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1961,6 +1979,73 @@
 <li>Pennington, J., Socher, R., &amp; Manning, C. (2014). GloVe: Global Vectors for Word Representation. <em>EMNLP</em>.</li>
 <li>Reimers, N., &amp; Gurevych, I. (2019). Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. <em>EMNLP</em>.</li>
 </ol>
+<h2 id="self-assessment-quiz">Self-Assessment Quiz<a class="headerlink" href="#self-assessment-quiz" title="Permanent link">&para;</a></h2>
+<p>Test your understanding of vector similarity and word embeddings.</p>
+<div class="upper-alpha">
+<p><strong>Question 1: What is a word embedding?</strong></p>
+<ol>
+<li>A physical object embedded in text</li>
+<li>A dense numerical vector that represents the meaning of a word</li>
+<li>A type of font style</li>
+<li>A grammar checking tool</li>
+</ol>
+</div>
+<details class="success">
+<summary>Answer</summary>
+<p>B) A dense numerical vector that represents the meaning of a word - Word embeddings convert words into multi-dimensional vectors where semantic relationships are preserved as geometric relationships.</p>
+</details>
+<div class="upper-alpha">
+<p><strong>Question 2: What does cosine similarity measure?</strong></p>
+<ol>
+<li>The physical distance between two objects</li>
+<li>The angle between two vectors, indicating how similar their directions are</li>
+<li>The size of two vectors</li>
+<li>The color difference between vectors</li>
+</ol>
+</div>
+<details class="success">
+<summary>Answer</summary>
+<p>B) The angle between two vectors, indicating how similar their directions are - Cosine similarity measures the cosine of the angle between vectors, with values closer to 1 indicating more similar meanings.</p>
+</details>
+<div class="upper-alpha">
+<p><strong>Question 3: In a well-trained embedding space, what happens to words with similar meanings?</strong></p>
+<ol>
+<li>They are placed far apart</li>
+<li>They cluster together in the vector space</li>
+<li>They are deleted</li>
+<li>They become identical</li>
+</ol>
+</div>
+<details class="success">
+<summary>Answer</summary>
+<p>B) They cluster together in the vector space - Words with similar meanings (like "car" and "automobile") are positioned near each other in the embedding space.</p>
+</details>
+<div class="upper-alpha">
+<p><strong>Question 4: Why does semantic search outperform keyword matching?</strong></p>
+<ol>
+<li>Semantic search is always faster</li>
+<li>Semantic search finds conceptually similar content even without exact word matches</li>
+<li>Keyword matching is illegal</li>
+<li>Semantic search uses less computing power</li>
+</ol>
+</div>
+<details class="success">
+<summary>Answer</summary>
+<p>B) Semantic search finds conceptually similar content even without exact word matches - Semantic search using embeddings can find documents about "automobiles" when searching for "cars" because it understands meaning, not just word presence.</p>
+</details>
+<div class="upper-alpha">
+<p><strong>Question 5: How are vector embeddings used in RAG (Retrieval Augmented Generation) systems?</strong></p>
+<ol>
+<li>They are not used in RAG</li>
+<li>They enable finding relevant document chunks based on semantic similarity to user queries</li>
+<li>They replace the language model</li>
+<li>They generate random content</li>
+</ol>
+</div>
+<details class="success">
+<summary>Answer</summary>
+<p>B) They enable finding relevant document chunks based on semantic similarity to user queries - RAG systems embed both documents and queries into the same vector space, then retrieve chunks with high similarity to provide relevant context to the LLM.</p>
+</details>
 
 
 

@@ -1312,6 +1312,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#self-assessment-quiz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-Assessment Quiz
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1511,6 +1520,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#self-assessment-quiz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-Assessment Quiz
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1553,6 +1571,73 @@
 <p><a href="https://huggingface.co/spaces/Xenova/the-tokenizer-playground">HuggingFace Xenova Tokenizer Playground</a> - Allows you to compare 14 different tokenizers!.  This one also color codes each word.</p>
 </li>
 </ul>
+<h2 id="self-assessment-quiz">Self-Assessment Quiz<a class="headerlink" href="#self-assessment-quiz" title="Permanent link">&para;</a></h2>
+<p>Test your understanding of tokenizers and how they work.</p>
+<div class="upper-alpha">
+<p><strong>Question 1: What is the main purpose of a tokenizer?</strong></p>
+<ol>
+<li>To check grammar and spelling</li>
+<li>To convert text into numerical representations that AI models can process</li>
+<li>To translate text between languages</li>
+<li>To encrypt sensitive data</li>
+</ol>
+</div>
+<details class="success">
+<summary>Answer</summary>
+<p>B) To convert text into numerical representations that AI models can process - Tokenizers break text into tokens and assign each a unique numerical ID from the model's vocabulary.</p>
+</details>
+<div class="upper-alpha">
+<p><strong>Question 2: Why do different AI models use different tokenizers?</strong></p>
+<ol>
+<li>For marketing differentiation only</li>
+<li>Each model's tokenizer is optimized for its training data and architecture</li>
+<li>Tokenizers are all identical</li>
+<li>Government regulations require different tokenizers</li>
+</ol>
+</div>
+<details class="success">
+<summary>Answer</summary>
+<p>B) Each model's tokenizer is optimized for its training data and architecture - Different tokenizers have different vocabulary sizes, subword algorithms, and handling of special characters optimized for their specific model.</p>
+</details>
+<div class="upper-alpha">
+<p><strong>Question 3: What does color-coding tokens in a visualization help users understand?</strong></p>
+<ol>
+<li>Which tokens are most expensive</li>
+<li>How text is segmented into individual tokens, showing word boundaries</li>
+<li>The age of each token</li>
+<li>Which tokens are errors</li>
+</ol>
+</div>
+<details class="success">
+<summary>Answer</summary>
+<p>B) How text is segmented into individual tokens, showing word boundaries - Color-coding makes it visually clear where the tokenizer splits text, revealing whether words become one or multiple tokens.</p>
+</details>
+<div class="upper-alpha">
+<p><strong>Question 4: What happens when a word is not in a tokenizer's vocabulary?</strong></p>
+<ol>
+<li>The model crashes</li>
+<li>The word is split into smaller subword pieces that are in the vocabulary</li>
+<li>The word is ignored completely</li>
+<li>A new vocabulary is created</li>
+</ol>
+</div>
+<details class="success">
+<summary>Answer</summary>
+<p>B) The word is split into smaller subword pieces that are in the vocabulary - Modern tokenizers use subword algorithms to handle unknown words by breaking them into recognized smaller pieces.</p>
+</details>
+<div class="upper-alpha">
+<p><strong>Question 5: Why is comparing multiple tokenizers useful?</strong></p>
+<ol>
+<li>To find the most colorful one</li>
+<li>To understand how different models handle the same text and estimate relative token counts</li>
+<li>Comparison serves no purpose</li>
+<li>To find spelling errors</li>
+</ol>
+</div>
+<details class="success">
+<summary>Answer</summary>
+<p>B) To understand how different models handle the same text and estimate relative token counts - Comparing tokenizers reveals differences in how models process text, which affects context window usage, costs, and model behavior.</p>
+</details>
 
 
 

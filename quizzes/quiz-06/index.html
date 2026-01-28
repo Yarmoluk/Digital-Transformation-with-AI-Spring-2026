@@ -1571,12 +1571,14 @@
 <h2 id="questions">Questions<a class="headerlink" href="#questions" title="Permanent link">&para;</a></h2>
 <h3 id="question-1-remember">Question 1 (Remember)<a class="headerlink" href="#question-1-remember" title="Permanent link">&para;</a></h3>
 <p><strong>What does REST API stand for?</strong></p>
-<ul>
-<li>[ ] A) Rapid Execution Service Technology</li>
-<li>[x] B) Representational State Transfer Application Programming Interface</li>
-<li>[ ] C) Remote System Transfer API</li>
-<li>[ ] D) Real-time Streaming Technology</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Rapid Execution Service Technology</li>
+<li>Representational State Transfer Application Programming Interface</li>
+<li>Remote System Transfer API</li>
+<li>Real-time Streaming Technology</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>B) Representational State Transfer Application Programming Interface</strong> - REST is an architectural style for web services that uses standard HTTP methods (GET, POST, etc.) to interact with resources.</p>
@@ -1584,12 +1586,14 @@
 <hr />
 <h3 id="question-2-remember">Question 2 (Remember)<a class="headerlink" href="#question-2-remember" title="Permanent link">&para;</a></h3>
 <p><strong>What is the purpose of an API key?</strong></p>
-<ul>
-<li>[ ] A) To encrypt messages</li>
-<li>[ ] B) To increase response speed</li>
-<li>[x] C) To authenticate and identify the calling application</li>
-<li>[ ] D) To reduce token count</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>To encrypt messages</li>
+<li>To increase response speed</li>
+<li>To authenticate and identify the calling application</li>
+<li>To reduce token count</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>C) To authenticate and identify the calling application</strong> - API keys verify the identity of applications making requests and track usage for billing and rate limiting purposes.</p>
@@ -1597,12 +1601,14 @@
 <hr />
 <h3 id="question-3-understand">Question 3 (Understand)<a class="headerlink" href="#question-3-understand" title="Permanent link">&para;</a></h3>
 <p><strong>What does the temperature parameter control in LLM APIs?</strong></p>
-<ul>
-<li>[ ] A) Processing speed</li>
-<li>[x] B) Randomness/creativity of outputs</li>
-<li>[ ] C) Cost per request</li>
-<li>[ ] D) Maximum context length</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Processing speed</li>
+<li>Randomness/creativity of outputs</li>
+<li>Cost per request</li>
+<li>Maximum context length</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>B) Randomness/creativity of outputs</strong> - Temperature (0-2) controls output variability. Lower values produce more focused, deterministic responses; higher values produce more creative, varied outputs.</p>
@@ -1610,12 +1616,14 @@
 <hr />
 <h3 id="question-4-understand">Question 4 (Understand)<a class="headerlink" href="#question-4-understand" title="Permanent link">&para;</a></h3>
 <p><strong>What is the relationship between tokens and API pricing?</strong></p>
-<ul>
-<li>[ ] A) Pricing is fixed regardless of tokens</li>
-<li>[x] B) Costs are typically calculated per 1,000 tokens processed</li>
-<li>[ ] C) Only output tokens are charged</li>
-<li>[ ] D) Tokens have no impact on pricing</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Pricing is fixed regardless of tokens</li>
+<li>Costs are typically calculated per 1,000 tokens processed</li>
+<li>Only output tokens are charged</li>
+<li>Tokens have no impact on pricing</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>B) Costs are typically calculated per 1,000 tokens processed</strong> - Most LLM APIs charge based on input and output token counts, with prices varying by model capability. Understanding token usage is essential for cost management.</p>
@@ -1623,12 +1631,14 @@
 <hr />
 <h3 id="question-5-apply">Question 5 (Apply)<a class="headerlink" href="#question-5-apply" title="Permanent link">&para;</a></h3>
 <p><strong>You need deterministic, reproducible outputs for a compliance application. How should you configure the API?</strong></p>
-<ul>
-<li>[ ] A) Temperature = 1.5, no seed</li>
-<li>[x] B) Temperature = 0, fixed seed value</li>
-<li>[ ] C) Maximum temperature, random seed</li>
-<li>[ ] D) Default settings</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Temperature = 1.5, no seed</li>
+<li>Temperature = 0, fixed seed value</li>
+<li>Maximum temperature, random seed</li>
+<li>Default settings</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>B) Temperature = 0, fixed seed value</strong> - Temperature 0 minimizes randomness, and a fixed seed (where supported) ensures identical inputs produce identical outputs for reproducibility.</p>
@@ -1636,12 +1646,14 @@
 <hr />
 <h3 id="question-6-apply">Question 6 (Apply)<a class="headerlink" href="#question-6-apply" title="Permanent link">&para;</a></h3>
 <p><strong>Your API calls are being rejected with rate limit errors. What's the appropriate response?</strong></p>
-<ul>
-<li>[ ] A) Send more requests immediately</li>
-<li>[ ] B) Switch to a different model</li>
-<li>[x] C) Implement exponential backoff and request queuing</li>
-<li>[ ] D) Ignore the errors</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Send more requests immediately</li>
+<li>Switch to a different model</li>
+<li>Implement exponential backoff and request queuing</li>
+<li>Ignore the errors</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>C) Implement exponential backoff and request queuing</strong> - Rate limiting requires backing off (waiting longer between retries) and queuing requests to stay within limits while ensuring all requests eventually complete.</p>
@@ -1649,12 +1661,14 @@
 <hr />
 <h3 id="question-7-analyze">Question 7 (Analyze)<a class="headerlink" href="#question-7-analyze" title="Permanent link">&para;</a></h3>
 <p><strong>Compare streaming responses versus standard responses in terms of user experience and complexity:</strong></p>
-<ul>
-<li>[ ] A) Streaming is simpler to implement</li>
-<li>[ ] B) Standard responses are always faster</li>
-<li>[x] C) Streaming improves perceived speed but adds implementation complexity</li>
-<li>[ ] D) They are identical in all aspects</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Streaming is simpler to implement</li>
+<li>Standard responses are always faster</li>
+<li>Streaming improves perceived speed but adds implementation complexity</li>
+<li>They are identical in all aspects</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>C) Streaming improves perceived speed but adds implementation complexity</strong> - Streaming delivers tokens as they're generated (better UX), but requires handling partial responses and managing connection state (more complex code).</p>
@@ -1662,12 +1676,14 @@
 <hr />
 <h3 id="question-8-analyze">Question 8 (Analyze)<a class="headerlink" href="#question-8-analyze" title="Permanent link">&para;</a></h3>
 <p><strong>Why might you choose the OpenAI API over the Anthropic API for a specific project?</strong></p>
-<ul>
-<li>[ ] A) OpenAI is always cheaper</li>
-<li>[ ] B) Anthropic has no API</li>
-<li>[x] C) Different strengths: ecosystem/plugins (OpenAI) vs. long context/reasoning (Anthropic)</li>
-<li>[ ] D) There is no meaningful difference</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>OpenAI is always cheaper</li>
+<li>Anthropic has no API</li>
+<li>Different strengths: ecosystem/plugins (OpenAI) vs. long context/reasoning (Anthropic)</li>
+<li>There is no meaningful difference</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>C) Different strengths: ecosystem/plugins (OpenAI) vs. long context/reasoning (Anthropic)</strong> - API choice depends on requirements: OpenAI offers broader ecosystem and plugins; Anthropic offers longer context and different reasoning characteristics.</p>
@@ -1675,12 +1691,14 @@
 <hr />
 <h3 id="question-9-evaluate">Question 9 (Evaluate)<a class="headerlink" href="#question-9-evaluate" title="Permanent link">&para;</a></h3>
 <p><strong>Your team is debating API cost optimization strategies. Which approach provides the best balance of cost and quality?</strong></p>
-<ul>
-<li>[ ] A) Always use the cheapest model</li>
-<li>[ ] B) Always use the most expensive model</li>
-<li>[x] C) Route simple queries to cheaper models; use premium models for complex tasks</li>
-<li>[ ] D) Ignore costs entirely</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Always use the cheapest model</li>
+<li>Always use the most expensive model</li>
+<li>Route simple queries to cheaper models; use premium models for complex tasks</li>
+<li>Ignore costs entirely</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>C) Route simple queries to cheaper models; use premium models for complex tasks</strong> - Intelligent routing matches query complexity to model capability, using efficient models for simple tasks and reserving expensive models for tasks that require them.</p>
@@ -1688,12 +1706,14 @@
 <hr />
 <h3 id="question-10-create">Question 10 (Create)<a class="headerlink" href="#question-10-create" title="Permanent link">&para;</a></h3>
 <p><strong>Design an API integration architecture for a high-volume customer service application with: variable query complexity, cost constraints, and uptime requirements.</strong></p>
-<ul>
-<li>[ ] A) Single API endpoint, no caching</li>
-<li>[ ] B) Premium model only, no optimization</li>
-<li>[x] C) Load balancing, model routing by complexity, response caching, fallback providers</li>
-<li>[ ] D) Manual API calls</li>
-</ul>
+<div class="upper-alpha">
+<ol>
+<li>Single API endpoint, no caching</li>
+<li>Premium model only, no optimization</li>
+<li>Load balancing, model routing by complexity, response caching, fallback providers</li>
+<li>Manual API calls</li>
+</ol>
+</div>
 <details class="success">
 <summary>Answer</summary>
 <p><strong>C) Load balancing, model routing by complexity, response caching, fallback providers</strong> - Enterprise architecture requires: load balancing (scale), routing (cost optimization), caching (efficiency), and fallbacks (reliability).</p>
